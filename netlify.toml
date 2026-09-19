@@ -1,5 +1,5 @@
 [build]
-  command = "npm --prefix frontend run build"
+  command = "npm ci --prefix frontend && npm --prefix frontend run build"
   publish = "frontend/dist"
 
 [build.environment]
