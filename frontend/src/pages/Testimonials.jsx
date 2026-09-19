@@ -3,7 +3,7 @@ import SectionHeading from '../components/SectionHeading'
 import TestimonialCard from '../components/TestimonialCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { Loader, OfflineNote } from '../components/APIStatus'
+import { Loader } from '../components/APIStatus'
 import { testimonials as staticTestimonials } from '../data/content'
 import { getTestimonials } from '../api/client'
 import { testimonialFromApi } from '../api/adapters'
@@ -46,7 +46,6 @@ export default function Testimonials() {
               ))}
             </StaggerGroup>
           )}
-          {offline && <OfflineNote />}
           {!loading && testimonials.length === 0 && (
             <p className="muted" style={{ textAlign: 'center', marginTop: '2.5rem', fontSize: '0.88rem' }}>
               New testimonials will appear here as students share their experiences.
