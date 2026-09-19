@@ -35,7 +35,7 @@ export const images = {
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
   about: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80',
   arabicProgram: '/images/arabic-90days.jpeg',
-  tafsirCircle: '/images/tafsir-circle.svg',
+  hadithImage: '/images/knowledge-light.jpeg',
 };
 
 export const learnArabic = {
