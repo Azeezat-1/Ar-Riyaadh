@@ -11,7 +11,14 @@
   padding-bottom: 2.25rem;
 }
 
+.footer__about .brand-mark {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
 .footer__name {
+  display: block;
   font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 600;
@@ -97,7 +104,8 @@
   border-top: 1px solid rgba(250, 246, 238, 0.14);
   padding-block: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   gap: 1rem;
   flex-wrap: wrap;
   font-size: 0.8rem;

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
+import { LogoMark } from './Header'
 import { navLinks, site } from '../data/content'
 import './Footer.css'
 
@@ -17,6 +18,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__about">
+            <LogoMark />
             <span className="footer__name">{site.name}</span>
             <p className="footer__desc">
               {site.tagline} Structured Islamic and Arabic learning taught by {site.founder}.
@@ -65,10 +67,6 @@ export default function Footer() {
         <div className="footer__bottom">
           <p>
             © {new Date().getFullYear()} {site.name} · Website by Azeezat Yusuf
-          </p>
-          <p className="footer__note">
-            Curriculum and lectures are conducted by {site.founder}, a Muallima and student of
-            knowledge.
           </p>
         </div>
       </div>
