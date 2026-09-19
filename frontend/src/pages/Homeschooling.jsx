@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from '../components/icons'
 import PageWrapper from '../components/PageWrapper'
@@ -7,9 +8,17 @@ import ArticleCard from '../components/ArticleCard'
 import SmartImage from '../components/SmartImage'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
+import { Loader, OfflineNote } from '../components/APIStatus'
 import { homeschoolArticles, images } from '../data/content'
+import { getArticleBySlug, getArticles } from '../api/client'
+import { articleDetailFromApi, articleFromApi } from '../api/adapters'
+import { useApi } from '../api/useApi'
 
 export default function Homeschooling() {
+  const { data: articles, loading, offline } = useApi(
+    () => getArticles().then((items) => items.map(articleFromApi)),
+    homeschoolArticles
+  )
   return (
     <PageWrapper>
       <section className="page-head">
@@ -33,13 +42,18 @@ export default function Homeschooling() {
             title="Lessons from the journey"
             lede="An evolving space where Umu Abdullah shares reflections on education, tarbiyah and family life through an Islamic lens."
           />
-          <StaggerGroup className="grid grid--3">
-            {homeschoolArticles.map((a) => (
-              <Reveal key={a.slug}>
-                <ArticleCard {...a} />
-              </Reveal>
-            ))}
-          </StaggerGroup>
+          {loading ? (
+            <Loader label="Loading articles…" />
+          ) : (
+            <StaggerGroup className="grid grid--3">
+              {articles.map((a) => (
+                <Reveal key={a.slug}>
+                  <ArticleCard {...a} />
+                </Reveal>
+              ))}
+            </StaggerGroup>
+          )}
+          {offline && <OfflineNote />}
         </div>
       </section>
 
@@ -84,7 +98,35 @@ export default function Homeschooling() {
 
 export function HomeschoolingArticleDetail() {
   const { slug } = useParams()
-  const article = homeschoolArticles.find((a) => a.slug === slug)
+  const fallback = homeschoolArticles.find((a) => a.slug === slug)
+  const [article, setArticle] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [offline, setOffline] = useState(false)
+
+  useEffect(() => {
+    let active = true
+    setLoading(true)
+    setOffline(false)
+    getArticleBySlug(slug)
+      .then((a) => active && setArticle(articleDetailFromApi(a)))
+      .catch(() => {
+        if (!active) return
+        setOffline(true)
+        setArticle(fallback && fallback.slug ? { ...fallback } : null)
+      })
+      .finally(() => active && setLoading(false))
+    return () => {
+      active = false
+    }
+  }, [slug]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (loading) {
+    return (
+      <PageWrapper>
+        <Loader label="Loading article…" />
+      </PageWrapper>
+    )
+  }
 
   if (!article) {
     return (
@@ -103,6 +145,21 @@ export function HomeschoolingArticleDetail() {
       </PageWrapper>
     )
   }
+
+  const legacyBody = article.content || (
+    <>
+      <p>
+        This article will be filled in with the full writing by Umu Abdullah Riyadh. It will share
+        the perspective and experience promised in the introduction — practical, honest reflections
+        on homeschooling from an Islamic viewpoint.
+      </p>
+      <p>
+        The article system is ready for the academy's own content: each piece has a title, slug,
+        excerpt, full content body, category, author and date, easy to manage without touching the
+        rest of the website.
+      </p>
+    </>
+  )
 
   return (
     <PageWrapper>
@@ -143,23 +200,13 @@ export function HomeschoolingArticleDetail() {
                   </svg>
                 </div>
               )}
-              <div className="story-body">
-                <p>
-                  This article will be filled in with the full writing by Umu Abdullah Riyadh. It
-                  will share the perspective and experience promised in the introduction — practical,
-                  honest reflections on homeschooling from an Islamic viewpoint.
-                </p>
-                <p>
-                  The article system is ready for the academy's own content: each piece has a title,
-                  slug, excerpt, full content body, category, author and date, easy to manage without
-                  touching the rest of the website.
-                </p>
-              </div>
+              <div className="story-body">{legacyBody}</div>
             </Reveal>
           </div>
         </section>
       </article>
 
+      {offline && <OfflineNote />}
       <CTASection />
     </PageWrapper>
   )

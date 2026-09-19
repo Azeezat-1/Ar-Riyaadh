@@ -3,9 +3,17 @@ import SectionHeading from '../components/SectionHeading'
 import TestimonialCard from '../components/TestimonialCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { testimonials } from '../data/content'
+import { Loader, OfflineNote } from '../components/APIStatus'
+import { testimonials as staticTestimonials } from '../data/content'
+import { getTestimonials } from '../api/client'
+import { testimonialFromApi } from '../api/adapters'
+import { useApi } from '../api/useApi'
 
 export default function Testimonials() {
+  const { data: testimonials, loading, offline } = useApi(
+    () => getTestimonials().then((items) => items.map(testimonialFromApi)),
+    staticTestimonials
+  )
   return (
     <PageWrapper>
       <section className="page-head">
@@ -27,17 +35,23 @@ export default function Testimonials() {
             eyebrow="Student voices"
             title="What students share about learning with us"
           />
-          <StaggerGroup className="grid grid--3">
-            {testimonials.map((t) => (
-              <Reveal key={t.id}>
-                <TestimonialCard {...t} />
-              </Reveal>
-            ))}
-          </StaggerGroup>
-          <p className="muted" style={{ textAlign: 'center', marginTop: '2.5rem', fontSize: '0.88rem' }}>
-            Placeholder testimonials are clearly marked and easy to replace with real student
-            experiences.
-          </p>
+          {loading ? (
+            <Loader label="Loading testimonials…" />
+          ) : (
+            <StaggerGroup className="grid grid--3">
+              {testimonials.map((t) => (
+                <Reveal key={t.id}>
+                  <TestimonialCard {...t} />
+                </Reveal>
+              ))}
+            </StaggerGroup>
+          )}
+          {offline && <OfflineNote />}
+          {!loading && testimonials.length === 0 && (
+            <p className="muted" style={{ textAlign: 'center', marginTop: '2.5rem', fontSize: '0.88rem' }}>
+              New testimonials will appear here as students share their experiences.
+            </p>
+          )}
         </div>
       </section>
 

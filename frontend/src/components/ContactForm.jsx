@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import { site } from '../data/content'
+import { submitContactMessage } from '../api/client'
 import './ContactForm.css'
 
 const initial = { name: '', email: '', phone: '', message: '' }
@@ -25,13 +26,12 @@ export default function ContactForm() {
     if (errors[e.target.name]) setErrors((er) => ({ ...er, [e.target.name]: null }))
   }
 
-  // Phase 3: POST to /api/contact. Kept local until the backend exists.
   const onSubmit = async (e) => {
     e.preventDefault()
     if (!validate()) return
     setStatus('sending')
     try {
-      await new Promise((resolve) => setTimeout(resolve, 700))
+      await submitContactMessage(form)
       setStatus('sent')
       setForm(initial)
       setTimeout(() => setStatus('idle'), 6000)

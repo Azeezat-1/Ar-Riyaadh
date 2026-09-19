@@ -4,10 +4,18 @@ import SectionHeading from '../components/SectionHeading'
 import ClassCard from '../components/ClassCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { classes, classCategories } from '../data/content'
+import { Loader, OfflineNote } from '../components/APIStatus'
+import { classes as staticClasses, classCategories } from '../data/content'
+import { getClasses } from '../api/client'
+import { classFromApi } from '../api/adapters'
+import { useApi } from '../api/useApi'
 
 export default function Classes() {
   const [filter, setFilter] = useState('all')
+  const { data: classes, loading, offline } = useApi(
+    () => getClasses().then((items) => items.map(classFromApi)),
+    staticClasses
+  )
   const visible = filter === 'all' ? classes : classes.filter((c) => c.category === filter)
 
   return (
@@ -46,15 +54,21 @@ export default function Classes() {
             ))}
           </div>
 
-          <StaggerGroup className="grid grid--2">
-            {visible.map((c) => (
-              <Reveal key={c.id}>
-                <ClassCard {...c} />
-              </Reveal>
-            ))}
-          </StaggerGroup>
+          {loading ? (
+            <Loader label="Loading classes…" />
+          ) : (
+            <StaggerGroup className="grid grid--2">
+              {visible.map((c) => (
+                <Reveal key={c.id}>
+                  <ClassCard {...c} />
+                </Reveal>
+              ))}
+            </StaggerGroup>
+          )}
 
-          {visible.length === 0 && (
+          {offline && <OfflineNote />}
+
+          {!loading && visible.length === 0 && (
             <p className="muted" style={{ textAlign: 'center', marginTop: '2rem' }}>
               No classes in this category yet. Contact the academy to ask about upcoming options.
             </p>
