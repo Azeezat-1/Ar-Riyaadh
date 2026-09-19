@@ -514,6 +514,136 @@
   color: var(--accent-hover);
 }
 
+/* Hadith feature with study-circle visual */
+
+.hadith-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.hadith-split__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hadith-split__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 52rem) {
+  .hadith-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Learn Arabic section */
+
+.section--arabic {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--arabic::before {
+  content: '';
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: rgba(185, 208, 108, 0.1);
+  left: -7rem;
+  bottom: -7rem;
+}
+
+.section--arabic::after {
+  content: '';
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: rgba(201, 169, 97, 0.12);
+  right: -5rem;
+  top: -6rem;
+}
+
+.learn-arabic__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.learn-arabic__frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(250, 246, 238, 0.18);
+}
+
+.learn-arabic__content {
+  background: rgba(5, 48, 20, 0.35);
+  border: 1px solid rgba(250, 246, 238, 0.12);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.learn-arabic__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--warm-white);
+  margin: 0.75rem 0 1rem;
+}
+
+.learn-arabic__lede {
+  color: rgba(250, 246, 238, 0.85);
+  font-size: 1.05rem;
+  max-width: 34em;
+}
+
+.learn-arabic__points {
+  list-style: none;
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.learn-arabic__points li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  color: rgba(250, 246, 238, 0.92);
+}
+
+.learn-arabic__points svg {
+  color: var(--lime);
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.learn-arabic__actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 52rem) {
+  .learn-arabic__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-arabic__frame {
+    max-width: 24rem;
+    margin-inline: auto;
+  }
+}
+
 /* Contact methods */
 
 .contact-methods {

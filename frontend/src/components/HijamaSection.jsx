@@ -8,7 +8,7 @@ export default function HijamaSection() {
   const highlights = hijama.services.slice(0, 3)
 
   return (
-    <section className="section" id="hijaamah">
+    <section className="section section--sage" id="hijaamah">
       <div className="container">
         <div className="hijama-split">
           <Reveal as="div" className="hijama-split__story">

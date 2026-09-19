@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Muslim women seated in a tafsir study circle, taught by a teacher in full hijab and niqab">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#115b2b"/>
+      <stop offset="1" stop-color="#0a4a21"/>
+    </linearGradient>
+    <linearGradient id="lampglow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9d06c" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#b9d06c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- room -->
+  <rect x="0" y="0" width="800" height="600" rx="28" fill="#f7f3ea"/>
+  <path d="M60 600 V360 A340 340 0 0 1 740 360 V600 Z" fill="url(#wall)"/>
+  <path d="M100 600 V366 A300 300 0 0 1 700 366 V600 Z" fill="#0a4a21"/>
+
+  <!-- hanging lamp -->
+  <line x1="400" y1="0" x2="400" y2="96" stroke="#5f8a31" stroke-width="4"/>
+  <path d="M360 96 h80 l18 42 h-116 Z" fill="#5f8a31"/>
+  <ellipse cx="400" cy="150" rx="120" ry="90" fill="url(#lampglow)"/>
+
+  <!-- rug -->
+  <ellipse cx="400" cy="568" rx="300" ry="34" fill="#1c6a38"/>
+  <ellipse cx="400" cy="564" rx="252" ry="26" fill="#52792c"/>
+  <ellipse cx="400" cy="560" rx="190" ry="18" fill="#46672a" fill-opacity="0.5"/>
+
+  <!-- ===== teacher (full hijab + niqab), standing right ===== -->
+  <g transform="translate(560,176)">
+    <!-- long jilbab -->
+    <path d="M28 0 C-40 40 -58 150 -46 236 L-40 356 L96 356 L102 236 C114 150 96 40 28 0 Z" fill="#115b2b"/>
+    <!-- shoulder cape -->
+    <path d="M-34 66 C -40 96 -34 128 -22 150 C 62 150 70 128 84 96 L 90 66 C 70 56 48 52 28 52 C 8 52 -14 56 -34 66 Z" fill="#0a4a21"/>
+    <!-- hijab hood -->
+    <ellipse cx="28" cy="38" rx="44" ry="52" fill="#0a4a21"/>
+    <!-- niqab veil -->
+    <path d="M-6 58 C4 70 52 70 62 58 L64 92 C60 104 44 108 28 108 C12 108 -4 104 -8 92 Z" fill="#053014"/>
+    <path d="M-14 66 C2 78 54 78 70 66 L74 92 C70 102 36 106 -4 104 Z" fill="#053014"/>
+    <!-- modest face hint above niqab -->
+    <ellipse cx="28" cy="46" rx="22" ry="20" fill="#0a4a21"/>
+    <path d="M6 62 C14 72 42 72 50 62 L52 88 C44 94 12 94 4 88 Z" fill="#053014"/>
+    <!-- hands holding book -->
+    <path d="M6 150 C18 138 40 138 50 150 L46 176 C40 180 18 180 10 176 Z" fill="#f7f3ea"/>
+    <rect x="0" y="170" width="56" height="38" rx="4" fill="#fdfcf8" stroke="#b9d06c" stroke-width="3"/>
+  </g>
+
+  <!-- ===== students seated in a semicircle ===== -->
+  <!-- student 1 -->
+  <g transform="translate(150,296) rotate(8)">
+    <ellipse cx="0" cy="118" rx="58" ry="16" fill="#52792c" fill-opacity="0.7"/>
+    <path d="M-34 26 C-44 60 -46 96 -42 124 L-40 148 L40 148 L42 124 C46 96 44 60 34 26 Z" fill="#1c6a38"/>
+    <ellipse cx="0" cy="18" rx="24" ry="28" fill="#1c6a38"/>
+    <rect x="-18" y="40" width="36" height="22" rx="3" fill="#f7f3ea"/>
+    <rect x="-26" y="128" width="52" height="12" rx="4" fill="#f7f3ea"/>
+  </g>
+  <!-- student 2 -->
+  <g transform="translate(238,252) rotate(4)">
+    <ellipse cx="0" cy="118" rx="58" ry="16" fill="#52792c" fill-opacity="0.7"/>
+    <path d="M-34 26 C-44 60 -46 96 -42 124 L-40 148 L40 148 L42 124 C46 96 44 60 34 26 Z" fill="#115b2b"/>
+    <ellipse cx="0" cy="18" rx="24" ry="28" fill="#115b2b"/>
+    <rect x="-18" y="40" width="36" height="22" rx="3" fill="#e4dcc9"/>
+    <rect x="-26" y="128" width="52" height="12" rx="4" fill="#f7f3ea"/>
+  </g>
+  <!-- student 3 (front centre) -->
+  <g transform="translate(352,238)">
+    <ellipse cx="0" cy="118" rx="58" ry="16" fill="#52792c" fill-opacity="0.7"/>
+    <path d="M-34 26 C-44 60 -46 96 -42 124 L-40 148 L40 148 L42 124 C46 96 44 60 34 26 Z" fill="#1c6a38"/>
+    <ellipse cx="0" cy="18" rx="24" ry="28" fill="#1c6a38"/>
+    <rect x="-18" y="40" width="36" height="22" rx="3" fill="#d9e6ae"/>
+    <rect x="-26" y="128" width="52" height="12" rx="4" fill="#f7f3ea"/>
+  </g>
+  <!-- student 4 -->
+  <g transform="translate(458,250) rotate(-4)">
+    <ellipse cx="0" cy="118" rx="58" ry="16" fill="#52792c" fill-opacity="0.7"/>
+    <path d="M-34 26 C-44 60 -46 96 -42 124 L-40 148 L40 148 L42 124 C46 96 44 60 34 26 Z" fill="#46672a"/>
+    <ellipse cx="0" cy="18" rx="24" ry="28" fill="#46672a"/>
+    <rect x="-18" y="40" width="36" height="22" rx="3" fill="#f7f3ea"/>
+    <rect x="-26" y="128" width="52" height="12" rx="4" fill="#e4dcc9"/>
+  </g>
+  <!-- student 5 -->
+  <g transform="translate(564,296) rotate(-8)">
+    <ellipse cx="0" cy="118" rx="58" ry="16" fill="#52792c" fill-opacity="0.7"/>
+    <path d="M-34 26 C-44 60 -46 96 -42 124 L-40 148 L40 148 L42 124 C46 96 44 60 34 26 Z" fill="#115b2b"/>
+    <ellipse cx="0" cy="18" rx="24" ry="28" fill="#115b2b"/>
+    <rect x="-18" y="40" width="36" height="22" rx="3" fill="#f7f3ea"/>
+    <rect x="-26" y="128" width="52" height="12" rx="4" fill="#f7f3ea"/>
+  </g>
+
+  <!-- arabesque arch frame -->
+  <path d="M78 600 V380 M722 600 V380" stroke="#b9d06c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M118 600 V388 M682 600 V388" stroke="#b9d06c" stroke-width="2" fill="none" stroke-dasharray="2 8" stroke-linecap="round"/>
+</svg>

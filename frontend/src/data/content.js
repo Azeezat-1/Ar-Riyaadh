@@ -34,6 +34,21 @@ export const images = {
   library: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80',
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
   about: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80',
+  arabicProgram: '/images/arabic-90days.jpeg',
+  tafsirCircle: '/images/tafsir-circle.svg',
+};
+
+export const learnArabic = {
+  eyebrow: 'Arabic',
+  title: 'Speak Arabic in 90 days',
+  lede: 'A structured Arabic-speaking programme for Muslim sisters — steady, practical and tailored to our learners.',
+  points: [
+    'Speak simple Arabic sentences with confidence',
+    'Introduce yourself and others in Arabic',
+    'Understand everyday vocabulary and phrases used in class',
+  ],
+  ctaText: 'Join an Arabic class',
+  ctaTo: '/classes',
 };
 
 export const navLinks = [

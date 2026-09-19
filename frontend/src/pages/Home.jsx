@@ -11,6 +11,7 @@ import Timeline from '../components/Timeline'
 import CTASection from '../components/CTASection'
 import BooksSection from '../components/BooksSection'
 import HijamaSection from '../components/HijamaSection'
+import LearnArabicSection from '../components/LearnArabicSection'
 import SmartImage from '../components/SmartImage'
 import { Reveal, StaggerGroup } from '../components/motion'
 import { Loader, OfflineNote } from '../components/APIStatus'
@@ -81,18 +82,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Learn Arabic */}
+      <LearnArabicSection />
+
       {/* Hadith feature */}
       <section className="section">
-        <div className="container container--narrow">
-          <Reveal as="div" className="hadith-feature">
-            <FontAwesomeIcon icon={icons['book-open']} className="hadith-feature__icon" aria-hidden="true" />
-            <p className="arabic hadith-feature__arabic">مَن سَلَكَ طَرِيقًا يَلتَمِسُ فِيهِ عِلمًا سَهَّلَ اللهُ لَهُ بِهِ طَرِيقًا إِلَى الجَنَّةِ</p>
-            <blockquote className="hadith-feature__quote">
-              “Whoever takes a path in which he seeks knowledge, Allah will make easy for him a
-              path to Paradise.”
-            </blockquote>
-            <span className="hadith-feature__ref">— Sahih Muslim</span>
-          </Reveal>
+        <div className="container">
+          <div className="hadith-split">
+            <Reveal as="div" className="hadith-feature">
+              <FontAwesomeIcon icon={icons['book-open']} className="hadith-feature__icon" aria-hidden="true" />
+              <p className="arabic hadith-feature__arabic">مَن سَلَكَ طَرِيقًا يَلتَمِسُ فِيهِ عِلمًا سَهَّلَ اللهُ لَهُ بِهِ طَرِيقًا إِلَى الجَنَّةِ</p>
+              <blockquote className="hadith-feature__quote">
+                “Whoever takes a path in which he seeks knowledge, Allah will make easy for him a
+                path to Paradise.”
+              </blockquote>
+              <span className="hadith-feature__ref">— Sahih Muslim</span>
+            </Reveal>
+            <Reveal as="div" className="hadith-split__visual" delay={0.15}>
+              <img src={images.tafsirCircle} alt="Muslim women seated in a tafsir study circle with their teacher" className="hadith-split__img" />
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -132,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Journey preview */}
-      <section className="section">
+      <section className="section section--sand">
         <div className="container">
           <SectionHeading
             eyebrow="Knowledge journey"
