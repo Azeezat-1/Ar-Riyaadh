@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
+            © {new Date().getFullYear()} {site.name} · Website by Azeezat Yusuf
           </p>
           <p className="footer__note">
             Curriculum and lectures are conducted by {site.founder}, a Muallima and student of
