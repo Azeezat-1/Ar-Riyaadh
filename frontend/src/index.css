@@ -1,0 +1,435 @@
+/* ============================================================
+   AL RIYADH ACADEMY — DESIGN SYSTEM
+   ============================================================ */
+
+:root {
+  /* Palette derived from the Ar-Riyadh logo (green emblem on warm white)
+     — deepest green rgb(0,54,18) #003612, olive rgb(100,150,36) #649624 */
+
+  /* Deep green family */
+  --deep-green: #0a4a21;
+  --deep-green-700: #115b2b;
+  --deep-green-800: #053014;
+  --sinature-green: #1c6a38;
+
+  /* Sage / leaf green family */
+  --sage-50: #eef4ec;
+  --sage-100: #dfeadd;
+  --sage-200: #c4d8c2;
+  --sage-300: #a7c2a4;
+  --sage-400: #86a882;
+
+  /* Warm neutrals (logo background ivory) */
+  --cream: #f7f3ea;
+  --warm-white: #fdfcf8;
+  --soft-beige: #eee7d8;
+  --beige-200: #e4dcc9;
+
+  /* Leaf accent (from the logo's olive green) */
+  --gold: #5f8a31;
+  --gold-600: #52792c;
+  --gold-700: #46672a;
+  --lime: #b9d06c;
+  --lime-soft: #d9e6ae;
+
+  /* Charcoal / ink */
+  --charcoal: #23231f;
+  --charcoal-60: #56544b;
+  --charcoal-40: #817d70;
+
+  /* Semantic */
+  --bg: var(--warm-white);
+  --bg-soft: var(--cream);
+  --surface: #ffffff;
+  --border: var(--beige-200);
+  --text: var(--charcoal);
+  --text-muted: var(--charcoal-60);
+  --text-faint: var(--charcoal-40);
+  --primary: var(--deep-green);
+  --primary-hover: var(--deep-green-700);
+  --accent: var(--gold);
+  --accent-hover: var(--gold-600);
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-arabic: 'Amiri', Georgia, serif;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(31, 59, 50, 0.05), 0 1px 3px rgba(31, 59, 50, 0.06);
+  --shadow-md: 0 4px 14px rgba(31, 59, 50, 0.08), 0 2px 6px rgba(31, 59, 50, 0.05);
+  --shadow-lg: 0 14px 40px rgba(31, 59, 50, 0.12);
+
+  /* Layout */
+  --container: 72rem;
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+  --header-h: 4.5rem;
+}
+
+/* ============ Reset & Base ============ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--sage-200);
+  color: var(--deep-green-800);
+}
+
+/* ============ Reusable utilities ============ */
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container--narrow {
+  max-width: 56rem;
+}
+
+.section {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.section--tinted {
+  background-color: var(--bg-soft);
+}
+
+.section--green {
+  background-color: var(--primary);
+  color: var(--cream);
+}
+
+.section--green h1,
+.section--green h2,
+.section--green h3 {
+  color: var(--warm-white);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-hover);
+}
+
+.eyebrow--light {
+  color: var(--gold);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 1.75rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.eyebrow--center::after {
+  content: '';
+  width: 1.75rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.lede {
+  color: var(--text-muted);
+  max-width: 46rem;
+  font-size: 1.05rem;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.925rem;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease,
+    transform 0.2s ease, box-shadow 0.25s ease;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: var(--cream);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn--gold {
+  background-color: var(--accent);
+  color: var(--deep-green-800);
+}
+
+.btn--gold:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--primary);
+  color: var(--cream);
+}
+
+.btn--ghost-light {
+  background-color: transparent;
+  border-color: rgba(250, 246, 238, 0.55);
+  color: var(--cream);
+}
+
+.btn--ghost-light:hover {
+  background-color: var(--cream);
+  color: var(--primary);
+}
+
+.btn--sm {
+  padding: 0.6rem 1.15rem;
+  font-size: 0.85rem;
+}
+
+/* Cards */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--sage-300);
+}
+
+.icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--radius-md);
+  background: var(--sage-50);
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.icon-wrap--gold {
+  background: rgba(201, 169, 97, 0.15);
+  color: var(--gold-700);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: var(--sage-50);
+  border: 1px solid var(--sage-200);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pill--gold {
+  background: rgba(201, 169, 97, 0.14);
+  border-color: rgba(201, 169, 97, 0.35);
+  color: var(--gold-700);
+}
+
+/* Section headings */
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.section-head h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+}
+
+.section-head .lede {
+  margin-inline: auto;
+}
+
+.section-head--left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.section-head--left .lede {
+  margin-inline: 0;
+}
+
+/* Grid helpers */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 64rem) {
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 46rem) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Arabic text */
+
+.arabic {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+/* Focus + motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

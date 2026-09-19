@@ -1,0 +1,1152 @@
+# AL RIYADH ACADEMY — MASTER WEBSITE BUILD PROMPT
+
+You are working inside my current VS Code workspace.
+
+**Build the actual website in code. Do not give me a presentation, mockup, conceptual explanation, or list of things I should build. Inspect the workspace, create/modify the necessary files, implement the frontend, run it, test it, and fix errors.**
+
+The website is for **Al Riyadh Academy**, an Islamic educational academy dedicated to teaching **females and girls**.
+
+The academy is led by **Umu Abdullah Riyadh**, a female teacher / Muallima who teaches Islamic and Arabic studies.
+
+---
+
+# 1. PROJECT GOAL
+
+Build a beautiful, trustworthy, educational and welcoming academy website for female students of different age groups, including:
+
+* Teenage girls
+* Young women
+* Adult women
+* Mothers
+* Women interested in Islamic studies
+* Women interested in learning Arabic
+
+The academy focuses on:
+
+* Qur'an
+* Hadith
+* Tafsir
+* Arabic language
+* Lughat al-Arabiyyah
+* Islamic education
+* Islamic lectures
+* Purification and related matters of worship
+* Muslim responsibilities and character
+* Homeschooling from an Islamic perspective
+* General beneficial Islamic knowledge
+
+The website should communicate:
+
+**Knowledge • Faith • Growth • Teaching • Perseverance • Community**
+
+It should feel peaceful, elegant, scholarly, feminine and trustworthy.
+
+---
+
+# 2. TECHNOLOGY
+
+Use the **MERN stack**.
+
+Frontend FIRST:
+
+* React
+* Vite
+* JavaScript
+* React Router
+* Axios
+* Framer Motion
+* Font Awesome
+
+Backend AFTER the frontend is complete:
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+
+Do not use TypeScript unless the existing project already requires it.
+
+The development process must be:
+
+### PHASE 1
+
+Build and complete the frontend.
+
+### PHASE 2
+
+Build the backend/API.
+
+### PHASE 3
+
+Connect the frontend to the backend.
+
+### PHASE 4
+
+Test and fix the complete application.
+
+---
+
+# 3. IMPORTANT — INSPECT THE CURRENT WORKSPACE
+
+Before writing code:
+
+1. Inspect the existing project.
+2. Understand the current folder structure.
+3. Identify installed packages.
+4. Reuse useful existing configuration.
+5. Do not unnecessarily delete existing files.
+6. Do not modify unrelated projects/files.
+7. Build within the current workspace.
+
+Then begin implementation.
+
+**Do the actual coding.**
+
+---
+
+# 4. BRAND IDENTITY
+
+Brand:
+
+# AL RIYADH ACADEMY
+
+Founder/Teacher:
+
+# UMU ABDULLAH RIYADH
+
+She may be described throughout the website as:
+
+* Muallima
+* Teacher
+* Islamic educator
+* Student of knowledge
+
+The website should not make exaggerated claims about qualifications or scholarship that have not been provided.
+
+---
+
+# 5. TARGET AUDIENCE
+
+The website is specifically for females.
+
+Visualise and communicate an environment for:
+
+* Teenage Muslimahs
+* Adult Muslimahs
+* Mothers
+* Female students
+* Women beginning their Islamic learning journey
+* Women seeking structured Arabic education
+* Women seeking Qur'an and Hadith study
+
+Do not make the website visually gender-neutral.
+
+However, keep the design **mature and elegant**, rather than childish or overly decorative.
+
+---
+
+# 6. VISUAL DIRECTION
+
+The website should feel:
+
+* Peaceful
+* Elegant
+* Feminine
+* Educational
+* Islamic
+* Modern
+* Warm
+* Trustworthy
+* Scholarly
+* Welcoming
+
+Avoid:
+
+* Excessive gold
+* Excessive Islamic patterns
+* Overly ornate mosque imagery
+* Neon colours
+* Excessive gradients
+* Excessive glassmorphism
+* Cartoonish design
+* Generic AI landing-page appearance
+* Excessive animation
+
+The design should feel like a **modern Islamic women's academy**.
+
+---
+
+# 7. COLOUR PALETTE
+
+Create a sophisticated palette using colours such as:
+
+* Deep green
+* Sage green
+* Cream
+* Warm white
+* Soft beige
+* Muted gold
+* Deep charcoal
+
+Keep the palette restrained.
+
+Use CSS variables for all major colours.
+
+The overall feeling should be calm and refined.
+
+---
+
+# 8. TYPOGRAPHY
+
+Choose typography that works beautifully for both English and Arabic.
+
+Use a refined modern sans-serif for English body text.
+
+For Arabic text, use a high-quality Arabic-compatible font.
+
+Possible direction:
+
+### English headings
+
+A sophisticated serif or modern elegant display font.
+
+### English body
+
+A clean readable sans-serif.
+
+### Arabic
+
+A dedicated Arabic font with excellent readability.
+
+Make sure the typography supports:
+
+* English
+* Arabic
+* Arabic transliteration where needed
+
+Arabic quotations and titles should render correctly.
+
+---
+
+# 9. ISLAMIC CONTENT ACCURACY
+
+This is extremely important.
+
+Do not invent:
+
+* Qur'an verses
+* Hadith
+* Scholar quotations
+* Arabic religious statements
+* Religious rulings
+* References
+
+If a Qur'an verse or Hadith is displayed:
+
+* Use the correct wording.
+* Include the source/reference where appropriate.
+* Do not fabricate citations.
+* Do not present uncertain wording as authentic.
+
+For the commonly cited hadith about seeking knowledge, use an accurately sourced translation such as:
+
+**“Whoever takes a path in which he seeks knowledge, Allah will make easy for him a path to Paradise.”**
+
+Reference:
+
+**Sahih Muslim**
+
+Do not create additional fabricated religious quotations.
+
+---
+
+# 10. HEADER
+
+Create a beautiful responsive header.
+
+Desktop navigation:
+
+* Home
+* About
+* Classes
+* Lectures
+* Homeschooling
+* Testimonials
+* Contact
+
+Include a clear CTA such as:
+
+**Join a Class**
+
+or
+
+**Explore Classes**
+
+Also include a subtle mobile menu.
+
+Mobile header:
+
+* Logo/name
+* Menu icon
+* Cart icon is NOT necessary because this is not primarily an e-commerce website
+* Mobile navigation drawer
+* Close icon
+
+---
+
+# 11. HERO SECTION
+
+Create a powerful but peaceful hero section.
+
+Use a high-quality image representing:
+
+* Muslim women learning
+* Female students studying
+* A teenage Muslimah reading
+* Women in an educational setting
+* Qur'an learning
+* Arabic learning
+
+### IMPORTANT IMAGE RULE
+
+Do not use images where women are presented in an inappropriate or stereotypical way.
+
+Prefer:
+
+* Modestly dressed Muslim women
+* Hijab
+* Female-only learning environments
+* Rear/side angles where appropriate
+* Students studying
+* Books/Qur'an
+* Classroom settings
+
+The images should communicate **knowledge and learning**, not simply “Islamic decoration.”
+
+Use an elegant overlay where necessary.
+
+Hero content:
+
+### Eyebrow
+
+**AL RIYADH ACADEMY**
+
+### Main headline
+
+Create a memorable headline around:
+
+**Seeking Knowledge. Growing in Faith.**
+
+or a similarly meaningful phrase.
+
+### Supporting text
+
+Explain that Al Riyadh Academy provides structured Islamic and Arabic learning for women and girls.
+
+### CTAs
+
+* **Explore Classes**
+* **Join a Telegram Class**
+* **Learn More**
+
+Add subtle Framer Motion entrance animations.
+
+---
+
+# 12. INTRODUCTION / WHAT WE TEACH
+
+Immediately after the hero, create a section that clearly answers:
+
+### What does Al Riyadh Academy teach?
+
+Create elegant learning cards for:
+
+### Qur'an
+
+Understanding, learning and engaging with the Book of Allah.
+
+### Hadith
+
+Learning authentic Prophetic teachings.
+
+### Tafsir
+
+Studying the meanings and explanations of Qur'anic verses.
+
+### Arabic Language
+
+Learning Lughat al-Arabiyyah and developing Arabic language skills.
+
+### Islamic Education
+
+Building understanding of Islamic responsibilities, worship and character.
+
+### Lectures
+
+Special sessions addressing practical and relevant topics for Muslim women.
+
+Use Font Awesome icons.
+
+Keep the cards visually elegant rather than generic.
+
+---
+
+# 13. CLASSES / TELEGRAM CLASSES
+
+Create a dedicated **Classes** section.
+
+The teacher currently conducts classes through Telegram.
+
+This section should allow visitors to see available classes and understand how to join.
+
+Each class card should contain:
+
+* Class title
+* Short description
+* Intended audience
+* Brief learning focus
+* Schedule placeholder
+* Telegram CTA
+
+CTA:
+
+**Join This Class**
+
+or
+
+**Request Access**
+
+When clicked, the button should lead to the appropriate Telegram/contact pathway.
+
+Do not invent actual Telegram URLs.
+
+Use clearly replaceable placeholders until the real links are supplied.
+
+The page should explain something similar to:
+
+> Interested in joining a class? Select the class you're interested in and follow the provided link or contact the appropriate person for access.
+
+---
+
+# 14. CLASS CATEGORIES
+
+Organise classes around areas such as:
+
+* Qur'an
+* Hadith
+* Tafsir
+* Arabic Language
+* Islamic Studies
+
+The interface should make it easy to understand which class is relevant to the visitor.
+
+Use filtering or category navigation if it improves the experience.
+
+---
+
+# 15. ABOUT UMU ABDULLAH RIYADH
+
+Create a dedicated **About** page/section.
+
+Introduce:
+
+# Umu Abdullah Riyadh
+
+She is a teacher / Muallima who has dedicated herself to learning and teaching Islamic knowledge.
+
+Create a personal story section based on the information provided:
+
+She began her journey as a student of knowledge approximately **ten years ago**.
+
+She learned at:
+
+**Madrasa Sunnah wal Jama'ah, Iwo, Osun State**
+
+Her journey was not always easy.
+
+Show the story of:
+
+* Beginning the journey
+* Learning
+* Perseverance
+* Continuing despite difficulties
+* Growing in knowledge
+* Eventually teaching others
+* Helping female students learn
+
+Do not exaggerate her qualifications.
+
+The tone should be humble and sincere.
+
+---
+
+# 16. KNOWLEDGE JOURNEY TIMELINE
+
+Create a visual timeline for Umu Abdullah's journey.
+
+For example:
+
+### Beginning
+
+The beginning of her journey as a student of knowledge.
+
+### Learning
+
+Years of studying Islamic knowledge and Arabic.
+
+### Perseverance
+
+Continuing despite challenges and difficulties.
+
+### Teaching
+
+Beginning to share beneficial knowledge with other women and girls.
+
+### Al Riyadh Academy
+
+Creating a learning environment where female students can continue their own journey.
+
+Use subtle scroll animations.
+
+---
+
+# 17. HADITH / KNOWLEDGE FEATURE
+
+Create a calm section highlighting the virtue of seeking knowledge.
+
+Use the accurately sourced hadith:
+
+> “Whoever takes a path in which he seeks knowledge, Allah will make easy for him a path to Paradise.”
+
+Reference:
+
+**Sahih Muslim**
+
+Present it respectfully.
+
+Do not turn it into a flashy marketing slogan.
+
+The purpose is to connect the academy's mission with the virtue of seeking beneficial knowledge.
+
+---
+
+# 18. TESTIMONIALS
+
+Create a dedicated testimonials section.
+
+These should be presented as student experiences.
+
+Include testimonial content based on the supplied themes, but keep them as authentic testimonials rather than inventing elaborate stories.
+
+Themes include:
+
+### Hadith Student
+
+A student who learned the **100 Hadith** under Umu Abdullah's tutelage and expresses gratitude for what she learned.
+
+### Long-term Student
+
+A student describing how much she has learned since knowing Umu Abdullah.
+
+### Student of Umu Abdullah
+
+A student explaining that studying under Umu Abdullah has helped her gain beneficial knowledge.
+
+Use:
+
+* Student name or initials where available
+* Student category if appropriate
+* Quote
+* Optional avatar/photo
+
+Do not fabricate names, credentials, ages or locations.
+
+If real testimonials have not yet been supplied, create clearly marked placeholder testimonial content that is easy to replace.
+
+---
+
+# 19. LECTURES PAGE
+
+Create a completely separate **Lectures** page.
+
+This page should showcase lectures delivered by Umu Abdullah Riyadh.
+
+Lectures are for females and may take place on:
+
+* Fridays
+* Sundays
+
+Create a beautiful lecture archive.
+
+Each lecture can contain:
+
+* Topic
+* Short description
+* Date placeholder
+* Speaker: Umu Abdullah Riyadh
+* Audience: Sisters / Muslimahs
+* Lecture status
+* Watch/listen/access CTA where applicable
+
+Do not invent actual lecture dates.
+
+---
+
+# 20. LECTURE TOPICS
+
+Include the provided lecture themes:
+
+### Purification
+
+Lectures addressing purity and purification from an Islamic perspective.
+
+### Our Responsibilities as Muslims
+
+Learning about responsibilities, character and conduct as Muslims.
+
+### Homeschooling
+
+Islamic perspectives on homeschooling and raising children with Islamic values.
+
+Other lecture topics can be added later through the backend.
+
+---
+
+# 21. HOMESCHOOLING SECTION
+
+Create a separate section/page dedicated specifically to:
+
+# Homeschooling from an Islamic Perspective
+
+This should be distinct from the general Lectures page.
+
+The content should allow Umu Abdullah to share:
+
+* Her experience as a mother
+* Her experience as a teacher
+* Lessons from homeschooling
+* Islamic principles that guide homeschooling
+* Raising children with Islamic values
+* Balancing education and tarbiyah
+* Practical reflections
+* Resources and recommendations
+
+The tone should be personal and educational.
+
+Do not make unsupported claims about homeschooling being universally superior.
+
+Present it as **her experience, reflections and Islamic educational perspective**.
+
+Include an appropriate CTA such as:
+
+**Read More**
+
+or
+
+**Explore Homeschooling**
+
+---
+
+# 22. HOMESCHOOLING ARTICLE SYSTEM
+
+Structure the frontend so that future homeschooling articles can easily be added.
+
+Possible fields:
+
+* Title
+* Slug
+* Cover image
+* Excerpt
+* Content
+* Date
+* Author
+* Category
+
+Create reusable article cards.
+
+---
+
+# 23. FEMALE STUDENT VISUALS
+
+The imagery throughout the website should represent the academy's actual audience.
+
+Use visuals of:
+
+* Teenage Muslim girls learning
+* Adult Muslim women studying
+* Mothers learning
+* Women reading Qur'an
+* Female students studying Arabic
+* Female-only classroom settings
+* Women writing notes
+* Islamic books
+* Arabic learning
+* Qur'an study
+* Hadith study
+
+Use tasteful, modest imagery.
+
+Avoid images that prominently display men's classrooms or mixed-gender environments.
+
+---
+
+# 24. SCHOOL / ACADEMY VISUAL IDENTITY
+
+Include a pictorial sense of an academy.
+
+Show:
+
+* Study spaces
+* Bookshelves
+* Desks
+* Qur'an
+* Arabic books
+* Notebooks
+* Female classroom environments
+* Online learning
+* Telegram learning/community where visually appropriate
+* Teacher/student learning atmosphere
+
+The visitor should immediately understand:
+
+**This is an academy where women and girls come to learn.**
+
+---
+
+# 25. WHY AL RIYADH ACADEMY
+
+Create a section communicating the academy's learning values.
+
+Possible themes:
+
+* Beneficial knowledge
+* Consistent learning
+* Understanding before practice
+* Learning at different stages of life
+* Female-focused learning environment
+* Arabic education
+* Qur'an and Hadith
+* Practical Islamic education
+* Encouragement and perseverance
+
+Do not use exaggerated claims such as “the best Islamic academy” unless supplied by the owner.
+
+---
+
+# 26. CONTACT / JOIN
+
+Create a clear contact section.
+
+Include:
+
+* Name
+* Email
+* Phone
+* Message
+
+Also include a CTA for class enquiries.
+
+Possible actions:
+
+**Ask About a Class**
+
+**Join a Telegram Class**
+
+**Contact the Academy**
+
+Do not invent real contact information.
+
+Use replaceable placeholders.
+
+---
+
+# 27. FOOTER
+
+Create a refined footer containing:
+
+**Al Riyadh Academy**
+
+Short description.
+
+Navigation:
+
+* Home
+* About
+* Classes
+* Lectures
+* Homeschooling
+* Testimonials
+* Contact
+
+Social/contact icons using Font Awesome.
+
+Include appropriate copyright text.
+
+---
+
+# 28. ROUTING
+
+Create React Router routes for:
+
+* `/`
+* `/about`
+* `/classes`
+* `/lectures`
+* `/homeschooling`
+* `/testimonials`
+* `/contact`
+
+Optional future routes:
+
+* `/classes/:id`
+* `/lectures/:id`
+* `/homeschooling/:slug`
+
+---
+
+# 29. FRONTEND COMPONENT ARCHITECTURE
+
+Build reusable components such as:
+
+* Header
+* MobileMenu
+* Hero
+* SectionHeading
+* SubjectCard
+* ClassCard
+* LectureCard
+* TestimonialCard
+* ArticleCard
+* AboutTeacher
+* Timeline
+* CTASection
+* ContactForm
+* Footer
+
+Do not put the entire website inside one huge React component.
+
+---
+
+# 30. ANIMATIONS
+
+Use Framer Motion carefully.
+
+Possible animations:
+
+* Hero text entrance
+* Image reveal
+* Subject cards
+* Class cards
+* Timeline reveal
+* Testimonial transitions
+* Mobile menu
+* Page transitions
+* Button hover
+
+Animations should be:
+
+* Smooth
+* Subtle
+* Respectful
+* Educational
+
+Do not make the website feel like an entertainment site.
+
+Respect reduced-motion preferences where practical.
+
+---
+
+# 31. RESPONSIVE DESIGN
+
+The website must work beautifully on:
+
+* Mobile
+* Tablet
+* Laptop
+* Desktop
+* Large screens
+
+Use mobile-first responsive design.
+
+Ensure:
+
+* No horizontal scrolling
+* No overlapping sections
+* No broken images
+* No unreadable Arabic
+* No overflowing navigation
+* Proper mobile menu
+* Comfortable reading width
+
+---
+
+# 32. ACCESSIBILITY
+
+Use:
+
+* Semantic HTML
+* Proper heading hierarchy
+* Accessible navigation
+* Meaningful alt text
+* Keyboard navigation
+* Visible focus states
+* Accessible forms
+* Good contrast
+* Clear button labels
+
+Make sure Arabic content remains readable and correctly aligned.
+
+Where appropriate, use RTL styling for Arabic text.
+
+---
+
+# 33. BACKEND — BUILD AFTER FRONTEND
+
+After the frontend has been completed and tested, create the Express/MongoDB backend.
+
+Use MongoDB + Mongoose.
+
+Possible models:
+
+### Class
+
+* title
+* category
+* description
+* audience
+* schedule
+* telegramLink
+* active
+* createdAt
+
+### Lecture
+
+* title
+* description
+* topic
+* date
+* image
+* accessLink
+* createdAt
+
+### Testimonial
+
+* name
+* content
+* category
+* image
+* approved
+* createdAt
+
+### HomeschoolingArticle
+
+* title
+* slug
+* excerpt
+* content
+* image
+* author
+* publishedAt
+
+### ContactMessage
+
+* name
+* email
+* phone
+* message
+* createdAt
+
+Use environment variables for sensitive configuration.
+
+---
+
+# 34. API
+
+Create clean REST API endpoints for:
+
+* Classes
+* Lectures
+* Testimonials
+* Homeschooling articles
+* Contact messages
+
+Include:
+
+* Validation
+* Error handling
+* Proper HTTP status codes
+* Clean controller/routes structure
+
+---
+
+# 35. TELEGRAM LINKS
+
+Do not invent Telegram links.
+
+Structure the application so that actual Telegram links can be added later.
+
+A class should have a configurable Telegram link.
+
+The CTA should clearly communicate that clicking it will take the student to the relevant Telegram class/access process.
+
+---
+
+# 36. CONTENT MANAGEMENT
+
+Make the architecture flexible enough that Umu Abdullah can eventually update:
+
+* Classes
+* Lecture topics
+* Lecture dates
+* Telegram links
+* Testimonials
+* Homeschooling articles
+
+without rebuilding the entire frontend.
+
+---
+
+# 37. IMAGE HANDLING
+
+Use high-quality images appropriate for the academy.
+
+Images should represent:
+
+* Muslim female students
+* Islamic education
+* Qur'an study
+* Arabic study
+* Female teachers
+* Books
+* Classrooms
+* Study environments
+
+Use descriptive alt text.
+
+Do not use random unrelated stock photography.
+
+If external image URLs are used during development, structure them so they can easily be replaced with the academy's real images later.
+
+---
+
+# 38. IMPORTANT CONTENT RULE
+
+Do not invent personal details about Umu Abdullah Riyadh.
+
+Only use information provided in this prompt.
+
+Do not invent:
+
+* Her age
+* Family details beyond what was provided
+* Specific degrees
+* Teachers she studied under
+* Additional institutions
+* Awards
+* Certifications
+* Number of students
+* Number of years teaching beyond the provided journey
+* Specific locations not supplied
+* Religious credentials not supplied
+
+Keep placeholders where information is missing.
+
+---
+
+# 39. IMPORTANT RELIGIOUS CONTENT RULE
+
+Do not use fabricated Qur'an verses, Hadith or scholarly statements.
+
+If additional Islamic quotations are needed, leave a clearly marked placeholder for verified content rather than inventing one.
+
+The website must prioritize **accuracy and trustworthiness**.
+
+---
+
+# 40. FINAL USER EXPERIENCE
+
+When someone opens the website, within a few seconds they should understand:
+
+**What is Al Riyadh Academy?**
+
+A female-focused academy for Islamic and Arabic education.
+
+**Who teaches there?**
+
+Umu Abdullah Riyadh, a Muallima and teacher.
+
+**What can I learn?**
+
+Qur'an, Hadith, Tafsir, Arabic and Islamic education.
+
+**Who can join?**
+
+Females across different age groups, including teenage girls and adult women.
+
+**How do I join?**
+
+Through the available class/Telegram access process.
+
+**Are there lectures?**
+
+Yes, dedicated female lectures including Friday and Sunday sessions.
+
+**Is there homeschooling content?**
+
+Yes, a dedicated section sharing Islamic homeschooling perspectives and experiences.
+
+---
+
+# 41. FINAL DESIGN QUALITY
+
+The final website should look like a genuine modern academy.
+
+It should NOT look like:
+
+* A generic Islamic template
+* A mosque website
+* A generic school template
+* A blog
+* A personal portfolio
+* A random AI-generated landing page
+
+It should look like:
+
+**A refined, modern Islamic learning academy specifically created for women and girls.**
+
+Use thoughtful spacing, strong typography, beautiful imagery, elegant cards, clear navigation and meaningful visual hierarchy.
+
+---
+
+# 42. FINAL TESTING
+
+After completing the implementation:
+
+1. Start the frontend.
+2. Start the backend.
+3. Check for build errors.
+4. Fix console errors.
+5. Test every route.
+6. Test mobile navigation.
+7. Test class cards.
+8. Test Telegram CTA placeholders.
+9. Test lecture pages.
+10. Test homeschooling articles.
+11. Test contact form.
+12. Test API requests.
+13. Test loading states.
+14. Test error states.
+15. Test responsive layouts.
+16. Check Arabic typography and RTL rendering.
+17. Check image loading.
+18. Check accessibility basics.
+19. Remove unused imports and code.
+20. Make sure the final application is polished.
+
+**Do not stop after creating the design. Actually build the working website in the current VS Code workspace.**
+
+The final result should clearly communicate the identity of:
+
+# AL RIYADH ACADEMY
+
+**A place for women and girls to seek beneficial Islamic and Arabic knowledge.**
