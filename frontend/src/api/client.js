@@ -1,7 +1,11 @@
 import axios from 'axios'
 
+// VITE_API_BASE lets a deployed frontend point /api at a separately hosted
+// backend (e.g. Render). Leave unset on Vercel/Netlify so /api stays same-origin.
+const baseURL = `${import.meta.env.VITE_API_BASE || ''}/api`
+
 const client = axios.create({
-  baseURL: '/api',
+  baseURL,
   timeout: 10000,
   headers: { 'Content-Type': 'application/json' },
 })

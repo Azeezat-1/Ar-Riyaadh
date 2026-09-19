@@ -35,7 +35,8 @@ app.use(notFound)
 app.use(errorHandler)
 
 function corsOrigins() {
-  const raw = process.env.CORS_ORIGINS || 'http://localhost:5173'
+  const raw = (process.env.CORS_ORIGINS || 'http://localhost:5173').trim()
+  if (raw === '*') return true
   return raw.split(',').map((o) => o.trim())
 }
 
