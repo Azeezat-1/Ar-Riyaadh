@@ -13,10 +13,22 @@ import BooksSection from '../components/BooksSection'
 import HijamaSection from '../components/HijamaSection'
 import SmartImage from '../components/SmartImage'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { subjects, classes, testimonials, images, values } from '../data/content'
+import { Loader, OfflineNote } from '../components/APIStatus'
+import { subjects, classes as staticClasses, testimonials as staticTestimonials, images, values } from '../data/content'
+import { getClasses, getTestimonials } from '../api/client'
+import { classFromApi, testimonialFromApi } from '../api/adapters'
+import { useApi } from '../api/useApi'
 
 export default function Home() {
-  const featuredClasses = classes.slice(0, 3)
+  const { data: liveClasses, loading: loadingClasses, offline: offlineClasses } = useApi(
+    () => getClasses().then((items) => items.map(classFromApi)),
+    staticClasses
+  )
+  const { data: liveTestimonials, loading: loadingTestimonials, offline: offlineTestimonials } = useApi(
+    () => getTestimonials().then((items) => items.map(testimonialFromApi)),
+    staticTestimonials
+  )
+  const featuredClasses = liveClasses.slice(0, 3)
 
   return (
     <PageWrapper>
@@ -48,13 +60,18 @@ export default function Home() {
             title="Featured classes"
             lede="Classes are held for sisters through Telegram. Interested in joining? Select a class and follow the provided link, or contact the academy for access."
           />
-          <StaggerGroup className="grid grid--3">
-            {featuredClasses.map((c) => (
-              <Reveal key={c.id}>
-                <ClassCard {...c} />
-              </Reveal>
-            ))}
-          </StaggerGroup>
+          {loadingClasses ? (
+            <Loader label="Loading classes…" />
+          ) : (
+            <StaggerGroup className="grid grid--3">
+              {featuredClasses.map((c) => (
+                <Reveal key={c.id}>
+                  <ClassCard {...c} />
+                </Reveal>
+              ))}
+            </StaggerGroup>
+          )}
+          {offlineClasses && <OfflineNote />}
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <Link to="/classes" className="btn btn--outline">
               View All Classes
@@ -146,13 +163,18 @@ export default function Home() {
             title="From those who learnt with us"
             lede="Words from students — their own experiences and gratitude. More can be added through the academy."
           />
-          <StaggerGroup className="grid grid--3">
-            {testimonials.map((t) => (
-              <Reveal key={t.id}>
-                <TestimonialCard {...t} />
-              </Reveal>
-            ))}
-          </StaggerGroup>
+          {loadingTestimonials ? (
+            <Loader label="Loading testimonials…" />
+          ) : (
+            <StaggerGroup className="grid grid--3">
+              {liveTestimonials.map((t) => (
+                <Reveal key={t.id}>
+                  <TestimonialCard {...t} />
+                </Reveal>
+              ))}
+            </StaggerGroup>
+          )}
+          {offlineTestimonials && <OfflineNote />}
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <Link to="/testimonials" className="btn btn--ghost-light">
               View All Testimonials
