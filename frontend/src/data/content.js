@@ -56,7 +56,7 @@ export const navLinks = [
   { label: 'About', to: '/about' },
   { label: 'Classes', to: '/classes' },
   { label: 'Lectures', to: '/lectures' },
-  { label: 'Homeschooling', to: '/homeschooling' },
+  { label: 'Tarbiyyah', to: '/homeschooling' },
   { label: 'Hijaamah', to: '/hijaamah' },
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact' },
