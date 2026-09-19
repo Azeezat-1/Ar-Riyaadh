@@ -1,6 +1,15 @@
 {
-  "framework": "vite",
-  "rootDirectory": "frontend",
+  "framework": "other",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

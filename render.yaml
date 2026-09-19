@@ -1,0 +1,38 @@
+# Render Blueprint — deploys the whole app on Render in one go.
+# "New +" -> "Blueprint" -> point at this repo. After first deploy:
+#   1. Set MONGODB_URI on the api service (Atlas connection string).
+#   2. Copy the api service URL into VITE_API_BASE on the web service, then
+#      deploy the web service again so the frontend calls the live API.
+# If you'd rather skip setup, the frontend still works from bundled content
+# (the API client falls back gracefully when /api is unreachable).
+
+services:
+  - type: web
+    name: ar-riyadh-academy-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGINS
+        value: "*"
+
+  - type: web
+    name: ar-riyadh-academy
+    runtime: static
+    rootDir: frontend
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE
+        sync: false
+        value: ""
