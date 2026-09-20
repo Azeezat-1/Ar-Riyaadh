@@ -142,7 +142,7 @@ export default function Header() {
                 </motion.span>
               ))}
               <div className="mobile-menu__cta">
-                <Link to="/classes" className="btn btn--gold" onClick={() => setMenuOpen(false)}>
+                <Link to="/classes" className="btn btn--lime" onClick={() => setMenuOpen(false)}>
                   Explore Classes
                 </Link>
               </div>
