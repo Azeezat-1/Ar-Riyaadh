@@ -3,7 +3,7 @@ import BookCard from './BookCard'
 import { Reveal, StaggerGroup } from './motion'
 import { books } from '../data/content'
 
-export default function BooksSection({ title = 'Books by Umu Abdullah Riyadh', eyebrow = 'Written works' }) {
+export default function BooksSection({ title = 'Books by Umm Abdillah Ar-Riyaadah', eyebrow = 'Written works' }) {
   if (!books.length) return null
 
   return (
@@ -12,7 +12,7 @@ export default function BooksSection({ title = 'Books by Umu Abdullah Riyadh', e
         <SectionHeading
           eyebrow={eyebrow}
           title={title}
-          lede="Books written by Umu Abdullah Riyadh to help readers learn and grow in beneficial knowledge."
+          lede="Books written by Umm Abdillah Ar-Riyaadah to help readers learn and grow in beneficial knowledge."
         />
         <StaggerGroup className="grid grid--4">
           {books.map((b) => (

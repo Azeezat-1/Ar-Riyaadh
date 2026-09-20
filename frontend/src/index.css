@@ -1,9 +1,9 @@
 /* ============================================================
-   AL RIYADH ACADEMY — DESIGN SYSTEM
+   AR RIYAADH ACADEMY — DESIGN SYSTEM
    ============================================================ */
 
 :root {
-  /* Palette derived from the Ar-Riyadh logo (green emblem on warm white)
+  /* Palette derived from the Ar-Riyaadh logo (green emblem on warm white)
      — deepest green rgb(0,54,18) #003612, olive rgb(100,150,36) #649624 */
 
   /* Deep green family */
@@ -276,6 +276,17 @@ h4 {
 
 .btn--gold:hover {
   background-color: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--lime {
+  background-color: var(--lime);
+  color: var(--primary);
+}
+
+.btn--lime:hover {
+  background-color: #e8ffa0;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }

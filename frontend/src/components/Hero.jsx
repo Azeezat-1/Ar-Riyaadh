@@ -23,24 +23,15 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero__bg" aria-hidden="true">
-        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-          <rect width="1440" height="900" fill="#f6f1e7" />
-          <circle cx="1180" cy="120" r="380" fill="#e3ece2" opacity="0.6" />
-          <circle cx="200" cy="760" r="330" fill="#c9d8c7" opacity="0.4" />
-          <path
-            d="M-40 640C240 520 520 760 780 660s480-70 700 40v260H-40z"
-            fill="#e9e0cf"
-            opacity="0.55"
-          />
-          <path d="M1300 80l140 140-140 140L1160 220z" fill="#c9a961" opacity="0.18" transform="rotate(10 1300 220)" />
-        </svg>
+        <img src={images.heroBackground} alt="" />
+        <div className="hero__bg-overlay" />
       </div>
 
       <div className="container hero__inner">
         <div className="hero__content">
           <motion.div variants={container} initial="hidden" animate="visible">
             <motion.span variants={fade} className="eyebrow">
-              Ar-Riyadh Academy
+              Ar-Riyaadh Academy
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
@@ -50,9 +41,9 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={fade} className="hero__lead">
-              Ar-Riyadh Academy provides structured Islamic and Arabic learning for women and
+              Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and
               girls — Qur&rsquo;an, Hadith, Tafsir, Arabic and Islamic studies, taught online by
-              Umu Abdullah Riyadh.
+              Umm Abdillah Ar-Riyaadah.
             </motion.p>
 
             <motion.div variants={fade} className="hero__actions">

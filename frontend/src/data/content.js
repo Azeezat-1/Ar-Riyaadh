@@ -1,7 +1,7 @@
 // ============================================================
-// AL RIYADH ACADEMY — CONTENT DATA
+// AR RIYAADH ACADEMY — CONTENT DATA
 // ------------------------------------------------------------
-// Central place for all display content. Umu Abdullah can
+// Central place for all display content. Umm Abdillah can
 // update classes, lectures, testimonials and articles here
 // without touching component code. In Phase 3 these will be
 // served from the backend API.
@@ -10,9 +10,9 @@
 // ============================================================
 
 export const site = {
-  name: 'Ar-Riyadh Academy',
+  name: 'Ar-Riyaadh Academy',
   tagline: 'A place for women and girls to seek beneficial Islamic and Arabic knowledge.',
-  founder: 'Umu Abdullah Riyadh',
+  founder: 'Umm Abdillah Ar-Riyaadah',
   founderRole: 'Muallima & Teacher',
   email: 'contact@alriyadhacademy.example',
   phone: '+000 000 000 0000',
@@ -36,6 +36,7 @@ export const images = {
   about: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80',
   arabicProgram: '/images/arabic-90days.jpeg',
   hadithImage: '/images/knowledge-light.jpeg',
+  heroBackground: '/images/knowledge-light.jpeg',
 };
 
 export const learnArabic = {
@@ -224,7 +225,7 @@ export const testimonials = [
     name: 'Student — Hadith Class',
     category: 'Hadith Student',
     quote:
-      'I learned the 100 Hadith under Umu Abdullah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
+      'I learned the 100 Hadith under Umm Abdillah Ar-Riyaadah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
     placeholder: true,
   },
   {
@@ -232,15 +233,15 @@ export const testimonials = [
     name: 'Long-term Student',
     category: 'Continuing Student',
     quote:
-      'Since I came to know Umu Abdullah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
+      'Since I came to know Umm Abdillah Ar-Riyaadah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
     placeholder: true,
   },
   {
     id: 't3',
-    name: 'Student of Umu Abdullah',
+    name: 'Student of Umm Abdillah Ar-Riyaadah',
     category: 'Islamic Studies Student',
     quote:
-      'Studying under Umu Abdullah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
+      'Studying under Umm Abdillah Ar-Riyaadah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
     placeholder: true,
   },
 ];
@@ -252,7 +253,7 @@ export const homeschoolArticles = [
     excerpt:
       'A personal introduction to homeschooling as a mother and teacher — why families choose it and the Islamic principles that guide it.',
     category: 'Perspectives',
-    author: 'Umu Abdullah Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadah',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -262,7 +263,7 @@ export const homeschoolArticles = [
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',
     category: 'Reflections',
-    author: 'Umu Abdullah Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadah',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -272,7 +273,7 @@ export const homeschoolArticles = [
     excerpt:
       'Some honest reflections on the balance between teaching students and raising children, and the lessons learnt along the way.',
     category: 'Reflections',
-    author: 'Umu Abdullah Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadah',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -344,14 +345,14 @@ export const timeline = [
   },
   {
     phase: 'Academy',
-    title: 'Ar-Riyadh Academy',
+    title: 'Ar-Riyaadh Academy',
     description:
       'Creating a learning environment where female students can continue their own journey — a place for women and girls to seek beneficial Islamic and Arabic knowledge.',
   },
 ];
 
 // ------------------------------------------------------------
-// BOOKS WRITTEN BY UMU ABDULLAH RIYADH
+// BOOKS WRITTEN BY UMM ABDILLAH AR-RIYAADAH
 // Taken from her Facebook page (facebook.com/lateefat.o.yusuff).
 // Add each book she has written here. Example fields:
 //   { title, description, cover, category, link }
@@ -368,14 +369,14 @@ export const books = [
 ];
 
 // ------------------------------------------------------------
-// HIJAMAH (cupping therapy) — Umu Abdullah Riyadh practises and
+// HIJAMAH (cupping therapy) — Umm Abdillah Ar-Riyaadah practises and
 // teaches hijaamah using needles and hijaamah cups.
 // ------------------------------------------------------------
 export const hijama = {
   title: 'Hijaamah',
   tagline: 'Acupuncture & cupping therapy, practised and taught with care',
   intro:
-    'Umu Abdullah Riyadh practises acupuncture and cupping (hijaamah) for sisters and trains students in these methods — using acupuncture needles and cupping cups, with care and the discipline the practice requires.',
+    'Umm Abdillah Ar-Riyaadah practises acupuncture and cupping (hijaamah) for sisters and trains students in these methods — using acupuncture needles and cupping cups, with care and the discipline the practice requires.',
   services: [
     {
       icon: 'droplet',

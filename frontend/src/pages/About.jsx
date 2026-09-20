@@ -49,11 +49,11 @@ export default function About() {
                 ease, and Allah facilitated her growth in knowledge.
               </p>
               <p>
-                Today, Umu Abdullah Riyadh teaches other women and girls — passing on the knowledge
-                she gained, with patience and sincerity, through Ar-Riyadh Academy.
+                Today, Umm Abdillah Ar-Riyaadah teaches other women and girls — passing on the knowledge
+                she gained, with patience and sincerity, through Ar-Riyaadh Academy.
               </p>
               <p className="muted">
-                Ar-Riyadh Academy represents that journey continuing — a space where other women and
+                Ar-Riyaadh Academy represents that journey continuing — a space where other women and
                 girls can take their own step in the path of seeking beneficial knowledge.
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function About() {
           <Reveal as="div">
             <SmartImage
               src={images.about}
-              alt="Umu Abdullah Riyadh, a dedicated Islamic teacher"
+              alt="Umm Abdillah Ar-Riyaadah, a dedicated Islamic teacher"
               ratio="4 / 5"
               style={{ borderRadius: 'var(--radius-lg)', border: '6px solid var(--warm-white)', boxShadow: 'var(--shadow-lg)' }}
             />

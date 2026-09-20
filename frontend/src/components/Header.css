@@ -141,26 +141,19 @@ img.brand-mark {
 
 .mobile-menu__link {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 1rem;
-  padding: 0.9rem 0.25rem;
+  padding: 0.7rem 0.25rem;
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 7vw, 2.2rem);
-  color: var(--cream);
+  font-size: clamp(1.15rem, 4.5vw, 1.5rem);
+  color: var(--lime);
   border-bottom: 1px solid rgba(250, 246, 238, 0.14);
   transition: color 0.2s ease;
 }
 
 .mobile-menu__link:hover,
 .mobile-menu__link--active {
-  color: var(--gold);
-}
-
-.mobile-menu__num {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  color: var(--gold);
+  color: var(--cream);
 }
 
 .mobile-menu__cta {

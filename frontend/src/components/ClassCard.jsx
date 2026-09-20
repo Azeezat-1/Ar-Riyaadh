@@ -1,21 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 
-export default function ClassCard({ icon, category, title, audience, description, focus, schedule, telegramLink }) {
+export default function ClassCard({ icon, category, title, description, focus, telegramLink }) {
   return (
     <article className="card class-card">
-      <div className="class-card__head">
-        <span className="pill">{category}</span>
-        <span className="pill pill--gold">
-          <FontAwesomeIcon icon={icons.clock} aria-hidden="true" />
-          {schedule}
-        </span>
-      </div>
+      <span className="pill">{category}</span>
       <div className="icon-wrap icon-wrap--gold">
         <FontAwesomeIcon icon={icons[icon]} aria-hidden="true" />
       </div>
       <h3 className="class-card__title">{title}</h3>
-      <span className="class-card__audience">{audience}</span>
       <p className="class-card__desc">{description}</p>
       {focus && (
         <ul className="class-card__focus">

@@ -28,7 +28,7 @@ export default function LearnArabicSection() {
               ))}
             </ul>
             <div className="learn-arabic__actions">
-              <Link to={learnArabic.ctaTo} className="btn btn--gold">
+              <Link to={learnArabic.ctaTo} className="btn btn--lime">
                 {learnArabic.ctaText}
                 <FontAwesomeIcon icon={icons['arrow-right']} />
               </Link>

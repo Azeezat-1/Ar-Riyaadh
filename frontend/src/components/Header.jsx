@@ -128,7 +128,7 @@ export default function Header() {
               exit={{ y: 16, opacity: 0 }}
               transition={{ duration: reduced ? 0 : 0.3, ease: 'easeOut' }}
             >
-              {navLinks.map((link, i) => (
+              {navLinks.map((link) => (
                 <motion.span key={link.to}>
                   <NavLink
                     to={link.to}
@@ -137,7 +137,6 @@ export default function Header() {
                     }
                     end={link.to === '/'}
                   >
-                    <span className="mobile-menu__num">0{i + 1}</span>
                     {link.label}
                   </NavLink>
                 </motion.span>
