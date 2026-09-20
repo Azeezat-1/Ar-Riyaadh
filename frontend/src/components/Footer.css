@@ -52,8 +52,8 @@
 }
 
 .footer__socials a:hover {
-  background: var(--gold);
-  border-color: var(--gold);
+  background: var(--lime);
+  border-color: var(--lime);
   color: var(--deep-green-800);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .footer__nav a:hover {
-  color: var(--gold);
+  color: var(--lime);
 }
 
 .footer__contact li {
@@ -97,7 +97,7 @@
 }
 
 .footer__contact a:hover {
-  color: var(--gold);
+  color: var(--lime);
 }
 
 .footer__bottom {
