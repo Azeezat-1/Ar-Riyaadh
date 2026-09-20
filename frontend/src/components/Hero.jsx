@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="hero__content">
           <motion.div variants={container} initial="hidden" animate="visible">
             <motion.span variants={fade} className="eyebrow">
-              Arriyaadh Academy
+              ArRiyaadh Academy
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
@@ -41,7 +41,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={fade} className="hero__lead">
-              Arriyaadh Academy provides structured Islamic and Arabic learning for women and
+              ArRiyaadh Academy provides structured Islamic and Arabic learning for women and
               girls — Qur&rsquo;an, Hadith, Tafsir, Arabic and Islamic studies, taught online by
               Umm Abdillah Ar-Riyaadah.
             </motion.p>
