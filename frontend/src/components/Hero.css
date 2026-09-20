@@ -23,6 +23,10 @@
   background: linear-gradient(115deg, rgba(13, 26, 22, 0.92) 20%, rgba(24, 43, 37, 0.78) 60%, rgba(31, 59, 50, 0.6));
 }
 
+.hero .eyebrow::before {
+  display: none;
+}
+
 .hero__inner {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -157,10 +161,6 @@
 /* Responsive */
 
 @media (max-width: 60rem) {
-.hero .eyebrow::before {
-  display: none;
-}
-
 .hero__inner {
     grid-template-columns: 1fr;
   }
