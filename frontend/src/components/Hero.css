@@ -157,7 +157,11 @@
 /* Responsive */
 
 @media (max-width: 60rem) {
-  .hero__inner {
+.hero .eyebrow::before {
+  display: none;
+}
+
+.hero__inner {
     grid-template-columns: 1fr;
   }
 
