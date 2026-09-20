@@ -165,7 +165,7 @@ export default function Home() {
       <HijamaSection />
 
       {/* Testimonials preview */}
-      <section className="section section--green">
+      <section className="section section--green section--compact">
         <div className="container">
           <SectionHeading
             eyebrow="Student experiences"

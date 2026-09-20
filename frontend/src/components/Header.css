@@ -78,8 +78,8 @@ img.brand-mark {
 
 .nav-link {
   position: relative;
-  padding: 0.5rem 0.8rem;
-  font-size: 0.9rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-muted);
   border-radius: var(--radius-pill);
