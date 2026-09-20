@@ -55,7 +55,6 @@ export const learnArabic = {
 export const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
-  { label: 'Classes', to: '/classes' },
   { label: 'Lectures', to: '/lectures' },
   { label: 'Tarbiyyah', to: '/homeschooling' },
   { label: 'Hijaamah', to: '/hijaamah' },
