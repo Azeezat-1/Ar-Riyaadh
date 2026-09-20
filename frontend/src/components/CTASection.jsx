@@ -21,7 +21,7 @@ export default function CTASection({ id }) {
           <div className="cta__actions">
             <a
               href="#"
-              className="btn btn--gold"
+              className="btn btn--lime"
               rel="noreferrer"
               target="_blank"
             >
