@@ -14,7 +14,7 @@ export default function Hijaamah() {
         <div className="container">
           <div className="page-head__inner">
             <span className="eyebrow">Hijaamah</span>
-            <h1>Hijaamah — Cupping Therapy</h1>
+            <h1>Hijaamah, Cupping Therapy</h1>
             <p className="lede">
               {hijama.intro}
             </p>
@@ -28,7 +28,7 @@ export default function Hijaamah() {
           <SectionHeading
             eyebrow="What is offered"
             title={hijama.tagline}
-            lede="Performed for sisters and taught to students — with care, cleanliness and the discipline the practice requires."
+            lede="Performed for sisters and taught to students, with care, cleanliness and the discipline the practice requires."
           />
           <StaggerGroup className="grid grid--4">
             {hijama.services.map((s) => (

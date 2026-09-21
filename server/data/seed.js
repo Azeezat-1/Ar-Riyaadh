@@ -14,10 +14,10 @@ const classes = [
     category: 'Qur\u02bc\u0101n',
     icon: 'book-quran',
     description:
-      'Build a strong, correct relationship with the Book of Allah — from accurate recitation to consistent engagement with the Qur\u02bc\u0101n.',
+      'Build a strong, correct relationship with the Book of Allah, from accurate recitation to consistent engagement with the Qur\u02bc\u0101n.',
     audience: 'Teenage girls \u2022 Adult women \u2022 Mothers',
     focus: ['Tajw\u012bd foundations', 'Fluency in recitation', 'Consistent daily reading'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -25,10 +25,10 @@ const classes = [
     category: 'Hadith',
     icon: 'scroll',
     description:
-      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit — a structured journey through selected hadith.',
+      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit, a structured journey through selected hadith.',
     audience: 'Women with some prior learning',
     focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -39,7 +39,7 @@ const classes = [
       'Step through the meanings of the Qur\u02bc\u0101n at a measured pace, understanding context and reflection together.',
     audience: 'Adult women \u2022 Mothers',
     focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -47,10 +47,10 @@ const classes = [
     category: 'Arabic Language',
     icon: 'language',
     description:
-      'Learn Lughat al-\u02bbArabiyyah step by step — building the vocabulary and understanding you need to engage with Arabic texts.',
+      'Learn Lughat al-\u02bbArabiyyah step by step, building the vocabulary and understanding you need to engage with Arabic texts.',
     audience: 'Beginners \u2022 Continuing students',
     focus: ['Reading and understanding', 'Vocabulary building', 'Simple grammar foundations'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -58,10 +58,10 @@ const classes = [
     category: 'Islamic Studies',
     icon: 'mosque',
     description:
-      'Practical Islamic education covering purification, worship, Muslim responsibilities and character — knowledge meant to be lived.',
+      'Practical Islamic education covering purification, worship, Muslim responsibilities and character, knowledge meant to be lived.',
     audience: 'Teenagers \u2022 Adult women \u2022 Mothers',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
 ]
@@ -71,7 +71,7 @@ const lectures = [
     title: 'Purification in Worship',
     topic: 'Purification',
     description:
-      'Lectures addressing purity and purification from an Islamic perspective — understanding the rulings that make worship correct and complete.',
+      'Lectures addressing purity and purification from an Islamic perspective, understanding the rulings that make worship correct and complete.',
     tags: ['Purification', 'Fiqh', 'Worship'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Sisters / Muslimahs',
@@ -82,7 +82,7 @@ const lectures = [
     title: 'Our Responsibilities as Muslims',
     topic: 'Our Responsibilities as Muslims',
     description:
-      'Learning about responsibilities, character and conduct as Muslims — what Islam asks of us in our daily lives and relationships.',
+      'Learning about responsibilities, character and conduct as Muslims, what Islam asks of us in our daily lives and relationships.',
     tags: ['Responsibilities', 'Character', 'Conduct'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Sisters / Muslimahs',
@@ -93,7 +93,7 @@ const lectures = [
     title: 'Homeschooling from an Islamic Perspective',
     topic: 'Homeschooling',
     description:
-      'Islamic perspectives on homeschooling and raising children with Islamic values — combining education, tarbiyah and family life.',
+      'Islamic perspectives on homeschooling and raising children with Islamic values, combining education, tarbiyah and family life.',
     tags: ['Homeschooling', 'Tarbiyah', 'Family'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Mothers / Muslimahs',
@@ -104,7 +104,7 @@ const lectures = [
 
 const testimonials = [
   {
-    name: 'Student — Hadith Class',
+    name: 'Student, Hadith Class',
     category: 'Hadith Student',
     content:
       'I learned the 100 Hadith under Umu Abdullah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
@@ -131,15 +131,15 @@ const articles = [
     title: 'Homeschooling from an Islamic Perspective',
     slug: 'homeschooling-from-an-islamic-perspective',
     excerpt:
-      'A personal introduction to homeschooling as a mother and teacher — why families choose it and the Islamic principles that guide it.',
+      'A personal introduction to homeschooling as a mother and teacher, why families choose it and the Islamic principles that guide it.',
     content:
-      'This article will be filled in with the full writing by Umu Abdullah Riyadh. It will share the perspective and experience promised in the introduction — practical, honest reflections on homeschooling from an Islamic viewpoint.',
+      'This article will be filled in with the full writing by Umu Abdullah Riyadh. It will share the perspective and experience promised in the introduction, practical, honest reflections on homeschooling from an Islamic viewpoint.',
     author: 'Umu Abdullah Riyadh',
     category: 'Perspectives',
     publishedAt: new Date(),
   },
   {
-    title: 'Education and Tarbiyah — Growing Together',
+    title: 'Education and Tarbiyah, Growing Together',
     slug: 'education-and-tarbiyah',
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',

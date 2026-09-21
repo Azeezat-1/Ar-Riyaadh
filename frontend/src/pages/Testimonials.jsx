@@ -22,7 +22,7 @@ export default function Testimonials() {
             <span className="eyebrow">Testimonials</span>
             <h1>From our students</h1>
             <p className="lede">
-              Student experiences with Ar-Riyaadh Academy — shared with gratitude. The academy will
+              Student experiences with Ar-Riyaadh Academy, shared with gratitude. The academy will
               add new testimonials as students choose to share them.
             </p>
           </div>

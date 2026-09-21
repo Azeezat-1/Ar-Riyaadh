@@ -42,7 +42,7 @@ export default function Hero() {
 
             <motion.p variants={fade} className="hero__lead">
               Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and
-              girls — Qur&rsquo;an, Hadith, Tafsir, Arabic and Islamic studies, taught online by
+              girls, Qur&rsquo;an, Hadith, Tafsir, Arabic and Islamic studies, taught online by
               Umm Abdillah Ar-Riyaadah.
             </motion.p>
 
@@ -86,7 +86,7 @@ export default function Hero() {
           <div className="hero__frame hero__frame--main">
             <SmartImage
               src={images.heroPrimary}
-              alt="A Muslim woman in hijab reading, focused on learning"
+              alt="The Qur'an open on a wooden stand, the core of the academy's studies"
             />
             <span className="hero__caption">
               <FontAwesomeIcon icon={icons['graduation-cap']} />

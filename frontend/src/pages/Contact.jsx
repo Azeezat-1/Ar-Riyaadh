@@ -36,7 +36,7 @@ export default function Contact() {
             <h1>Get in touch</h1>
             <p className="lede">
               Questions about joining a class, choosing your starting point, or enrolling for
-              lectures? Reach out below — the academy is happy to guide you.
+              lectures? Reach out below, the academy is happy to guide you.
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Contact() {
           <SectionHeading
             eyebrow="Class enquiries"
             title="Ask about a class"
-            lede="Tell us which class you're interested in and where you are in your learning journey — we'll help you find a good starting point."
+            lede="Tell us which class you're interested in and where you are in your learning journey, we'll help you find a good starting point."
           />
           <div style={{ display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#" className="btn btn--primary">

@@ -36,7 +36,7 @@ export function LogoMark() {
 
 export function Logo({ to = '/', onClick }) {
   return (
-    <Link to={to} className="brand" onClick={onClick} aria-label={`${site.name} — home`}>
+    <Link to={to} className="brand" onClick={onClick} aria-label={`${site.name}, home`}>
       <LogoMark />
       <span className="brand-text">
         <span className="brand-name">{site.name}</span>

@@ -823,7 +823,7 @@
 }
 
 /* Light text treatment for the deep-green "Student experiences"
-   (testimonials) section — white / off-white / lime tones. */
+   (testimonials) section, white / off-white / lime tones. */
 
 .section--green .lede {
   color: var(--lime-soft);

@@ -1,5 +1,5 @@
 // ============================================================
-// AR RIYAADH ACADEMY — CONTENT DATA
+// AR RIYAADH ACADEMY, CONTENT DATA
 // ------------------------------------------------------------
 // Central place for all display content. Umm Abdillah can
 // update classes, lectures, testimonials and articles here
@@ -25,10 +25,10 @@ export const site = {
 }
 
 // Development imagery. Replace these URLs with the academy's real
-// photography later — components automatically fall back to an
+// photography later, components automatically fall back to an
 // elegant placeholder if an image cannot load.
 export const images = {
-  heroPrimary: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80',
+  heroPrimary: '/images/quran-stand.jpeg',
   heroSecondary: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80',
   study: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=80',
   library: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80',
@@ -42,7 +42,7 @@ export const images = {
 export const learnArabic = {
   eyebrow: 'Arabic',
   title: 'Speak Arabic in 90 days',
-  lede: 'A structured Arabic-speaking programme for Muslim sisters — steady, practical and tailored to our learners.',
+  lede: 'A structured Arabic-speaking programme for Muslim sisters, steady, practical and tailored to our learners.',
   points: [
     'Speak simple Arabic sentences with confidence',
     'Introduce yourself and others in Arabic',
@@ -68,7 +68,7 @@ export const subjects = [
     icon: 'book-quran',
     title: 'Qur\u02bcān',
     description:
-      'Understanding, learning and engaging with the Book of Allah — learning to read, recite and connect with its meanings.',
+      'Understanding, learning and engaging with the Book of Allah, learning to read, recite and connect with its meanings.',
   },
   {
     id: 'hadith',
@@ -103,7 +103,7 @@ export const subjects = [
     icon: 'microphone-lines',
     title: 'Lectures',
     description:
-      'Special sessions addressing practical and relevant topics for Muslim women — faith, family and everyday life.',
+      'Special sessions addressing practical and relevant topics for Muslim women, faith, family and everyday life.',
   },
 ];
 
@@ -115,9 +115,9 @@ export const classes = [
     title: 'Qur\u02bcān Reading',
     audience: 'Teenage girls \u2022 Adult women \u2022 Mothers',
     description:
-      'Build a strong, correct relationship with the Book of Allah — from accurate recitation to consistent engagement with the Qur\u02bcān.',
+      'Build a strong, correct relationship with the Book of Allah, from accurate recitation to consistent engagement with the Qur\u02bcān.',
     focus: ['Tajwīd foundations', 'Fluency in recitation', 'Consistent daily reading'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -127,9 +127,9 @@ export const classes = [
     title: 'Hadith Studies',
     audience: 'Women with some prior learning',
     description:
-      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit — a structured journey through selected hadith.',
+      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit, a structured journey through selected hadith.',
     focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -141,7 +141,7 @@ export const classes = [
     description:
       'Step through the meanings of the Qur\u02bcān at a measured pace, understanding context and reflection together.',
     focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -151,9 +151,9 @@ export const classes = [
     title: 'Arabic (Lughah) Classes',
     audience: 'Beginners \u2022 Continuing students',
     description:
-      'Learn Lughat al-\u02bbArabiyyah step by step — building the vocabulary and understanding you need to engage with Arabic texts.',
+      'Learn Lughat al-\u02bbArabiyyah step by step, building the vocabulary and understanding you need to engage with Arabic texts.',
     focus: ['Reading and understanding', 'Vocabulary building', 'Simple grammar foundations'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
   {
@@ -163,9 +163,9 @@ export const classes = [
     title: 'Islamic Studies & Purification',
     audience: 'Teenagers \u2022 Adult women \u2022 Mothers',
     description:
-      'Practical Islamic education covering purification, worship, Muslim responsibilities and character — knowledge meant to be lived.',
+      'Practical Islamic education covering purification, worship, Muslim responsibilities and character, knowledge meant to be lived.',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
-    schedule: 'Schedule placeholder — contact to confirm times.',
+    schedule: 'Schedule placeholder, contact to confirm times.',
     telegramLink: '#',
   },
 ];
@@ -185,7 +185,7 @@ export const lectures = [
     topic: 'Purification',
     title: 'Purification in Worship',
     excerpt:
-      'Lectures addressing purity and purification from an Islamic perspective — understanding the rulings that make worship correct and complete.',
+      'Lectures addressing purity and purification from an Islamic perspective, understanding the rulings that make worship correct and complete.',
     tags: ['Purification', 'Fiqh', 'Worship'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Sisters / Muslimahs',
@@ -197,7 +197,7 @@ export const lectures = [
     topic: 'Our Responsibilities as Muslims',
     title: 'Our Responsibilities as Muslims',
     excerpt:
-      'Learning about responsibilities, character and conduct as Muslims — what Islam asks of us in our daily lives and relationships.',
+      'Learning about responsibilities, character and conduct as Muslims, what Islam asks of us in our daily lives and relationships.',
     tags: ['Responsibilities', 'Character', 'Conduct'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Sisters / Muslimahs',
@@ -209,7 +209,7 @@ export const lectures = [
     topic: 'Homeschooling',
     title: 'Homeschooling from an Islamic Perspective',
     excerpt:
-      'Islamic perspectives on homeschooling and raising children with Islamic values — combining education, tarbiyah and family life.',
+      'Islamic perspectives on homeschooling and raising children with Islamic values, combining education, tarbiyah and family life.',
     tags: ['Homeschooling', 'Tarbiyah', 'Family'],
     schedule: 'Friday / Sunday sessions',
     audience: 'Mothers / Muslimahs',
@@ -250,7 +250,7 @@ export const homeschoolArticles = [
     slug: 'homeschooling-from-an-islamic-perspective',
     title: 'Homeschooling from an Islamic Perspective',
     excerpt:
-      'A personal introduction to homeschooling as a mother and teacher — why families choose it and the Islamic principles that guide it.',
+      'A personal introduction to homeschooling as a mother and teacher, why families choose it and the Islamic principles that guide it.',
     category: 'Perspectives',
     author: 'Umm Abdillah Ar-Riyaadah',
     publishedAt: 'Placeholder date',
@@ -258,7 +258,7 @@ export const homeschoolArticles = [
   },
   {
     slug: 'education-and-tarbiyah',
-    title: 'Education and Tarbiyah — Growing Together',
+    title: 'Education and Tarbiyah, Growing Together',
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',
     category: 'Reflections',
@@ -283,7 +283,7 @@ export const values = [
     icon: 'book-open',
     title: 'Beneficial Knowledge',
     description:
-      'Learning that is sound in source, clear in meaning and practical in daily life — knowledge that moves the heart and improves the practice.',
+      'Learning that is sound in source, clear in meaning and practical in daily life, knowledge that moves the heart and improves the practice.',
   },
   {
     icon: 'arrow-trend-up',
@@ -295,7 +295,7 @@ export const values = [
     icon: 'scale-balanced',
     title: 'Understanding Before Practice',
     description:
-      'We learn meanings before actions — so that worship and conduct are built on understanding, not blind imitation.',
+      'We learn meanings before actions, so that worship and conduct are built on understanding, not blind imitation.',
   },
   {
     icon: 'people-group',
@@ -313,7 +313,7 @@ export const values = [
     icon: 'person-chalkboard',
     title: 'Encouragement & Perseverance',
     description:
-      'Every student is supported to keep going — even when the journey is difficult or life gets busy.',
+      'Every student is supported to keep going, even when the journey is difficult or life gets busy.',
   },
 ];
 
@@ -328,7 +328,7 @@ export const timeline = [
     phase: 'Learning',
     title: 'Years of Learning',
     description:
-      'Years of studying Islamic knowledge and Arabic — growing step by step through the Qur\u02bcān, hadith, and the language of the religion.',
+      'Years of studying Islamic knowledge and Arabic, growing step by step through the Qur\u02bcān, hadith, and the language of the religion.',
   },
   {
     phase: 'Perseverance',
@@ -346,7 +346,7 @@ export const timeline = [
     phase: 'Academy',
     title: 'Ar-Riyaadh Academy',
     description:
-      'Creating a learning environment where female students can continue their own journey — a place for women and girls to seek beneficial Islamic and Arabic knowledge.',
+      'Creating a learning environment where female students can continue their own journey, a place for women and girls to seek beneficial Islamic and Arabic knowledge.',
   },
 ];
 
@@ -368,14 +368,14 @@ export const books = [
 ];
 
 // ------------------------------------------------------------
-// HIJAMAH (cupping therapy) — Umm Abdillah Ar-Riyaadah practises and
+// HIJAMAH (cupping therapy), Umm Abdillah Ar-Riyaadah practises and
 // teaches hijaamah using needles and hijaamah cups.
 // ------------------------------------------------------------
 export const hijama = {
   title: 'Hijaamah',
   tagline: 'Acupuncture & cupping therapy, practised and taught with care',
   intro:
-    'Umm Abdillah Ar-Riyaadah practises acupuncture and cupping (hijaamah) for sisters and trains students in these methods — using acupuncture needles and cupping cups, with care and the discipline the practice requires.',
+    'Umm Abdillah Ar-Riyaadah practises acupuncture and cupping (hijaamah) for sisters and trains students in these methods, using acupuncture needles and cupping cups, with care and the discipline the practice requires.',
   services: [
     {
       icon: 'droplet',
@@ -393,17 +393,17 @@ export const hijama = {
       icon: 'graduation-cap',
       title: 'Training Students',
       description:
-        'Students are trained in both acupuncture and cupping — the knowledge, the methods, the instruments and the discipline they require.',
+        'Students are trained in both acupuncture and cupping, the knowledge, the methods, the instruments and the discipline they require.',
     },
     {
       icon: 'shield-halved',
       title: 'Done With Care',
       description:
-        'Every session is conducted with attention to safety, hygiene and the privacy of the sister — in a calm and trustworthy environment.',
+        'Every session is conducted with attention to safety, hygiene and the privacy of the sister, in a calm and trustworthy environment.',
     },
   ],
   howItWorks: [
-    'Book an appointment with the academy — cupping or acupuncture.',
+    'Book an appointment with the academy, cupping or acupuncture.',
     'A sister-only session, conducted in a clean and private setting.',
     'Practical training is also available for sisters who wish to learn.',
   ],

@@ -23,7 +23,7 @@ export default function About() {
             </h1>
             <p className="lede">
               {site.founder} is a teacher and Muallima who has dedicated herself to learning and
-              teaching Islamic knowledge — learning, persevering, and helping other women and
+              teaching Islamic knowledge, learning, persevering, and helping other women and
               girls on their own journey.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function About() {
           <Reveal as="div">
             <span className="eyebrow">Her story</span>
             <h2 style={{ fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', margin: '1rem 0 1.1rem', color: 'var(--primary)' }}>
-              Not always easy — but worth every step
+              Not always easy, but worth every step
             </h2>
             <div className="story-body">
               <p>
@@ -45,15 +45,15 @@ export default function About() {
               </p>
               <p>
                 Her journey was not always easy. There were moments that were difficult, times when
-                continuing felt heavy — yet she held on. She continued learning, through struggle and
+                continuing felt heavy, yet she held on. She continued learning, through struggle and
                 ease, and Allah facilitated her growth in knowledge.
               </p>
               <p>
-                Today, Umm Abdillah Ar-Riyaadah teaches other women and girls — passing on the knowledge
+                Today, Umm Abdillah Ar-Riyaadah teaches other women and girls, passing on the knowledge
                 she gained, with patience and sincerity, through Ar-Riyaadh Academy.
               </p>
               <p className="muted">
-                Ar-Riyaadh Academy represents that journey continuing — a space where other women and
+                Ar-Riyaadh Academy represents that journey continuing, a space where other women and
                 girls can take their own step in the path of seeking beneficial knowledge.
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function About() {
           <SectionHeading
             eyebrow="Knowledge journey"
             title="A path of learning, perseverance and teaching"
-            lede="Her journey — from student to teacher — has been one of patience, growth and a sincere desire to benefit others."
+            lede="Her journey, from student to teacher, has been one of patience, growth and a sincere desire to benefit others."
           />
           <Timeline />
         </div>

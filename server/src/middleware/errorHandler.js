@@ -5,7 +5,7 @@ export const notFound = (req, res, next) => {
   next(new ApiError(404, `Route not found: ${req.method} ${req.originalUrl}`))
 }
 
-// Central error handler — single place that shapes every error response.
+// Central error handler, single place that shapes every error response.
 export const errorHandler = (err, req, res, _next) => {
   let { statusCode = 500, message = 'Server error' } = err
 

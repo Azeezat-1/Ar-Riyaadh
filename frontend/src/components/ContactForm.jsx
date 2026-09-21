@@ -103,14 +103,14 @@ export default function ContactForm() {
           {status === 'sending' ? 'Sending…' : 'Send Message'}
         </button>
         <span className="contact-form__note">
-          Direct class enquiries are also welcome — contact the academy at{' '}
+          Direct class enquiries are also welcome, contact the academy at{' '}
           <a href={`mailto:${site.email}`}>{site.email}</a>.
         </span>
       </div>
 
       {status === 'sent' && (
         <p className="contact-form__success" role="status">
-          Thanks — your message has been sent. The academy will get back to you soon, in shā&#x2019; Allāh.
+          Thanks, your message has been sent. The academy will get back to you soon, in shā&#x2019; Allāh.
         </p>
       )}
       {status === 'error' && (

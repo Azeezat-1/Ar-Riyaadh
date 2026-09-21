@@ -1,4 +1,4 @@
-// API test suite — run with: npm test
+// API test suite, run with: npm test
 // Uses node:test (built into Node 20+) against a dedicated test database,
 // so the seeded/dev data is never touched.
 import test, { before, after, beforeEach } from 'node:test'

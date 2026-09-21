@@ -41,7 +41,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="What we teach"
             title="A structured path to beneficial knowledge"
-            lede="Ar-Riyaadh Academy helps women and girls build a strong, steady connection to the Qur'án and the Islamic sciences — taught clearly, step by step."
+            lede="Ar-Riyaadh Academy helps women and girls build a strong, steady connection to the Qur'án and the Islamic sciences, taught clearly, step by step."
           />
           <StaggerGroup className="grid grid--3">
             {subjects.map((s) => (
@@ -96,10 +96,10 @@ export default function Home() {
                 “Whoever takes a path in which he seeks knowledge, Allah will make easy for him a
                 path to Paradise.”
               </blockquote>
-              <span className="hadith-feature__ref">— Sahih Muslim</span>
+              <span className="hadith-feature__ref">Sahih Muslim</span>
             </Reveal>
             <Reveal as="div" className="hadith-split__visual" delay={0.15}>
-              <img src={images.hadithImage} alt="Seeking knowledge — the academy's lesson poster" className="hadith-split__img" />
+              <img src={images.hadithImage} alt="Seeking knowledge, the academy's lesson poster" className="hadith-split__img" />
             </Reveal>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Knowledge journey"
             title="The story behind the academy"
-            lede="Ar-Riyaadh Academy grew out of a personal journey as a student of knowledge — learning, persevering, and then teaching others."
+            lede="Ar-Riyaadh Academy grew out of a personal journey as a student of knowledge, learning, persevering, and then teaching others."
           />
           <Timeline />
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
@@ -170,7 +170,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Student experiences"
             title="From those who learnt with us"
-            lede="Words from students — their own experiences and gratitude. More can be added through the academy."
+            lede="Words from students, their own experiences and gratitude. More can be added through the academy."
           />
           {loadingTestimonials ? (
             <Loader label="Loading testimonials…" />

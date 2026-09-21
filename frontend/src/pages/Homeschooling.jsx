@@ -27,7 +27,7 @@ export default function Homeschooling() {
             <span className="eyebrow">Homeschooling</span>
             <h1>Homeschooling from an Islamic Perspective</h1>
             <p className="lede">
-              Personal reflections on homeschooling — as a mother, a teacher and a student of
+              Personal reflections on homeschooling, as a mother, a teacher and a student of
               knowledge. Islamic principles that guide education and raising children with Islamic
               values, shared as experience rather than a universal claim.
             </p>
@@ -69,7 +69,7 @@ export default function Homeschooling() {
             </h2>
             <div className="story-body">
               <p>
-                Homeschooling, for us, is a way to combine education with tarbiyah — nurturing the
+                Homeschooling, for us, is a way to combine education with tarbiyah, nurturing the
                 child's faith, character and love of learning alongside their books.
               </p>
               <p>
@@ -79,7 +79,7 @@ export default function Homeschooling() {
               </p>
               <p>
                 This section will grow with practical reflections and resources. What is shared
-                here is our experience — presented honestly, as one family's journey, not as a
+                here is our experience, presented honestly, as one family's journey, not as a
                 claim that one way suits everyone.
               </p>
             </div>
@@ -150,7 +150,7 @@ export function HomeschoolingArticleDetail() {
     <>
       <p>
         This article will be filled in with the full writing by Umm Abdillah Ar-Riyaadah. It will share
-        the perspective and experience promised in the introduction — practical, honest reflections
+        the perspective and experience promised in the introduction, practical, honest reflections
         on homeschooling from an Islamic viewpoint.
       </p>
       <p>

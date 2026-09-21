@@ -1,10 +1,10 @@
 /* ============================================================
-   AR RIYAADH ACADEMY — DESIGN SYSTEM
+   AR RIYAADH ACADEMY, DESIGN SYSTEM
    ============================================================ */
 
 :root {
   /* Palette derived from the Ar-Riyaadh logo (green emblem on warm white)
-     — deepest green rgb(0,54,18) #003612, olive rgb(100,150,36) #649624 */
+    , deepest green rgb(0,54,18) #003612, olive rgb(100,150,36) #649624 */
 
   /* Deep green family */
   --deep-green: #0a4a21;

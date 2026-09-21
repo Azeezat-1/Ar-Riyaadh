@@ -13,7 +13,7 @@ export function OfflineNote() {
       style={{ textAlign: 'center', marginTop: '1.2rem', fontStyle: 'italic' }}
       role="status"
     >
-      Live data is momentarily unavailable — showing saved content.
+      Live data is momentarily unavailable, showing saved content.
     </p>
   )
 }
