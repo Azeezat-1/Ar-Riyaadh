@@ -3,7 +3,7 @@ import SectionHeading from '../components/SectionHeading'
 import LectureCard from '../components/LectureCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { Loader, OfflineNote } from '../components/APIStatus'
+import { Loader } from '../components/APIStatus'
 import { lectures as staticLectures, site } from '../data/content'
 import { getLectures } from '../api/client'
 import { lectureFromApi } from '../api/adapters'
@@ -47,7 +47,6 @@ export default function Lectures() {
               ))}
             </StaggerGroup>
           )}
-          {offline && <OfflineNote />}
           <p className="muted" style={{ textAlign: 'center', marginTop: '2.5rem', fontSize: '0.9rem' }}>
             More lecture topics will be added here through the academy in the future.
           </p>

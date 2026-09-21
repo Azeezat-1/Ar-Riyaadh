@@ -14,7 +14,7 @@ import HijamaSection from '../components/HijamaSection'
 import LearnArabicSection from '../components/LearnArabicSection'
 import SmartImage from '../components/SmartImage'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { Loader, OfflineNote } from '../components/APIStatus'
+import { Loader } from '../components/APIStatus'
 import { subjects, classes as staticClasses, testimonials as staticTestimonials, images, values } from '../data/content'
 import { getClasses, getTestimonials } from '../api/client'
 import { classFromApi, testimonialFromApi } from '../api/adapters'
@@ -72,7 +72,6 @@ export default function Home() {
               ))}
             </StaggerGroup>
           )}
-          {offlineClasses && <OfflineNote />}
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <Link to="/classes" className="btn btn--outline">
               View All Classes
@@ -183,7 +182,6 @@ export default function Home() {
               ))}
             </StaggerGroup>
           )}
-          {offlineTestimonials && <OfflineNote />}
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <Link to="/testimonials" className="btn btn--ghost-light">
               View All Testimonials

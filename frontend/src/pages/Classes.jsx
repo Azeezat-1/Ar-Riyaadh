@@ -4,7 +4,7 @@ import SectionHeading from '../components/SectionHeading'
 import ClassCard from '../components/ClassCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { Loader, OfflineNote } from '../components/APIStatus'
+import { Loader } from '../components/APIStatus'
 import { classes as staticClasses, classCategories } from '../data/content'
 import { getClasses } from '../api/client'
 import { classFromApi } from '../api/adapters'
@@ -66,7 +66,6 @@ export default function Classes() {
             </StaggerGroup>
           )}
 
-          {offline && <OfflineNote />}
 
           {!loading && visible.length === 0 && (
             <p className="muted" style={{ textAlign: 'center', marginTop: '2rem' }}>

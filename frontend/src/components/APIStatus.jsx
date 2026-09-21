@@ -5,15 +5,3 @@ export function Loader({ label = 'Loading…' }) {
     </p>
   )
 }
-
-export function OfflineNote() {
-  return (
-    <p
-      className="muted small"
-      style={{ textAlign: 'center', marginTop: '1.2rem', fontStyle: 'italic' }}
-      role="status"
-    >
-      Live data is momentarily unavailable, showing saved content.
-    </p>
-  )
-}

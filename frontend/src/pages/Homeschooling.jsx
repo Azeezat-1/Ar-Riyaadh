@@ -8,7 +8,7 @@ import ArticleCard from '../components/ArticleCard'
 import SmartImage from '../components/SmartImage'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
-import { Loader, OfflineNote } from '../components/APIStatus'
+import { Loader } from '../components/APIStatus'
 import { homeschoolArticles, images } from '../data/content'
 import { getArticleBySlug, getArticles } from '../api/client'
 import { articleDetailFromApi, articleFromApi } from '../api/adapters'
@@ -53,7 +53,6 @@ export default function Homeschooling() {
               ))}
             </StaggerGroup>
           )}
-          {offline && <OfflineNote />}
         </div>
       </section>
 
@@ -206,7 +205,6 @@ export function HomeschoolingArticleDetail() {
         </section>
       </article>
 
-      {offline && <OfflineNote />}
       <CTASection />
     </PageWrapper>
   )
