@@ -199,7 +199,6 @@ h4 {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -213,20 +212,6 @@ h4 {
 
 .eyebrow--lime {
   color: var(--lime);
-}
-
-.eyebrow::before {
-  content: '';
-  width: 1.75rem;
-  height: 1px;
-  background: var(--accent);
-}
-
-.eyebrow--center::after {
-  content: '';
-  width: 1.75rem;
-  height: 1px;
-  background: var(--accent);
 }
 
 .lede {

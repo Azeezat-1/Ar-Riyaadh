@@ -867,8 +867,3 @@
 .section--green .eyebrow {
   color: var(--lime);
 }
-
-.section--green .eyebrow::before,
-.section--green .eyebrow--center::after {
-  background: var(--lime);
-}
