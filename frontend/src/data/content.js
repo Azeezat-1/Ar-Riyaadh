@@ -221,7 +221,7 @@ export const lectures = [
 export const testimonials = [
   {
     id: 't1',
-    name: 'Aisha',
+    name: "A'isha",
     category: 'Hadith Student',
     quote:
       'I learned the 100 Hadith under Umm Abdillah Ar-Riyaadah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
@@ -229,7 +229,7 @@ export const testimonials = [
   },
   {
     id: 't2',
-    name: 'Umm AbdirRahman',
+    name: 'Umm Kaamil',
     category: 'Continuing Student',
     quote:
       'Since I came to know Umm Abdillah Ar-Riyaadah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
@@ -237,7 +237,7 @@ export const testimonials = [
   },
   {
     id: 't3',
-    name: 'Safiyyah',
+    name: 'Umm Aatikah',
     category: 'Islamic Studies Student',
     quote:
       'Studying under Umm Abdillah Ar-Riyaadah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
