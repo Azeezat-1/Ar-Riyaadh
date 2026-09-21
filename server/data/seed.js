@@ -104,24 +104,24 @@ const lectures = [
 
 const testimonials = [
   {
-    name: 'Student, Hadith Class',
+    name: "A'isha",
     category: 'Hadith Student',
     content:
-      'I learned the 100 Hadith under Umu Abdullah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
+      'I learned the 100 Hadith under Umm Abdillah Ar-Riyaadah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
     approved: true,
   },
   {
-    name: 'Long-term Student',
+    name: 'Umm Kaamil',
     category: 'Continuing Student',
     content:
-      'Since I came to know Umu Abdullah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
+      'Since I came to know Umm Abdillah Ar-Riyaadah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
     approved: true,
   },
   {
-    name: 'Student of Umu Abdullah',
+    name: 'Umm Aatikah',
     category: 'Islamic Studies Student',
     content:
-      'Studying under Umu Abdullah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
+      'Studying under Umm Abdillah Ar-Riyaadah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
     approved: true,
   },
 ]
@@ -133,8 +133,8 @@ const articles = [
     excerpt:
       'A personal introduction to homeschooling as a mother and teacher, why families choose it and the Islamic principles that guide it.',
     content:
-      'This article will be filled in with the full writing by Umu Abdullah Riyadh. It will share the perspective and experience promised in the introduction, practical, honest reflections on homeschooling from an Islamic viewpoint.',
-    author: 'Umu Abdullah Riyadh',
+      'This article will be filled in with the full writing by Umm Abdillah Ar-Riyaadah. It will share the perspective and experience promised in the introduction, practical, honest reflections on homeschooling from an Islamic viewpoint.',
+    author: 'Umm Abdillah Ar-Riyaadah',
     category: 'Perspectives',
     publishedAt: new Date(),
   },
@@ -144,8 +144,8 @@ const articles = [
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',
     content:
-      'This article will be filled in with the full writing by Umu Abdullah Riyadh.',
-    author: 'Umu Abdullah Riyadh',
+      'This article will be filled in with the full writing by Umm Abdillah Ar-Riyaadah.',
+    author: 'Umm Abdillah Ar-Riyaadah',
     category: 'Reflections',
     publishedAt: new Date(),
   },
@@ -155,8 +155,8 @@ const articles = [
     excerpt:
       'Some honest reflections on the balance between teaching students and raising children, and the lessons learnt along the way.',
     content:
-      'This article will be filled in with the full writing by Umu Abdullah Riyadh.',
-    author: 'Umu Abdullah Riyadh',
+      'This article will be filled in with the full writing by Umm Abdillah Ar-Riyaadah.',
+    author: 'Umm Abdillah Ar-Riyaadah',
     category: 'Reflections',
     publishedAt: new Date(),
   },
