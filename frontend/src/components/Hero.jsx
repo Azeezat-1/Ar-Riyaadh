@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import SmartImage from './SmartImage'
-import { images } from '../data/content'
+import { images, WA_BASE } from '../data/content'
 import './Hero.css'
 
 const container = {
@@ -35,43 +34,39 @@ export default function Hero() {
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
-              Seeking Knowledge.
+              Empowering Souls Through Authentic
               <br />
-              <em>Growing in Faith.</em>
+              <em>Islamic Knowledge &amp; Holistic Wellness.</em>
             </motion.h1>
 
             <motion.p variants={fade} className="hero__lead">
-              Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and
-              girls, Qur&rsquo;an, Hadith, Tafsir, Arabic and Islamic studies, taught online by
+              Learn Quran recitation, Arabic fluency, Tafseer, and Hadith memorization with
               Umm Abdillah Ar-Riyaadah.
             </motion.p>
 
             <motion.div variants={fade} className="hero__actions">
-              <Link to="/classes" className="btn btn--primary">
+              <a href="#classes" className="btn btn--primary">
                 Explore Classes
                 <FontAwesomeIcon icon={icons['arrow-right']} />
-              </Link>
-              <a href="#join-cta" className="btn btn--gold">
-                <FontAwesomeIcon icon={icons.brandTelegram} />
-                Join a Telegram Class
               </a>
-              <Link to="/about" className="btn btn--outline">
-                Learn More
-              </Link>
+              <a href={WA_BASE} className="btn btn--lime" rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={icons.brandWhatsapp} />
+                Chat on WhatsApp
+              </a>
             </motion.div>
 
             <motion.ul variants={fade} className="hero__points">
               <li>
                 <FontAwesomeIcon icon={icons.check} />
-                Qur&rsquo;an &amp; Hadith
+                Qur&rsquo;an &amp; Tajweed
               </li>
               <li>
                 <FontAwesomeIcon icon={icons.check} />
-                Tafsir &amp; Arabic
+                Arabic, Tafseer &amp; Hadith
               </li>
               <li>
                 <FontAwesomeIcon icon={icons.check} />
-                For women &amp; girls
+                Holistic Sunnah Hijama
               </li>
             </motion.ul>
           </motion.div>

@@ -16,8 +16,8 @@ const classSchema = new mongoose.Schema(
     description: { type: String, required: [true, 'Class description is required'], trim: true },
     audience: { type: String, trim: true },
     focus: { type: [String], default: [] },
-    schedule: { type: String, default: 'Schedule placeholder, contact to confirm times.', trim: true },
-    telegramLink: { type: String, default: '#', trim: true },
+    schedule: { type: String, default: 'Live and self-paced options available.', trim: true },
+    link: { type: String, default: 'https://wa.me/2348131663860', trim: true },
     active: { type: Boolean, default: true },
   },
   { timestamps: true }

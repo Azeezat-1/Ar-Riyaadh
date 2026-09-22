@@ -3,71 +3,68 @@
    ============================================================ */
 
 :root {
-  /* Palette derived from the Ar-Riyaadh logo (green emblem on warm white)
-    , deepest green rgb(0,54,18) #003612, olive rgb(100,150,36) #649624 */
+  /* Emerald family */
+  --deep-green: #064e3b;
+  --deep-green-700: #0f5132;
+  --deep-green-800: #043027;
+  --sinature-green: #0b8a4f;
 
-  /* Deep green family */
-  --deep-green: #0a4a21;
-  --deep-green-700: #115b2b;
-  --deep-green-800: #053014;
-  --sinature-green: #1c6a38;
+  /* Soft mint / sage family */
+  --sage-50: #ecfdf5;
+  --sage-100: #d1fae5;
+  --sage-200: #a7f3d0;
+  --sage-300: #6ee7b7;
+  --sage-400: #34d399;
 
-  /* Sage / leaf green family */
-  --sage-50: #eef4ec;
-  --sage-100: #dfeadd;
-  --sage-200: #c4d8c2;
-  --sage-300: #a7c2a4;
-  --sage-400: #86a882;
+  /* Neutral family (light, airy, professional) */
+  --cream: #ffffff;
+  --warm-white: #ffffff;
+  --soft-beige: #f1f5f9;
+  --beige-200: #e2e8f0;
 
-  /* Warm neutrals (logo background ivory) */
-  --cream: #f7f3ea;
-  --warm-white: #fdfcf8;
-  --soft-beige: #eee7d8;
-  --beige-200: #e4dcc9;
+  /* Accent (emerald highlight) */
+  --gold: #0b8a4f;
+  --gold-600: #059669;
+  --gold-700: #065f46;
+  --lime: #6ee7b7;
+  --lime-soft: #a7f3d0;
 
-  /* Leaf accent (from the logo's olive green) */
-  --gold: #5f8a31;
-  --gold-600: #52792c;
-  --gold-700: #46672a;
-  --lime: #b9d06c;
-  --lime-soft: #d9e6ae;
-
-  /* Charcoal / ink */
-  --charcoal: #23231f;
-  --charcoal-60: #56544b;
-  --charcoal-40: #817d70;
+  /* Charcoal / ink (slate neutrals) */
+  --charcoal: #0f172a;
+  --charcoal-60: #475569;
+  --charcoal-40: #64748b;
 
   /* Semantic */
-  --bg: var(--warm-white);
-  --bg-soft: var(--cream);
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
   --surface: #ffffff;
   --border: var(--beige-200);
   --text: var(--charcoal);
   --text-muted: var(--charcoal-60);
   --text-faint: var(--charcoal-40);
-  --primary: var(--deep-green);
-  --primary-hover: var(--deep-green-700);
+  --primary: var(--deep-green-700);
+  --primary-hover: var(--deep-green);
   --accent: var(--gold);
-  --accent-hover: var(--gold-600);
+  --accent-hover: var(--gold-700);
 
-  /* Typography */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  /* Typography (sans-serif across the site) */
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-arabic: 'Amiri', Georgia, serif;
 
   /* Radii */
-  --radius-sm: 8px;
+  --radius-sm: 10px;
   --radius-md: 14px;
-  --radius-lg: 22px;
+  --radius-lg: 16px;
   --radius-pill: 999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(31, 59, 50, 0.05), 0 1px 3px rgba(31, 59, 50, 0.06);
-  --shadow-md: 0 4px 14px rgba(31, 59, 50, 0.08), 0 2px 6px rgba(31, 59, 50, 0.05);
-  --shadow-lg: 0 14px 40px rgba(31, 59, 50, 0.12);
+  --shadow-sm: 0 1px 2px rgba(15, 81, 50, 0.06), 0 1px 3px rgba(15, 81, 50, 0.05);
+  --shadow-md: 0 8px 22px rgba(15, 81, 50, 0.09), 0 3px 8px rgba(15, 81, 50, 0.05);
+  --shadow-lg: 0 18px 44px rgba(15, 81, 50, 0.13);
 
   /* Layout */
-  --container: 72rem;
+  --container: 74rem;
   --gutter: clamp(1.25rem, 4vw, 2rem);
   --header-h: 4.5rem;
 }
@@ -133,9 +130,9 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.18;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--primary);
 }
 
@@ -260,7 +257,7 @@ h4 {
 
 .btn--gold {
   background-color: var(--accent);
-  color: var(--deep-green-800);
+  color: #ffffff;
 }
 
 .btn--gold:hover {
@@ -271,11 +268,11 @@ h4 {
 
 .btn--lime {
   background-color: var(--lime);
-  color: var(--primary);
+  color: var(--deep-green);
 }
 
 .btn--lime:hover {
-  background-color: #e8ffa0;
+  background-color: #86efac;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -293,7 +290,7 @@ h4 {
 
 .btn--ghost-light {
   background-color: transparent;
-  border-color: rgba(250, 246, 238, 0.55);
+  border-color: rgba(255, 255, 255, 0.55);
   color: var(--cream);
 }
 
@@ -337,7 +334,7 @@ h4 {
 }
 
 .icon-wrap--gold {
-  background: rgba(201, 169, 97, 0.15);
+  background: rgba(11, 138, 79, 0.08);
   color: var(--gold-700);
 }
 
@@ -356,8 +353,8 @@ h4 {
 }
 
 .pill--gold {
-  background: rgba(201, 169, 97, 0.14);
-  border-color: rgba(201, 169, 97, 0.35);
+  background: rgba(11, 138, 79, 0.08);
+  border-color: rgba(11, 138, 79, 0.26);
   color: var(--gold-700);
 }
 
@@ -434,6 +431,49 @@ h4 {
   text-align: right;
   font-size: 1.4rem;
   line-height: 2;
+}
+
+/* Floating WhatsApp button */
+
+.whatsapp-float {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.6rem);
+  bottom: clamp(1rem, 3vw, 1.6rem);
+  z-index: 45;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.35rem;
+  border-radius: var(--radius-pill);
+  background: #25d366;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.92rem;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float svg {
+  font-size: 1.35rem;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float__label {
+  white-space: nowrap;
+}
+
+@media (max-width: 28rem) {
+  .whatsapp-float__label {
+    display: none;
+  }
+
+  .whatsapp-float {
+    padding: 1rem;
+  }
 }
 
 /* Focus + motion preference */

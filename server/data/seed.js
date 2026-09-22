@@ -8,50 +8,52 @@ import Lecture from '../src/models/Lecture.js'
 import Testimonial from '../src/models/Testimonial.js'
 import Article from '../src/models/HomeschoolingArticle.js'
 
+const WA = 'https://wa.me/2348131663860?text='
+
 const classes = [
   {
-    title: 'Qur\u02bc\u0101n Reading',
+    title: 'Qur\u02bc\u0101n Recitation & Tajweed',
     category: 'Qur\u02bc\u0101n',
     icon: 'book-quran',
     description:
-      'Build a strong, correct relationship with the Book of Allah, from accurate recitation to consistent engagement with the Qur\u02bc\u0101n.',
+      'Master correct pronunciation, fluency and the rules of Tajweed, building a strong, correct relationship with the Book of Allah.',
     audience: 'Teenage girls \u2022 Adult women \u2022 Mothers',
     focus: ['Tajw\u012bd foundations', 'Fluency in recitation', 'Consistent daily reading'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+    schedule: 'Live and self-paced options available.',
+    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Qur'an Recitation & Tajweed class at Ar-Riyaadh Academy.")}`,
   },
   {
-    title: 'Hadith Studies',
-    category: 'Hadith',
-    icon: 'scroll',
-    description:
-      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit, a structured journey through selected hadith.',
-    audience: 'Women with some prior learning',
-    focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
-  },
-  {
-    title: 'Tafsir Sessions',
-    category: 'Tafsir',
-    icon: 'feather-pointed',
-    description:
-      'Step through the meanings of the Qur\u02bc\u0101n at a measured pace, understanding context and reflection together.',
-    audience: 'Adult women \u2022 Mothers',
-    focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
-  },
-  {
-    title: 'Arabic (Lughah) Classes',
+    title: 'Fluent Arabic Speaking Class',
     category: 'Arabic Language',
     icon: 'language',
     description:
-      'Learn Lughat al-\u02bbArabiyyah step by step, building the vocabulary and understanding you need to engage with Arabic texts.',
+      'A dedicated spoken Arabic course for practical conversation, helping you express yourself in Arabic with confidence.',
     audience: 'Beginners \u2022 Continuing students',
-    focus: ['Reading and understanding', 'Vocabulary building', 'Simple grammar foundations'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+    focus: ['Practical conversation', 'Vocabulary building', 'Simple grammar foundations'],
+    schedule: 'Live and self-paced options available.',
+    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Fluent Arabic Speaking class at Ar-Riyaadh Academy.")}`,
+  },
+  {
+    title: 'Tafseer (Qur\u02bc\u0101nic Exegesis)',
+    category: 'Tafsir',
+    icon: 'feather-pointed',
+    description:
+      'Deepen your understanding of the Qur\u02bc\u0101n, its meanings, context and reflection, at a measured and structured pace.',
+    audience: 'Adult women \u2022 Mothers',
+    focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
+    schedule: 'Live and self-paced options available.',
+    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Tafseer class at Ar-Riyaadh Academy.")}`,
+  },
+  {
+    title: 'Hadith Memorization',
+    category: 'Hadith',
+    icon: 'scroll',
+    description:
+      'Memorize and understand authentic Prophetic traditions with structured guidance, making the Sunnah meaningful and practical.',
+    audience: 'Women with some prior learning',
+    focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
+    schedule: 'Live and self-paced options available.',
+    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Hadith Memorization class at Ar-Riyaadh Academy.")}`,
   },
   {
     title: 'Islamic Studies & Purification',
@@ -61,8 +63,8 @@ const classes = [
       'Practical Islamic education covering purification, worship, Muslim responsibilities and character, knowledge meant to be lived.',
     audience: 'Teenagers \u2022 Adult women \u2022 Mothers',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+    schedule: 'Live and self-paced options available.',
+    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Islamic Studies & Purification class at Ar-Riyaadh Academy.")}`,
   },
 ]
 

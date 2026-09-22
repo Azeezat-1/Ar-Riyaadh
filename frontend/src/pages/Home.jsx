@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from '../components/icons'
 import PageWrapper from '../components/PageWrapper'
 import Hero from '../components/Hero'
+import AboutIntro from '../components/AboutIntro'
 import SectionHeading from '../components/SectionHeading'
 import SubjectCard from '../components/SubjectCard'
 import ClassCard from '../components/ClassCard'
+import LectureCard from '../components/LectureCard'
 import TestimonialCard from '../components/TestimonialCard'
 import Timeline from '../components/Timeline'
 import CTASection from '../components/CTASection'
@@ -15,7 +17,14 @@ import LearnArabicSection from '../components/LearnArabicSection'
 import SmartImage from '../components/SmartImage'
 import { Reveal, StaggerGroup } from '../components/motion'
 import { Loader } from '../components/APIStatus'
-import { subjects, classes as staticClasses, testimonials as staticTestimonials, images, values } from '../data/content'
+import {
+  subjects,
+  classes as staticClasses,
+  lectures as staticLectures,
+  testimonials as staticTestimonials,
+  images,
+  values,
+} from '../data/content'
 import { getClasses, getTestimonials } from '../api/client'
 import { classFromApi, testimonialFromApi } from '../api/adapters'
 import { useApi } from '../api/useApi'
@@ -29,17 +38,20 @@ export default function Home() {
     () => getTestimonials().then((items) => items.map(testimonialFromApi)),
     staticTestimonials
   )
-  const featuredClasses = liveClasses.slice(0, 3)
+  const featuredClasses = liveClasses.slice(0, 4)
 
   return (
     <PageWrapper>
       <Hero />
 
+      {/* About Umm Abdillah */}
+      <AboutIntro />
+
       {/* What we teach */}
-      <section className="section" id="teach">
+      <section className="section section--tinted" id="teach">
         <div className="container">
           <SectionHeading
-            eyebrow="What we teach"
+            eyebrow="Subjects & programs"
             title="A structured path to beneficial knowledge"
             lede="Ar-Riyaadh Academy helps women and girls build a strong, steady connection to the Qur'án and the Islamic sciences, taught clearly, step by step."
           />
@@ -53,18 +65,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured classes */}
-      <section className="section section--tinted" id="classes">
+      {/* Classes & Programs */}
+      <section className="section" id="classes">
         <div className="container">
           <SectionHeading
-            eyebrow="Telegram classes"
-            title="Featured classes"
-            lede="Classes are held for sisters through Telegram. Interested in joining? Select a class and follow the provided link, or contact the academy for access."
+            eyebrow="Classes & programs"
+            title="Choose your learning path"
+            lede="Interactive live and self-paced programs taught by Umm Abdillah Ar-Riyaadah. Enrol directly through WhatsApp."
           />
           {loadingClasses ? (
             <Loader label="Loading classes…" />
           ) : (
-            <StaggerGroup className="grid grid--3">
+            <StaggerGroup className="grid grid--4">
               {featuredClasses.map((c) => (
                 <Reveal key={c.id}>
                   <ClassCard {...c} />
@@ -73,7 +85,7 @@ export default function Home() {
             </StaggerGroup>
           )}
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link to="/classes" className="btn btn--outline">
+            <Link to="/classes" className="btn btn--primary">
               View All Classes
               <FontAwesomeIcon icon={icons['arrow-right']} />
             </Link>
@@ -163,13 +175,37 @@ export default function Home() {
       {/* Hijaamah */}
       <HijamaSection />
 
+      {/* Free & public lectures */}
+      <section className="section section--tinted">
+        <div className="container">
+          <SectionHeading
+            eyebrow="Free & public lectures"
+            title="Recordings, weekly lectures & webinars"
+            lede="Curated lectures on faith, family and everyday life, hosted by Umm Abdillah Ar-Riyaadah. Join live or revisit the recordings."
+          />
+          <StaggerGroup className="grid grid--3">
+            {staticLectures.slice(0, 3).map((l) => (
+              <Reveal key={l.id}>
+                <LectureCard {...l} />
+              </Reveal>
+            ))}
+          </StaggerGroup>
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link to="/lectures" className="btn btn--outline">
+              View All Lectures
+              <FontAwesomeIcon icon={icons['arrow-right']} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials preview */}
       <section className="section section--green section--compact">
         <div className="container">
           <SectionHeading
             eyebrow="Student experiences"
             title="From those who learnt with us"
-            lede="Words from students, their own experiences and gratitude. More can be added through the academy."
+            lede="Real words from students, their courses and their transformations in Qur'an, Arabic and Hijaamah."
           />
           {loadingTestimonials ? (
             <Loader label="Loading testimonials…" />

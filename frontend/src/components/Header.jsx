@@ -40,7 +40,7 @@ export function Logo({ to = '/', onClick }) {
       <LogoMark />
       <span className="brand-text">
         <span className="brand-name">{site.name}</span>
-        <span className="brand-sub">Women &amp; Girls · Islamic &amp; Arabic Learning</span>
+        <span className="brand-sub">Islamic Academy · Hijama &amp; Wellness</span>
       </span>
     </Link>
   )
@@ -91,10 +91,15 @@ export default function Header() {
           </nav>
 
           <div className="header__actions">
-            <Link to="/classes" className="btn btn--primary btn--sm header__cta">
-              Explore Classes
-              <FontAwesomeIcon icon={icons['arrow-right']} />
-            </Link>
+            <a
+              href={site.socials.whatsapp}
+              className="btn btn--primary btn--sm header__cta"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
+              Contact on WhatsApp
+            </a>
             <button
               type="button"
               className="header__burger"

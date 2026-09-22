@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
+import { WA_BASE } from '../data/content'
 
-export default function ClassCard({ icon, category, title, description, focus, telegramLink }) {
+export default function ClassCard({ icon, category, title, description, focus, link }) {
+  const enrollTo = link || WA_BASE
   return (
     <article className="card class-card">
       <span className="pill">{category}</span>
@@ -21,13 +23,13 @@ export default function ClassCard({ icon, category, title, description, focus, t
         </ul>
       )}
       <a
-        href={telegramLink}
+        href={enrollTo}
         className="btn btn--primary btn--sm class-card__cta"
         rel="noreferrer"
         target="_blank"
       >
-        <FontAwesomeIcon icon={icons.brandTelegram} />
-        Join This Class
+        <FontAwesomeIcon icon={icons.brandWhatsapp} />
+        Enroll via WhatsApp
       </a>
     </article>
   )

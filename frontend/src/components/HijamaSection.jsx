@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import { Reveal, StaggerGroup } from './motion'
@@ -31,10 +30,15 @@ export default function HijamaSection() {
                 Training for students who wish to learn
               </li>
             </ul>
-            <Link to="/hijaamah" className="btn btn--outline">
-              Explore Hijaamah
-              <FontAwesomeIcon icon={icons['arrow-right']} />
-            </Link>
+            <a
+              href={hijama.bookLink}
+              className="btn btn--primary"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
+              {hijama.ctaText}
+            </a>
           </Reveal>
           <StaggerGroup className="grid grid--2 hijama-split__grid">
             {highlights.map((s) => (

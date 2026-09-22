@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PageWrapper from '../components/PageWrapper'
 import SectionHeading from '../components/SectionHeading'
 import ClassCard from '../components/ClassCard'
 import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
 import { Loader } from '../components/APIStatus'
-import { classes as staticClasses, classCategories } from '../data/content'
+import { icons } from '../components/icons'
+import { classes as staticClasses, classCategories, WA_BASE } from '../data/content'
 import { getClasses } from '../api/client'
 import { classFromApi } from '../api/adapters'
 import { useApi } from '../api/useApi'
@@ -23,11 +25,11 @@ export default function Classes() {
       <section className="page-head">
         <div className="container">
           <div className="page-head__inner">
-            <span className="eyebrow">Telegram classes</span>
+            <span className="eyebrow">Classes & programs</span>
             <h1>Classes</h1>
             <p className="lede">
-              Classes are currently held through Telegram. Select the class you're interested in
-              and follow the provided link, or contact the academy to request access.
+              Interactive live and self-paced classes in Qur'an, Arabic, Tafseer and Hadith.
+              Select a class and enrol directly through WhatsApp.
             </p>
           </div>
         </div>
@@ -80,14 +82,16 @@ export default function Classes() {
           <SectionHeading
             eyebrow="Ready to join?"
             title="How do I join a class?"
-            lede="Choose a class above, follow the Telegram link, or contact the academy directly. You are welcome to ask about the right starting point for you."
+            lede="Choose a class above and message us on WhatsApp to enrol. You are welcome to ask about the right starting point for you."
           />
           <div style={{ display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="#" className="btn btn--primary">
+            <a href={WA_BASE} className="btn btn--primary" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
               Ask About a Class
             </a>
-            <a href="#" className="btn btn--gold">
-              Join a Telegram Class
+            <a href={WA_BASE} className="btn btn--gold" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
+              Chat on WhatsApp
             </a>
           </div>
         </div>

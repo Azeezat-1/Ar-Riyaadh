@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import { LogoMark } from './Header'
-import { navLinks, site } from '../data/content'
+import { navLinks, site, WA_BASE } from '../data/content'
 import './Footer.css'
 
 const socials = [
@@ -49,18 +49,24 @@ export default function Footer() {
             <span className="footer__heading">Contact</span>
             <ul>
               <li>
+                <FontAwesomeIcon icon={icons.brandWhatsapp} aria-hidden="true" />
+                <a href={WA_BASE} rel="noreferrer" target="_blank">
+                  {site.phone}
+                </a>
+              </li>
+              <li>
                 <FontAwesomeIcon icon={icons.envelope} aria-hidden="true" />
                 <a href={`mailto:${site.email}`}>{site.email}</a>
               </li>
               <li>
-                <FontAwesomeIcon icon={icons.phone} aria-hidden="true" />
-                <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>
-              </li>
-              <li>
                 <FontAwesomeIcon icon={icons['location-dot']} aria-hidden="true" />
-                <span>Available online via Telegram</span>
+                <span>Online classes via WhatsApp</span>
               </li>
             </ul>
+            <a href={WA_BASE} className="btn btn--lime btn--sm footer__wa" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
 

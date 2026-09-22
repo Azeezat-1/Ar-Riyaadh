@@ -9,16 +9,21 @@
 // Replace all PLACEHOLDER contact details with real ones.
 // ============================================================
 
+export const WHATSAPP_NUMBER = '2348131663860'
+export const WA_BASE = `https://wa.me/${WHATSAPP_NUMBER}`
+export const waLink = (message = '') =>
+  message ? `${WA_BASE}?text=${encodeURIComponent(message)}` : WA_BASE
+
 export const site = {
   name: 'Ar-Riyaadh Academy',
-  tagline: 'A place for women and girls to seek beneficial Islamic and Arabic knowledge.',
+  tagline: 'Empowering souls through authentic Islamic knowledge and holistic wellness.',
   founder: 'Umm Abdillah Ar-Riyaadah',
-  founderRole: 'Muallima & Teacher',
+  founderRole: 'Muallima & Certified Hijaamah Practitioner',
   email: 'contact@alriyadhacademy.example',
-  phone: '+000 000 000 0000',
+  phone: '+234 813 166 3860',
   socials: {
     telegram: '#', // TODO: real Telegram link
-    whatsapp: '#', // TODO: real WhatsApp link
+    whatsapp: WA_BASE,
     instagram: '#', // TODO: real Instagram link
     youtube: '#', // TODO: real YouTube link
   },
@@ -52,12 +57,29 @@ export const learnArabic = {
   ctaTo: '/classes',
 };
 
+export const aboutIntro = {
+  eyebrow: 'About Umm Abdillah Ar-Riyaadah',
+  title: 'A teacher devoted to authentic knowledge',
+  lede: 'From her student days to guiding others today, she teaches the Qur\u02bcān, fluent Arabic, Tafseer, Hadith and prophetic Hijama therapy with sincerity.',
+  paragraphs: [
+    'Her dedication to seeking authentic knowledge of the Deen began years ago as a student, striving through struggle and ease for a sound understanding of Islam and its sciences.',
+    'Today, as an accomplished teacher, she dedicates her life to guiding students in reading the Qur\u02bcān, mastering fluent Arabic speech, memorizing Hadith, understanding Tafseer and practising prophetic Hijama therapy.',
+    'Every lesson at Ar-Riyaadh Academy reflects her patience, her care and her sincere desire to see each student grow.',
+  ],
+  badges: [
+    { icon: 'shield-halved', title: 'Authentic Methodology' },
+    { icon: 'user-check', title: 'Interactive Live & Self-Paced Classes' },
+    { icon: 'spa', title: 'Holistic Sunnah Healing (Hijama)' },
+  ],
+  ctaText: 'Read Her Full Story',
+};
+
 export const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
+  { label: 'About Umm Abdillah', to: '/about' },
+  { label: 'Classes & Programs', to: '/classes' },
+  { label: 'Hijama Services', to: '/hijaamah' },
   { label: 'Lectures', to: '/lectures' },
-  { label: 'Tarbiyyah', to: '/homeschooling' },
-  { label: 'Hijaamah', to: '/hijaamah' },
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact' },
 ];
@@ -112,49 +134,49 @@ export const classes = [
     id: 'quran-class',
     category: 'Qur\u02bcān',
     icon: 'book-quran',
-    title: 'Qur\u02bcān Reading',
+    title: 'Qur\u02bcān Recitation & Tajweed',
     audience: 'Teenage girls \u2022 Adult women \u2022 Mothers',
     description:
-      'Build a strong, correct relationship with the Book of Allah, from accurate recitation to consistent engagement with the Qur\u02bcān.',
+      'Master correct pronunciation, fluency and the rules of Tajweed, building a strong, correct relationship with the Book of Allah.',
     focus: ['Tajwīd foundations', 'Fluency in recitation', 'Consistent daily reading'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
-  },
-  {
-    id: 'hadith-class',
-    category: 'Hadith',
-    icon: 'scroll',
-    title: 'Hadith Studies',
-    audience: 'Women with some prior learning',
-    description:
-      'Study authentic Prophetic narrations with accurate meaning, memorisation and practical benefit, a structured journey through selected hadith.',
-    focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
-  },
-  {
-    id: 'tafsir-class',
-    category: 'Tafsir',
-    icon: 'feather-pointed',
-    title: 'Tafsir Sessions',
-    audience: 'Adult women \u2022 Mothers',
-    description:
-      'Step through the meanings of the Qur\u02bcān at a measured pace, understanding context and reflection together.',
-    focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+    schedule: 'Live and self-paced options available.',
+    link: waLink("Assalamu alaikum, I'm interested in the Qur'an Recitation & Tajweed class at Ar-Riyaadh Academy."),
   },
   {
     id: 'arabic-class',
     category: 'Arabic Language',
     icon: 'language',
-    title: 'Arabic (Lughah) Classes',
+    title: 'Fluent Arabic Speaking Class',
     audience: 'Beginners \u2022 Continuing students',
     description:
-      'Learn Lughat al-\u02bbArabiyyah step by step, building the vocabulary and understanding you need to engage with Arabic texts.',
-    focus: ['Reading and understanding', 'Vocabulary building', 'Simple grammar foundations'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+      'A dedicated spoken Arabic course for practical conversation, helping you express yourself in Arabic with confidence.',
+    focus: ['Practical conversation', 'Vocabulary building', 'Simple grammar foundations'],
+    schedule: 'Live and self-paced options available.',
+    link: waLink("Assalamu alaikum, I'm interested in the Fluent Arabic Speaking class at Ar-Riyaadh Academy."),
+  },
+  {
+    id: 'tafsir-class',
+    category: 'Tafsir',
+    icon: 'feather-pointed',
+    title: 'Tafseer (Qur\u02bcānic Exegesis)',
+    audience: 'Adult women \u2022 Mothers',
+    description:
+      'Deepen your understanding of the Qur\u02bcān, its meanings, context and reflection, at a measured and structured pace.',
+    focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
+    schedule: 'Live and self-paced options available.',
+    link: waLink("Assalamu alaikum, I'm interested in the Tafseer class at Ar-Riyaadh Academy."),
+  },
+  {
+    id: 'hadith-class',
+    category: 'Hadith',
+    icon: 'scroll',
+    title: 'Hadith Memorization',
+    audience: 'Women with some prior learning',
+    description:
+      'Memorize and understand authentic Prophetic traditions with structured guidance, making the Sunnah meaningful and practical.',
+    focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
+    schedule: 'Live and self-paced options available.',
+    link: waLink("Assalamu alaikum, I'm interested in the Hadith Memorization class at Ar-Riyaadh Academy."),
   },
   {
     id: 'islamic-studies-class',
@@ -165,8 +187,8 @@ export const classes = [
     description:
       'Practical Islamic education covering purification, worship, Muslim responsibilities and character, knowledge meant to be lived.',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
-    schedule: 'Schedule placeholder, contact to confirm times.',
-    telegramLink: '#',
+    schedule: 'Live and self-paced options available.',
+    link: waLink("Assalamu alaikum, I'm interested in the Islamic Studies & Purification class at Ar-Riyaadh Academy."),
   },
 ];
 
@@ -373,41 +395,42 @@ export const books = [
 // ------------------------------------------------------------
 export const hijama = {
   title: 'Hijaamah',
-  tagline: 'Acupuncture & cupping therapy, practised and taught with care',
+  tagline: 'Sunnah cupping therapy, practised and taught with care',
   intro:
-    'Umm Abdillah Ar-Riyaadah practises acupuncture and cupping (hijaamah) for sisters and trains students in these methods, using acupuncture needles and cupping cups, with care and the discipline the practice requires.',
+    'Umm Abdillah Ar-Riyaadah practises prophetic Hijama (cupping) therapy for sisters, offering holistic wellness through gentle detoxification, improved circulation and therapeutic relief, performed carefully and hygienically.',
   services: [
     {
       icon: 'droplet',
       title: 'Cupping (Hijaamah) Sessions',
       description:
-        'Cupping therapy for sisters, performed carefully and hygienically using cupping cups.',
+        'Sunnah cupping therapy for sisters, performed carefully and hygienically using cupping cups.',
     },
     {
-      icon: 'syringe',
-      title: 'Acupuncture',
+      icon: 'hand-holding-heart',
+      title: 'Holistic Wellness Relief',
       description:
-        'Acupuncture using fine, sterile needles, applied correctly and with complete care for each sister.',
+        'Gentle detoxification and therapeutic relief, helping ease tension and support natural healing.',
     },
     {
       icon: 'graduation-cap',
       title: 'Training Students',
       description:
-        'Students are trained in both acupuncture and cupping, the knowledge, the methods, the instruments and the discipline they require.',
+        'Students are trained in cupping, the knowledge, the methods, the instruments and the discipline they require.',
     },
     {
       icon: 'shield-halved',
       title: 'Done With Care',
       description:
-        'Every session is conducted with attention to safety, hygiene and the privacy of the sister, in a calm and trustworthy environment.',
+        'Every session is conducted with attention to safety, hygiene and privacy, in a calm and trustworthy environment.',
     },
   ],
   howItWorks: [
-    'Book an appointment with the academy, cupping or acupuncture.',
-    'A sister-only session, conducted in a clean and private setting.',
+    'Book an appointment with the academy for a cupping session.',
+    'A sisters-only session, conducted in a clean and private setting.',
     'Practical training is also available for sisters who wish to learn.',
   ],
   note:
-    'Hijaamah is a practice encouraged in the Sunnah. This page will be updated with verified details and appointment information.',
-  ctaText: 'Enquire About Hijaamah',
+    'Hijaamah is a Sunnah practice encouraged by the Messenger of Allah, peace be upon him. Sessions are booked via WhatsApp for privacy.',
+  ctaText: 'Book a Hijaamah Session',
+  bookLink: waLink("Assalamu alaikum, I'd like to book a Hijaamah (cupping) session at Ar-Riyaadh Academy."),
 };

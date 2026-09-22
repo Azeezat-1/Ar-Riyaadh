@@ -36,6 +36,7 @@ import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube'
+import { faStar } from '@fortawesome/free-solid-svg-icons/faStar'
 
 export const icons = {
   'book-quran': faBookQuran,
@@ -75,4 +76,5 @@ export const icons = {
   brandWhatsapp: faWhatsapp,
   brandInstagram: faInstagram,
   brandYoutube: faYoutube,
+  star: faStar,
 }

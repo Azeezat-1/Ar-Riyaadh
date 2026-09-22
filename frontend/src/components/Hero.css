@@ -20,7 +20,7 @@
 .hero__bg-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, rgba(13, 26, 22, 0.92) 20%, rgba(24, 43, 37, 0.78) 60%, rgba(31, 59, 50, 0.6));
+  background: linear-gradient(115deg, rgba(4, 48, 39, 0.94) 20%, rgba(6, 78, 59, 0.82) 60%, rgba(11, 138, 79, 0.55));
 }
 
 .hero__inner {
@@ -45,7 +45,7 @@
 }
 
 .hero__lead {
-  color: rgba(250, 246, 238, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.08rem;
   max-width: 34rem;
 }
@@ -63,16 +63,25 @@
 }
 
 .hero__actions .btn--primary:hover {
-  background: #e8ffa0;
+  background: #34d399;
+}
+
+.hero__actions .btn--lime {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.hero__actions .btn--lime:hover {
+  background: #1ebe57;
 }
 
 .hero__actions .btn--outline {
-  border-color: rgba(250, 246, 238, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
   color: var(--cream);
 }
 
 .hero__actions .btn--outline:hover {
-  background: rgba(250, 246, 238, 0.14);
+  background: rgba(255, 255, 255, 0.14);
   border-color: var(--cream);
 }
 
@@ -81,7 +90,7 @@
   flex-wrap: wrap;
   gap: 0.6rem 1.6rem;
   margin-top: 2.1rem;
-  color: rgba(250, 246, 238, 0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -137,15 +146,20 @@
   gap: 0.5rem;
   padding: 0.55rem 0.95rem;
   border-radius: var(--radius-pill);
-  background: rgba(31, 59, 50, 0.88);
-  color: var(--cream);
+  background: rgba(4, 48, 39, 0.88);
+  color: #ffffff;
   font-size: 0.78rem;
   font-weight: 500;
   backdrop-filter: blur(4px);
 }
 
 .hero__caption--alt {
-  background: rgba(201, 169, 97, 0.92);
+  background: rgba(6, 78, 59, 0.92);
+  color: #ffffff;
+}
+
+.hero__caption--alt {
+  background: rgba(6, 78, 59, 0.92);
   color: var(--deep-green-800);
 }
 

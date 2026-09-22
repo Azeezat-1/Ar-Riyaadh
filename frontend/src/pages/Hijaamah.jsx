@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from '../components/icons'
 import PageWrapper from '../components/PageWrapper'
@@ -66,10 +65,10 @@ export default function Hijaamah() {
             <p>{hijama.note}</p>
           </Reveal>
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <Link to="/contact" className="btn btn--primary">
-              <FontAwesomeIcon icon={icons.comments} />
+            <a href={hijama.bookLink} className="btn btn--primary" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.brandWhatsapp} />
               {hijama.ctaText}
-            </Link>
+            </a>
           </div>
         </div>
       </section>

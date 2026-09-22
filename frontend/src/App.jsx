@@ -1,7 +1,10 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { icons } from './components/icons'
+import { WA_BASE } from './data/content'
 import Home from './pages/Home'
 import About from './pages/About'
 import Classes from './pages/Classes'
@@ -31,6 +34,16 @@ export default function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </AnimatePresence>
+      <a
+        href={WA_BASE}
+        className="whatsapp-float"
+        aria-label="Chat with Ar-Riyaadh Academy on WhatsApp"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={icons.brandWhatsapp} />
+        <span className="whatsapp-float__label">Chat with us</span>
+      </a>
       <Footer />
     </>
   )
