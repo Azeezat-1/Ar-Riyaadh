@@ -22,9 +22,9 @@
   background: linear-gradient(
     100deg,
     rgba(4, 48, 39, 0.97) 0%,
-    rgba(4, 48, 39, 0.9) 40%,
-    rgba(4, 48, 39, 0.62) 68%,
-    rgba(6, 78, 59, 0.38) 100%
+    rgba(4, 48, 39, 0.85) 38%,
+    rgba(11, 138, 79, 0.5) 72%,
+    rgba(189, 202, 164, 0.3) 100%
   );
 }
 
@@ -40,18 +40,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.5rem 1.1rem;
-  border: 1px solid var(--brand-sage);
-  border-radius: var(--radius-pill);
+  padding: 0;
   color: var(--brand-sage);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
-}
-
-.hero__badge svg {
-  font-size: 0.9rem;
 }
 
 .hero__title {

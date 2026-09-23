@@ -28,7 +28,6 @@ export default function Hero() {
         <div className="hero__content">
           <motion.div variants={container} initial="hidden" animate="visible">
             <motion.span variants={fade} className="hero__badge">
-              <FontAwesomeIcon icon={icons['book-open']} aria-hidden="true" />
               AR RIYAADH ACADEMY
             </motion.span>
 
