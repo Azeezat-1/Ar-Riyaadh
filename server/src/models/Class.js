@@ -17,7 +17,7 @@ const classSchema = new mongoose.Schema(
     audience: { type: String, trim: true },
     focus: { type: [String], default: [] },
     schedule: { type: String, default: 'Live and self-paced options available.', trim: true },
-    link: { type: String, default: 'https://wa.me/2348131663860', trim: true },
+    link: { type: String, default: 'https://t.me/ArRiyadhAcademy', trim: true },
     active: { type: Boolean, default: true },
   },
   { timestamps: true }

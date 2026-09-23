@@ -4,7 +4,7 @@ import PageWrapper from '../components/PageWrapper'
 import SectionHeading from '../components/SectionHeading'
 import ContactForm from '../components/ContactForm'
 import { Reveal } from '../components/motion'
-import { site, WA_BASE } from '../data/content'
+import { site, WA_BASE, TELEGRAM } from '../data/content'
 
 const contactMethods = [
   {
@@ -87,13 +87,12 @@ export default function Contact() {
             lede="Tell us which class you're interested in and where you are in your learning journey, we'll help you find a good starting point."
           />
           <div style={{ display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={WA_BASE} className="btn btn--primary" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={icons.brandWhatsapp} />
-              Ask About a Class
+            <a href={TELEGRAM.join} className="btn btn--primary" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.telegram} />
+              Join a Telegram Class
             </a>
-            <a href={WA_BASE} className="btn btn--gold" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={icons.brandWhatsapp} />
-              Chat on WhatsApp
+            <a href={`mailto:${site.email}`} className="btn btn--gold">
+              Contact the Academy
             </a>
           </div>
         </div>

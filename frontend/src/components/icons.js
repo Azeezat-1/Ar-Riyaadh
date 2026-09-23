@@ -72,6 +72,7 @@ export const icons = {
   'user-check': faUserCheck,
   comments: faComments,
   'hand-holding-heart': faHandHoldingHeart,
+  telegram: faTelegram,
   brandTelegram: faTelegram,
   brandWhatsapp: faWhatsapp,
   brandInstagram: faInstagram,

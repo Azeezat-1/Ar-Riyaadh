@@ -1,8 +1,8 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
-import SmartImage from './SmartImage'
-import { images, WA_BASE } from '../data/content'
+import { images, TELEGRAM } from '../data/content'
 import './Hero.css'
 
 const container = {
@@ -20,45 +20,48 @@ export default function Hero() {
   const fade = item(reduced)
 
   return (
-    <section className="hero">
-      <div className="hero__bg" aria-hidden="true">
-        <img src={images.heroBackground} alt="" />
-        <div className="hero__bg-overlay" />
-      </div>
+    <section className="hero hero--overlay">
+      <img className="hero__bg" src={images.heroBackground} alt="" />
+      <div className="hero__bg-overlay" aria-hidden="true" />
 
       <div className="container hero__inner">
         <div className="hero__content">
           <motion.div variants={container} initial="hidden" animate="visible">
-            <motion.span variants={fade} className="eyebrow">
-              Ar-Riyaadh Academy
+            <motion.span variants={fade} className="hero__badge">
+              <FontAwesomeIcon icon={icons['book-open']} aria-hidden="true" />
+              AL RIYADH ACADEMY
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
-              Empowering Souls Through Authentic
+              Seeking Knowledge.
               <br />
-              <em>Islamic Knowledge &amp; Holistic Wellness.</em>
+              <span className="hero__accent">Growing in Faith.</span>
             </motion.h1>
 
             <motion.p variants={fade} className="hero__lead">
-              Learn Quran recitation, Arabic fluency, Tafseer, and Hadith memorization with
-              Umm Abdillah Ar-Riyaadah.
+              Al Riyadh Academy provides structured Islamic and Arabic learning for women and
+              girls — Qur'an, Hadith, Tafsir, Arabic and Islamic education, in a peaceful and
+              female-focused environment.
             </motion.p>
 
             <motion.div variants={fade} className="hero__actions">
-              <a href="#classes" className="btn btn--primary">
+              <Link to="/classes" className="btn btn--hero">
                 Explore Classes
                 <FontAwesomeIcon icon={icons['arrow-right']} />
+              </Link>
+              <a href={TELEGRAM.join} className="btn btn--ghost-light" rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={icons.telegram} />
+                Join a Telegram Class
               </a>
-              <a href={WA_BASE} className="btn btn--lime" rel="noreferrer" target="_blank">
-                <FontAwesomeIcon icon={icons.brandWhatsapp} />
-                Chat on WhatsApp
-              </a>
+              <Link to="/about" className="btn btn--link">
+                Learn More
+              </Link>
             </motion.div>
 
             <motion.ul variants={fade} className="hero__points">
               <li>
                 <FontAwesomeIcon icon={icons.check} />
-                Qur&rsquo;an &amp; Tajweed
+                Qur'an &amp; Tajweed
               </li>
               <li>
                 <FontAwesomeIcon icon={icons.check} />
@@ -66,39 +69,11 @@ export default function Hero() {
               </li>
               <li>
                 <FontAwesomeIcon icon={icons.check} />
-                Holistic Sunnah Hijama
+                Hijaamah instruction
               </li>
             </motion.ul>
           </motion.div>
         </div>
-
-        <motion.div
-          className="hero__media"
-          initial={reduced ? undefined : { opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-        >
-          <div className="hero__frame hero__frame--main">
-            <SmartImage
-              src={images.heroPrimary}
-              alt="The Qur'an open on a wooden stand, the core of the academy's studies"
-            />
-            <span className="hero__caption">
-              <FontAwesomeIcon icon={icons['graduation-cap']} />
-              Students of knowledge
-            </span>
-          </div>
-          <div className="hero__frame hero__frame--side">
-            <SmartImage
-              src={images.heroSecondary}
-              alt="Knowledge is Light — the academy's learning poster"
-            />
-            <span className="hero__caption hero__caption--alt">
-              <FontAwesomeIcon icon={icons['book-open']} />
-              A place to learn
-            </span>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

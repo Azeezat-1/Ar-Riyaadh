@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PageWrapper from '../components/PageWrapper'
 import SectionHeading from '../components/SectionHeading'
@@ -7,7 +8,7 @@ import CTASection from '../components/CTASection'
 import { Reveal, StaggerGroup } from '../components/motion'
 import { Loader } from '../components/APIStatus'
 import { icons } from '../components/icons'
-import { classes as staticClasses, classCategories, WA_BASE } from '../data/content'
+import { classes as staticClasses, classCategories, TELEGRAM } from '../data/content'
 import { getClasses } from '../api/client'
 import { classFromApi } from '../api/adapters'
 import { useApi } from '../api/useApi'
@@ -28,8 +29,8 @@ export default function Classes() {
             <span className="eyebrow">Classes & programs</span>
             <h1>Classes</h1>
             <p className="lede">
-              Interactive live and self-paced classes in Qur'an, Arabic, Tafseer and Hadith.
-              Select a class and enrol directly through WhatsApp.
+              Interactive classes in Qur'an, Hadith, Tafsir, Arabic Language and Islamic Studies.
+              Select a class and join or request access through Telegram.
             </p>
           </div>
         </div>
@@ -82,18 +83,20 @@ export default function Classes() {
           <SectionHeading
             eyebrow="Ready to join?"
             title="How do I join a class?"
-            lede="Choose a class above and message us on WhatsApp to enrol. You are welcome to ask about the right starting point for you."
+            lede="Interested in joining a class? Select the class you're interested in and follow the provided Telegram link or contact the appropriate person for access."
           />
           <div style={{ display: 'flex', gap: '0.9rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={WA_BASE} className="btn btn--primary" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={icons.brandWhatsapp} />
+            <a href={TELEGRAM.join} className="btn btn--primary" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.telegram} />
+              Join a Telegram Class
+            </a>
+            <Link to="/contact" className="btn btn--gold">
               Ask About a Class
-            </a>
-            <a href={WA_BASE} className="btn btn--gold" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={icons.brandWhatsapp} />
-              Chat on WhatsApp
-            </a>
+            </Link>
           </div>
+          <p className="muted" style={{ marginTop: '1.25rem', fontSize: '0.85rem' }}>
+            Telegram links are placeholders and will point to the academy's real class groups when provided.
+          </p>
         </div>
       </section>
 

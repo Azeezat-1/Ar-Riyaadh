@@ -1,12 +1,13 @@
 // ============================================================
-// AR RIYAADH ACADEMY, CONTENT DATA
+// AL RIYADH ACADEMY (UMM ABDILLAH AR-RIYADH ACADEMY), CONTENT
 // ------------------------------------------------------------
-// Central place for all display content. Umm Abdillah can
-// update classes, lectures, testimonials and articles here
+// Central place for all display content. Umm Abdillah Ar-Riyadh
+// can update classes, lectures, testimonials and articles here
 // without touching component code. In Phase 3 these will be
 // served from the backend API.
 // ------------------------------------------------------------
-// Replace all PLACEHOLDER contact details with real ones.
+// PLACEHOLDER INFO: replace every `t.me/your-...` Class link and
+// the `#` social links with the academy's real links.
 // ============================================================
 
 export const WHATSAPP_NUMBER = '2348131663860'
@@ -14,15 +15,25 @@ export const WA_BASE = `https://wa.me/${WHATSAPP_NUMBER}`
 export const waLink = (message = '') =>
   message ? `${WA_BASE}?text=${encodeURIComponent(message)}` : WA_BASE
 
+// Telegram join path for classes. Replace `link` on each class with
+// the academy's real Telegram group/channel link when available.
+export const TELEGRAM = {
+  base: 'https://t.me/',
+  join: 'https://t.me/ArRiyadhAcademy', // TODO: real academy Telegram channel
+  note: 'Links are placeholders until the academy supplies its Telegram join links.',
+}
+
 export const site = {
-  name: 'Ar-Riyaadh Academy',
-  tagline: 'Empowering souls through authentic Islamic knowledge and holistic wellness.',
-  founder: 'Umm Abdillah Ar-Riyaadah',
-  founderRole: 'Muallima & Certified Hijaamah Practitioner',
+  name: 'Al Riyadh Academy',
+  fullName: 'Umm Abdillah Ar-Riyadh Academy',
+  motto: 'Rooted Learning, Lasting Impact.',
+  tagline: 'A female-focused academy for structured Islamic and Arabic learning.',
+  founder: 'Umm Abdillah Ar-Riyadh',
+  founderRole: 'Muallima & Student of Knowledge',
   email: 'contact@alriyadhacademy.example',
   phone: '+234 813 166 3860',
   socials: {
-    telegram: '#', // TODO: real Telegram link
+    telegram: TELEGRAM.join, // TODO: real Telegram link
     whatsapp: WA_BASE,
     instagram: '#', // TODO: real Instagram link
     youtube: '#', // TODO: real YouTube link
@@ -33,15 +44,13 @@ export const site = {
 // photography later, components automatically fall back to an
 // elegant placeholder if an image cannot load.
 export const images = {
-  heroPrimary: '/images/quran-stand.jpeg',
-  heroSecondary: '/images/knowledge-light.jpeg',
+  heroBackground: '/images/quran-stand.jpeg',
   study: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=80',
   library: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80',
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
   about: '/images/about-umm-abdillah.jpg',
   arabicProgram: '/images/arabic-90days.jpeg',
   hadithImage: '/images/journey-to-hadith.jpeg',
-  heroBackground: '/images/knowledge-light.jpeg',
 };
 
 export const learnArabic = {
@@ -58,27 +67,27 @@ export const learnArabic = {
 };
 
 export const aboutIntro = {
-  eyebrow: 'About Umm Abdillah Ar-Riyaadah',
+  eyebrow: 'About Umm Abdillah Ar-Riyadh',
   title: 'A teacher devoted to authentic knowledge',
-  lede: 'From her student days to guiding others today, she teaches the Qur\u02bcān, fluent Arabic, Tafseer, Hadith and prophetic Hijama therapy with sincerity.',
+  lede: 'From her student days to guiding others today, she teaches the Qur\u02bcān, fluent Arabic, Tafseer, Hadith and prophetic Hijaamah therapy with sincerity.',
   paragraphs: [
     'Her dedication to seeking authentic knowledge of the Deen began years ago as a student, striving through struggle and ease for a sound understanding of Islam and its sciences.',
-    'Today, as an accomplished teacher, she dedicates her life to guiding students in reading the Qur\u02bcān, mastering fluent Arabic speech, memorizing Hadith, understanding Tafseer and practising prophetic Hijama therapy.',
-    'Every lesson at Ar-Riyaadh Academy reflects her patience, her care and her sincere desire to see each student grow.',
+    'Today, as an accomplished teacher, she dedicates her life to guiding students in reading the Qur\u02bcān, mastering fluent Arabic speech, memorizing Hadith, understanding Tafseer and practising prophetic Hijaamah therapy.',
+    'Every lesson at Al Riyadh Academy reflects her patience, her care and her sincere desire to see each student grow.',
   ],
   badges: [
     { icon: 'shield-halved', title: 'Authentic Methodology' },
     { icon: 'user-check', title: 'Interactive Live & Self-Paced Classes' },
-    { icon: 'spa', title: 'Holistic Sunnah Healing (Hijama)' },
+    { icon: 'spa', title: 'Holistic Sunnah Healing (Hijaamah)' },
   ],
   ctaText: 'Read Her Full Story',
 };
 
 export const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'About Umm Abdillah', to: '/about' },
-  { label: 'Classes & Programs', to: '/classes' },
-  { label: 'Hijama Services', to: '/hijaamah' },
+  { label: 'About', to: '/about' },
+  { label: 'Classes', to: '/classes' },
+  { label: 'Hijaamah', to: '/hijaamah' },
   { label: 'Lectures', to: '/lectures' },
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact' },
@@ -129,6 +138,8 @@ export const subjects = [
   },
 ];
 
+// Each class points at a Telegram join link. Replace `TELEGRAM.join`
+// (or the per-class `link`) with the academy's real Telegram links.
 export const classes = [
   {
     id: 'quran-class',
@@ -140,7 +151,7 @@ export const classes = [
       'Master correct pronunciation, fluency and the rules of Tajweed, building a strong, correct relationship with the Book of Allah.',
     focus: ['Tajwīd foundations', 'Fluency in recitation', 'Consistent daily reading'],
     schedule: 'Live and self-paced options available.',
-    link: waLink("Assalamu alaikum, I'm interested in the Qur'an Recitation & Tajweed class at Ar-Riyaadh Academy."),
+    link: TELEGRAM.join,
   },
   {
     id: 'arabic-class',
@@ -152,7 +163,7 @@ export const classes = [
       'A dedicated spoken Arabic course for practical conversation, helping you express yourself in Arabic with confidence.',
     focus: ['Practical conversation', 'Vocabulary building', 'Simple grammar foundations'],
     schedule: 'Live and self-paced options available.',
-    link: waLink("Assalamu alaikum, I'm interested in the Fluent Arabic Speaking class at Ar-Riyaadh Academy."),
+    link: TELEGRAM.join,
   },
   {
     id: 'tafsir-class',
@@ -164,7 +175,7 @@ export const classes = [
       'Deepen your understanding of the Qur\u02bcān, its meanings, context and reflection, at a measured and structured pace.',
     focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
     schedule: 'Live and self-paced options available.',
-    link: waLink("Assalamu alaikum, I'm interested in the Tafseer class at Ar-Riyaadh Academy."),
+    link: TELEGRAM.join,
   },
   {
     id: 'hadith-class',
@@ -176,7 +187,7 @@ export const classes = [
       'Memorize and understand authentic Prophetic traditions with structured guidance, making the Sunnah meaningful and practical.',
     focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
     schedule: 'Live and self-paced options available.',
-    link: waLink("Assalamu alaikum, I'm interested in the Hadith Memorization class at Ar-Riyaadh Academy."),
+    link: TELEGRAM.join,
   },
   {
     id: 'islamic-studies-class',
@@ -188,7 +199,7 @@ export const classes = [
       'Practical Islamic education covering purification, worship, Muslim responsibilities and character, knowledge meant to be lived.',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
     schedule: 'Live and self-paced options available.',
-    link: waLink("Assalamu alaikum, I'm interested in the Islamic Studies & Purification class at Ar-Riyaadh Academy."),
+    link: TELEGRAM.join,
   },
 ];
 
@@ -246,7 +257,7 @@ export const testimonials = [
     name: "A'isha",
     category: 'Hadith Student',
     quote:
-      'I learned the 100 Hadith under Umm Abdillah Ar-Riyaadah and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
+      'I learned the 100 Hadith under Umm Abdillah Ar-Riyadh and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
     placeholder: true,
   },
   {
@@ -254,7 +265,7 @@ export const testimonials = [
     name: 'Umm Kaamil',
     category: 'Continuing Student',
     quote:
-      'Since I came to know Umm Abdillah Ar-Riyaadah I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
+      'Since I came to know Umm Abdillah Ar-Riyadh I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
     placeholder: true,
   },
   {
@@ -262,7 +273,7 @@ export const testimonials = [
     name: 'Umm Aatikah',
     category: 'Islamic Studies Student',
     quote:
-      'Studying under Umm Abdillah Ar-Riyaadah has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
+      'Studying under Umm Abdillah Ar-Riyadh has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
     placeholder: true,
   },
 ];
@@ -274,7 +285,7 @@ export const homeschoolArticles = [
     excerpt:
       'A personal introduction to homeschooling as a mother and teacher, why families choose it and the Islamic principles that guide it.',
     category: 'Perspectives',
-    author: 'Umm Abdillah Ar-Riyaadah',
+    author: 'Umm Abdillah Ar-Riyadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -284,7 +295,7 @@ export const homeschoolArticles = [
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',
     category: 'Reflections',
-    author: 'Umm Abdillah Ar-Riyaadah',
+    author: 'Umm Abdillah Ar-Riyadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -294,7 +305,7 @@ export const homeschoolArticles = [
     excerpt:
       'Some honest reflections on the balance between teaching students and raising children, and the lessons learnt along the way.',
     category: 'Reflections',
-    author: 'Umm Abdillah Ar-Riyaadah',
+    author: 'Umm Abdillah Ar-Riyadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -366,7 +377,7 @@ export const timeline = [
   },
   {
     phase: 'Academy',
-    title: 'Ar-Riyaadh Academy',
+    title: 'Al Riyadh Academy',
     description:
       'Creating a learning environment where female students can continue their own journey, a place for women and girls to seek beneficial Islamic and Arabic knowledge.',
   },
@@ -390,7 +401,7 @@ export const books = [
 ];
 
 // ------------------------------------------------------------
-// HIJAMAH (cupping therapy), Umm Abdillah Ar-Riyaadah practises and
+// HIJAMAH (cupping therapy), Umm Abdillah Ar-Riyadh practises and
 // teaches hijaamah using needles and hijaamah cups.
 // ------------------------------------------------------------
 export const hijama = {
@@ -398,7 +409,7 @@ export const hijama = {
   title: 'Hijaamah',
   tagline: 'Sunnah cupping therapy, practised and taught with care',
   intro:
-    'Umm Abdillah Ar-Riyaadah practises prophetic Hijama (cupping) therapy for sisters, offering holistic wellness through gentle detoxification, improved circulation and therapeutic relief, performed carefully and hygienically.',
+    'Umm Abdillah Ar-Riyadh practises prophetic Hijaamah (cupping) therapy for sisters, offering holistic wellness through gentle detoxification, improved circulation and therapeutic relief, performed carefully and hygienically.',
   services: [
     {
       icon: 'droplet',
@@ -431,7 +442,7 @@ export const hijama = {
     'Practical training is also available for sisters who wish to learn.',
   ],
   note:
-    'Hijaamah is a Sunnah practice encouraged by the Messenger of Allah, peace be upon him. Sessions are booked via WhatsApp for privacy.',
+    'Hijaamah is a Sunnah practice encouraged by the Messenger of Allah, peace be upon him. Sessions are arranged directly with the academy for privacy.',
   ctaText: 'Book a Hijaamah Session',
-  bookLink: waLink("Assalamu alaikum, I'd like to book a Hijaamah (cupping) session at Ar-Riyaadh Academy."),
+  bookLink: '/contact',
 };

@@ -26,6 +26,16 @@
   letter-spacing: -0.01em;
 }
 
+.footer__motto {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-300);
+}
+
 .footer__desc {
   margin-top: 0.9rem;
   max-width: 30rem;

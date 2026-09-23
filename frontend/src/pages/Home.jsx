@@ -53,7 +53,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Subjects & programs"
             title="A structured path to beneficial knowledge"
-            lede="Ar-Riyaadh Academy helps women and girls build a strong, steady connection to the Qur'án and the Islamic sciences, taught clearly, step by step."
+            lede="Al Riyadh Academy helps women and girls build a strong, steady connection to the Qur'án and the Islamic sciences, taught clearly, step by step."
           />
           <StaggerGroup className="grid grid--3">
             {subjects.map((s) => (
@@ -71,7 +71,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Classes & programs"
             title="Choose your learning path"
-            lede="Interactive live and self-paced programs taught by Umm Abdillah Ar-Riyaadah. Enrol directly through WhatsApp."
+            lede="Interactive live and self-paced programs taught by Umm Abdillah Ar-Riyadh. Join or request access through Telegram."
           />
           {loadingClasses ? (
             <Loader label="Loading classes…" />
@@ -116,12 +116,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 25. Why Ar-Riyaadh Academy */}
+      {/* 25. Why Al Riyadh Academy */}
       <section className="section section--tinted">
         <div className="container">
           <SectionHeading
             eyebrow="Our values"
-            title="Why Ar-Riyaadh Academy"
+            title="Why Al Riyadh Academy"
             lede="Simple, sincere principles shape how we welcome and teach every student."
           />
           <StaggerGroup className="grid grid--3">
@@ -157,7 +157,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Knowledge journey"
             title="The story behind the academy"
-            lede="Ar-Riyaadh Academy grew out of a personal journey as a student of knowledge, learning, persevering, and then teaching others."
+            lede="Al Riyadh Academy grew out of a personal journey as a student of knowledge, learning, persevering, and then teaching others."
           />
           <Timeline />
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>

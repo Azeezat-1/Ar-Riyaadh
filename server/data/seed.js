@@ -8,7 +8,9 @@ import Lecture from '../src/models/Lecture.js'
 import Testimonial from '../src/models/Testimonial.js'
 import Article from '../src/models/HomeschoolingArticle.js'
 
-const WA = 'https://wa.me/2348131663860?text='
+// Telegram join links are PLACEHOLDERS. Replace with the academy's real
+// Telegram group links per class when they are supplied.
+const TELEGRAM_JOIN = 'https://t.me/ArRiyadhAcademy'
 
 const classes = [
   {
@@ -20,7 +22,7 @@ const classes = [
     audience: 'Teenage girls \u2022 Adult women \u2022 Mothers',
     focus: ['Tajw\u012bd foundations', 'Fluency in recitation', 'Consistent daily reading'],
     schedule: 'Live and self-paced options available.',
-    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Qur'an Recitation & Tajweed class at Ar-Riyaadh Academy.")}`,
+    link: TELEGRAM_JOIN,
   },
   {
     title: 'Fluent Arabic Speaking Class',
@@ -31,7 +33,7 @@ const classes = [
     audience: 'Beginners \u2022 Continuing students',
     focus: ['Practical conversation', 'Vocabulary building', 'Simple grammar foundations'],
     schedule: 'Live and self-paced options available.',
-    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Fluent Arabic Speaking class at Ar-Riyaadh Academy.")}`,
+    link: TELEGRAM_JOIN,
   },
   {
     title: 'Tafseer (Qur\u02bc\u0101nic Exegesis)',
@@ -42,7 +44,7 @@ const classes = [
     audience: 'Adult women \u2022 Mothers',
     focus: ['S\u016bras explained clearly', 'Context and reflection', 'Q&A discussion'],
     schedule: 'Live and self-paced options available.',
-    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Tafseer class at Ar-Riyaadh Academy.")}`,
+    link: TELEGRAM_JOIN,
   },
   {
     title: 'Hadith Memorization',
@@ -53,7 +55,7 @@ const classes = [
     audience: 'Women with some prior learning',
     focus: ['The 100 Hadith programme', 'Memorisation with meaning', 'Connecting hadith to practice'],
     schedule: 'Live and self-paced options available.',
-    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Hadith Memorization class at Ar-Riyaadh Academy.")}`,
+    link: TELEGRAM_JOIN,
   },
   {
     title: 'Islamic Studies & Purification',
@@ -64,7 +66,7 @@ const classes = [
     audience: 'Teenagers \u2022 Adult women \u2022 Mothers',
     focus: ['Purification & worship', 'Muslim responsibilities', 'Character and daily conduct'],
     schedule: 'Live and self-paced options available.',
-    link: `${WA}${encodeURIComponent("Assalamu alaikum, I'm interested in the Islamic Studies & Purification class at Ar-Riyaadh Academy.")}`,
+    link: TELEGRAM_JOIN,
   },
 ]
 

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import { Reveal } from './motion'
-import { WA_BASE, site } from '../data/content'
+import { TELEGRAM } from '../data/content'
 
 export default function CTASection({ id }) {
   return (
@@ -15,19 +15,14 @@ export default function CTASection({ id }) {
               Start your journey today
             </h2>
             <p className="cta__text">
-              Enrol for a class or book a Hijaamah session. Message us directly on WhatsApp at{' '}
-              <strong>{site.phone}</strong>, and our team will gladly guide you.
+              Join a Telegram class, enrol for a lecture, or ask about Hijaamah instruction. Select a
+              class and follow the provided link, or contact the academy for guidance.
             </p>
           </div>
           <div className="cta__actions">
-            <a
-              href={WA_BASE}
-              className="btn btn--lime"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={icons.brandWhatsapp} />
-              Contact on WhatsApp
+            <a href={TELEGRAM.join} className="btn btn--lime" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon icon={icons.telegram} />
+              Join a Telegram Class
             </a>
             <Link to="/classes" className="btn btn--ghost-light">
               Explore Classes
