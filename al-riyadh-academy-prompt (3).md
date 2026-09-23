@@ -1,10 +1,10 @@
-# AL RIYADH ACADEMY — MASTER WEBSITE BUILD PROMPT (v2)
+# AR RIYAADH ACADEMY — MASTER WEBSITE BUILD PROMPT (v2)
 
 You are working inside my current VS Code workspace.
 
 **Build the actual website in code. Do not give me a presentation, mockup, conceptual explanation, or list of things I should build. Inspect the workspace, create/modify the necessary files, implement the frontend, run it, test it, and fix errors.**
 
-The website is for **Al Riyadh Academy**, full name **Umm Abdillah Ar-Riyadh Academy** (per the official logo), an Islamic educational academy dedicated to teaching **females and girls**, led by **Umm Abdillah Ar-Riyadh**, a female teacher / Muallima who teaches Islamic and Arabic studies. Motto: **"Rooted Learning, Lasting Impact."**
+The website is for **Ar-Riyaadh Academy**, full name **Umm Abdillah Ar-Riyaadh Academy** (per the official logo), an Islamic educational academy dedicated to teaching **females and girls**, led by **Umm Abdillah Ar-Riyaadh**, a female teacher / Muallima who teaches Islamic and Arabic studies. Motto: **"Rooted Learning, Lasting Impact."**
 
 ---
 
@@ -84,7 +84,7 @@ Before writing code: inspect the existing project, understand folder structure, 
 
 # 5. BRAND & AUDIENCE
 
-Brand: **AL RIYADH ACADEMY**. Teacher: **Umm Abdillah Ar-Riyadh** — may be referred to as Muallima, Teacher, Islamic educator, student of knowledge. Do not claim qualifications not provided.
+Brand: **AR RIYAADH ACADEMY**. Teacher: **Umm Abdillah Ar-Riyaadh** — may be referred to as Muallima, Teacher, Islamic educator, student of knowledge. Do not claim qualifications not provided.
 
 Audience: females only — teenage Muslimahs, adult Muslimahs, mothers, women beginning Islamic learning, women seeking structured Arabic/Qur'an/Hadith study. The design should visibly reflect a female-focused environment while staying mature and elegant, not childish or overly decorative.
 
@@ -113,7 +113,7 @@ Desktop nav: Home, About, Classes, Lectures, Homeschooling, Testimonials, Contac
 
 Asymmetric layout (see 2.6) — not a centered stock-hero. High-quality, tastefully modest imagery of Muslim women/girls learning, reading Qur'an, studying Arabic, in a female-only classroom setting. No inappropriate or stereotypical framing.
 
-- Eyebrow: **AL RIYADH ACADEMY**
+- Eyebrow: **AR RIYAADH ACADEMY**
 - Headline: built around "Seeking Knowledge. Growing in Faith." or similar
 - Supporting text: structured Islamic and Arabic learning for women and girls
 - CTAs: Explore Classes / Join a Telegram Class / Learn More
@@ -139,7 +139,7 @@ Include explanatory copy along the lines of: "Interested in joining a class? Sel
 
 Personal, humble, sincere tone — not exaggerated. Her story: began as a student of knowledge roughly ten years ago, studied at Madrasa Sunnah wal Jama'ah, Iwo, Osun State; the journey included difficulty and perseverance, eventually leading to teaching other women and girls.
 
-Include a visual timeline (Beginning → Learning → Perseverance → Teaching → Al Riyadh Academy) built as a real narrative, with subtle scroll animation.
+Include a visual timeline (Beginning → Learning → Perseverance → Teaching → Ar-Riyaadh Academy) built as a real narrative, with subtle scroll animation.
 
 Do not invent: her age, family details beyond what's given, degrees, teachers she studied under, other institutions, awards, certifications, student counts, additional years of teaching, unlisted locations, or unlisted religious credentials.
 
@@ -159,7 +159,7 @@ Present as authentic student experiences, not elaborate invented stories. Themes
 
 # 14. LECTURES PAGE
 
-Separate page. Lectures for females, held Fridays/Sundays. Each entry: topic, short description, date placeholder, speaker (Umm Abdillah Ar-Riyadh), audience (Sisters/Muslimahs), status, access CTA. Topics to include: Purification, Our Responsibilities as Muslims, Homeschooling. Don't invent actual dates.
+Separate page. Lectures for females, held Fridays/Sundays. Each entry: topic, short description, date placeholder, speaker (Umm Abdillah Ar-Riyaadh), audience (Sisters/Muslimahs), status, access CTA. Topics to include: Purification, Our Responsibilities as Muslims, Homeschooling. Don't invent actual dates.
 
 ---
 
@@ -171,7 +171,7 @@ Structure for future articles with fields: title, slug, cover image, excerpt, co
 
 ---
 
-# 16. WHY AL RIYADH ACADEMY
+# 16. WHY AR RIYAADH ACADEMY
 
 Section on learning values: beneficial knowledge, consistent learning, understanding before practice, learning at different life stages, female-focused environment, Arabic/Qur'an/Hadith education, practical Islamic education, encouragement and perseverance. No unsupported superlative claims ("the best...") unless explicitly supplied.
 
@@ -235,13 +235,13 @@ High-quality, tasteful imagery matching Section 8/2.7. Descriptive alt text. No 
 
 # 25. CONTENT & RELIGIOUS ACCURACY GUARDRAILS
 
-Do not invent personal details about Umm Abdillah Ar-Riyadh beyond what's supplied here (age, extra family details, degrees, teachers, other institutions, awards, certifications, student counts, extra years of teaching, unlisted locations or credentials). Do not fabricate Qur'an verses, Hadith, or scholarly statements — use a clearly marked placeholder instead when verified content isn't available.
+Do not invent personal details about Umm Abdillah Ar-Riyaadh beyond what's supplied here (age, extra family details, degrees, teachers, other institutions, awards, certifications, student counts, extra years of teaching, unlisted locations or credentials). Do not fabricate Qur'an verses, Hadith, or scholarly statements — use a clearly marked placeholder instead when verified content isn't available.
 
 ---
 
 # 26. FINAL EXPERIENCE CHECK
 
-Within a few seconds a visitor should understand: what Al Riyadh Academy is (a female-focused Islamic and Arabic academy), who teaches (Umm Abdillah Ar-Riyadh), what's taught (Qur'an, Hadith, Tafsir, Arabic, Islamic education), who can join (females of various ages), how to join (class/Telegram access), that there are lectures (including Friday/Sunday sessions), and that there's dedicated homeschooling content.
+Within a few seconds a visitor should understand: what Ar-Riyaadh Academy is (a female-focused Islamic and Arabic academy), who teaches (Umm Abdillah Ar-Riyaadh), what's taught (Qur'an, Hadith, Tafsir, Arabic, Islamic education), who can join (females of various ages), how to join (class/Telegram access), that there are lectures (including Friday/Sunday sessions), and that there's dedicated homeschooling content.
 
 The final result should read as **a refined, modern Islamic learning academy built specifically for women and girls** — not a generic template, mosque site, blog, or portfolio.
 

@@ -29,7 +29,7 @@ export default function Hero() {
           <motion.div variants={container} initial="hidden" animate="visible">
             <motion.span variants={fade} className="hero__badge">
               <FontAwesomeIcon icon={icons['book-open']} aria-hidden="true" />
-              AL RIYADH ACADEMY
+              AR RIYAADH ACADEMY
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
@@ -39,7 +39,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={fade} className="hero__lead">
-              Al Riyadh Academy provides structured Islamic and Arabic learning for women and
+              Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and
               girls — Qur'an, Hadith, Tafsir, Arabic and Islamic education, in a peaceful and
               female-focused environment.
             </motion.p>

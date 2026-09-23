@@ -1,7 +1,7 @@
 // ============================================================
-// AL RIYADH ACADEMY (UMM ABDILLAH AR-RIYADH ACADEMY), CONTENT
+// AR RIYAADH ACADEMY (UMM ABDILLAH AR-RIYADH ACADEMY), CONTENT
 // ------------------------------------------------------------
-// Central place for all display content. Umm Abdillah Ar-Riyadh
+// Central place for all display content. Umm Abdillah Ar-Riyaadh
 // can update classes, lectures, testimonials and articles here
 // without touching component code. In Phase 3 these will be
 // served from the backend API.
@@ -24,11 +24,11 @@ export const TELEGRAM = {
 }
 
 export const site = {
-  name: 'Al Riyadh Academy',
-  fullName: 'Umm Abdillah Ar-Riyadh Academy',
+  name: 'Ar-Riyaadh Academy',
+  fullName: 'Umm Abdillah Ar-Riyaadh Academy',
   motto: 'Rooted Learning, Lasting Impact.',
   tagline: 'A female-focused academy for structured Islamic and Arabic learning.',
-  founder: 'Umm Abdillah Ar-Riyadh',
+  founder: 'Umm Abdillah Ar-Riyaadh',
   founderRole: 'Muallima & Student of Knowledge',
   email: 'contact@alriyadhacademy.example',
   phone: '+234 813 166 3860',
@@ -67,13 +67,13 @@ export const learnArabic = {
 };
 
 export const aboutIntro = {
-  eyebrow: 'About Umm Abdillah Ar-Riyadh',
+  eyebrow: 'About Umm Abdillah Ar-Riyaadh',
   title: 'A teacher devoted to authentic knowledge',
   lede: 'From her student days to guiding others today, she teaches the Qur\u02bcān, fluent Arabic, Tafseer, Hadith and prophetic Hijaamah therapy with sincerity.',
   paragraphs: [
     'Her dedication to seeking authentic knowledge of the Deen began years ago as a student, striving through struggle and ease for a sound understanding of Islam and its sciences.',
     'Today, as an accomplished teacher, she dedicates her life to guiding students in reading the Qur\u02bcān, mastering fluent Arabic speech, memorizing Hadith, understanding Tafseer and practising prophetic Hijaamah therapy.',
-    'Every lesson at Al Riyadh Academy reflects her patience, her care and her sincere desire to see each student grow.',
+    'Every lesson at Ar-Riyaadh Academy reflects her patience, her care and her sincere desire to see each student grow.',
   ],
   badges: [
     { icon: 'shield-halved', title: 'Authentic Methodology' },
@@ -257,7 +257,7 @@ export const testimonials = [
     name: "A'isha",
     category: 'Hadith Student',
     quote:
-      'I learned the 100 Hadith under Umm Abdillah Ar-Riyadh and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
+      'I learned the 100 Hadith under Umm Abdillah Ar-Riyaadh and I am grateful for everything I gained. She explained the meanings clearly and made memorisation meaningful. May Allah reward her.',
     placeholder: true,
   },
   {
@@ -265,7 +265,7 @@ export const testimonials = [
     name: 'Umm Kaamil',
     category: 'Continuing Student',
     quote:
-      'Since I came to know Umm Abdillah Ar-Riyadh I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
+      'Since I came to know Umm Abdillah Ar-Riyaadh I have learned so much. Her patience and consistency kept me going when I found studying hard. Masha\u02bcAllah.',
     placeholder: true,
   },
   {
@@ -273,7 +273,7 @@ export const testimonials = [
     name: 'Umm Aatikah',
     category: 'Islamic Studies Student',
     quote:
-      'Studying under Umm Abdillah Ar-Riyadh has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
+      'Studying under Umm Abdillah Ar-Riyaadh has helped me gain beneficial knowledge in a way I can actually use. The environment is calm, respectful and truly for women.',
     placeholder: true,
   },
 ];
@@ -285,7 +285,7 @@ export const homeschoolArticles = [
     excerpt:
       'A personal introduction to homeschooling as a mother and teacher, why families choose it and the Islamic principles that guide it.',
     category: 'Perspectives',
-    author: 'Umm Abdillah Ar-Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -295,7 +295,7 @@ export const homeschoolArticles = [
     excerpt:
       'Balancing academic learning with the moral and spiritual upbringing of children, and practical reflections from the journey.',
     category: 'Reflections',
-    author: 'Umm Abdillah Ar-Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -305,7 +305,7 @@ export const homeschoolArticles = [
     excerpt:
       'Some honest reflections on the balance between teaching students and raising children, and the lessons learnt along the way.',
     category: 'Reflections',
-    author: 'Umm Abdillah Ar-Riyadh',
+    author: 'Umm Abdillah Ar-Riyaadh',
     publishedAt: 'Placeholder date',
     cover: '' /* TODO: cover image */,
   },
@@ -377,7 +377,7 @@ export const timeline = [
   },
   {
     phase: 'Academy',
-    title: 'Al Riyadh Academy',
+    title: 'Ar-Riyaadh Academy',
     description:
       'Creating a learning environment where female students can continue their own journey, a place for women and girls to seek beneficial Islamic and Arabic knowledge.',
   },
@@ -401,7 +401,7 @@ export const books = [
 ];
 
 // ------------------------------------------------------------
-// HIJAMAH (cupping therapy), Umm Abdillah Ar-Riyadh practises and
+// HIJAMAH (cupping therapy), Umm Abdillah Ar-Riyaadh practises and
 // teaches hijaamah using needles and hijaamah cups.
 // ------------------------------------------------------------
 export const hijama = {
@@ -410,7 +410,7 @@ export const hijama = {
   title: 'Hijaamah',
   tagline: 'Sunnah cupping therapy, practised and taught with care',
   intro:
-    'Umm Abdillah Ar-Riyadh practises prophetic Hijaamah (cupping) therapy for sisters, offering holistic wellness through gentle detoxification, improved circulation and therapeutic relief, performed carefully and hygienically.',
+    'Umm Abdillah Ar-Riyaadh practises prophetic Hijaamah (cupping) therapy for sisters, offering holistic wellness through gentle detoxification, improved circulation and therapeutic relief, performed carefully and hygienically.',
   services: [
     {
       icon: 'droplet',

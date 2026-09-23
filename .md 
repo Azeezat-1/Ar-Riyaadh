@@ -1,10 +1,10 @@
-# AL RIYADH ACADEMY — MASTER WEBSITE BUILD PROMPT
+# AR RIYAADH ACADEMY — MASTER WEBSITE BUILD PROMPT
 
 You are working inside my current VS Code workspace.
 
 **Build the actual website in code. Do not give me a presentation, mockup, conceptual explanation, or list of things I should build. Inspect the workspace, create/modify the necessary files, implement the frontend, run it, test it, and fix errors.**
 
-The website is for **Al Riyadh Academy**, an Islamic educational academy dedicated to teaching **females and girls**.
+The website is for **Ar-Riyaadh Academy**, an Islamic educational academy dedicated to teaching **females and girls**.
 
 The academy is led by **Umu Abdullah Riyadh**, a female teacher / Muallima who teaches Islamic and Arabic studies.
 
@@ -108,7 +108,7 @@ Then begin implementation.
 
 Brand:
 
-# AL RIYADH ACADEMY
+# AR RIYAADH ACADEMY
 
 Founder/Teacher:
 
@@ -329,7 +329,7 @@ Hero content:
 
 ### Eyebrow
 
-**AL RIYADH ACADEMY**
+**AR RIYAADH ACADEMY**
 
 ### Main headline
 
@@ -341,7 +341,7 @@ or a similarly meaningful phrase.
 
 ### Supporting text
 
-Explain that Al Riyadh Academy provides structured Islamic and Arabic learning for women and girls.
+Explain that Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and girls.
 
 ### CTAs
 
@@ -357,7 +357,7 @@ Add subtle Framer Motion entrance animations.
 
 Immediately after the hero, create a section that clearly answers:
 
-### What does Al Riyadh Academy teach?
+### What does Ar-Riyaadh Academy teach?
 
 Create elegant learning cards for:
 
@@ -502,7 +502,7 @@ Continuing despite challenges and difficulties.
 
 Beginning to share beneficial knowledge with other women and girls.
 
-### Al Riyadh Academy
+### Ar-Riyaadh Academy
 
 Creating a learning environment where female students can continue their own journey.
 
@@ -713,7 +713,7 @@ The visitor should immediately understand:
 
 ---
 
-# 25. WHY AL RIYADH ACADEMY
+# 25. WHY AR RIYAADH ACADEMY
 
 Create a section communicating the academy's learning values.
 
@@ -764,7 +764,7 @@ Use replaceable placeholders.
 
 Create a refined footer containing:
 
-**Al Riyadh Academy**
+**Ar-Riyaadh Academy**
 
 Short description.
 
@@ -1067,7 +1067,7 @@ The website must prioritize **accuracy and trustworthiness**.
 
 When someone opens the website, within a few seconds they should understand:
 
-**What is Al Riyadh Academy?**
+**What is Ar-Riyaadh Academy?**
 
 A female-focused academy for Islamic and Arabic education.
 
@@ -1147,6 +1147,6 @@ After completing the implementation:
 
 The final result should clearly communicate the identity of:
 
-# AL RIYADH ACADEMY
+# AR RIYAADH ACADEMY
 
 **A place for women and girls to seek beneficial Islamic and Arabic knowledge.**

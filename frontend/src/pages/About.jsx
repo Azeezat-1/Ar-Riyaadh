@@ -49,11 +49,11 @@ export default function About() {
                 ease, and Allah facilitated her growth in knowledge.
               </p>
               <p>
-                Today, Umm Abdillah Ar-Riyadh teaches other women and girls, passing on the knowledge
-                she gained, with patience and sincerity, through Al Riyadh Academy.
+                Today, Umm Abdillah Ar-Riyaadh teaches other women and girls, passing on the knowledge
+                she gained, with patience and sincerity, through Ar-Riyaadh Academy.
               </p>
               <p className="muted">
-                Al Riyadh Academy represents that journey continuing, a space where other women and
+                Ar-Riyaadh Academy represents that journey continuing, a space where other women and
                 girls can take their own step in the path of seeking beneficial knowledge.
               </p>
             </div>

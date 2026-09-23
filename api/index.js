@@ -1,4 +1,4 @@
-// Vercel serverless entry for the Ar-Riyadh Academy API.
+// Vercel serverless entry for the Ar-Riyaadh Academy API.
 // Mounts the existing Express app and lazy-connects MongoDB on first
 // request, keeping the connection alive across warm invocations.
 import expressApp from '../server/src/app.js'

@@ -40,7 +40,7 @@ export default function Homeschooling() {
           <SectionHeading
             eyebrow="Articles & reflections"
             title="Lessons from the journey"
-            lede="An evolving space where Umm Abdillah Ar-Riyadh shares reflections on education, tarbiyah and family life through an Islamic lens."
+            lede="An evolving space where Umm Abdillah Ar-Riyaadh shares reflections on education, tarbiyah and family life through an Islamic lens."
           />
           {loading ? (
             <Loader label="Loading articles…" />
@@ -148,7 +148,7 @@ export function HomeschoolingArticleDetail() {
   const legacyBody = article.content || (
     <>
       <p>
-        This article will be filled in with the full writing by Umm Abdillah Ar-Riyadh. It will share
+        This article will be filled in with the full writing by Umm Abdillah Ar-Riyaadh. It will share
         the perspective and experience promised in the introduction, practical, honest reflections
         on homeschooling from an Islamic viewpoint.
       </p>

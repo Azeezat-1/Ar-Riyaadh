@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'test') {
 
 app.get('/', (_req, res) => {
   res.json({
-    name: 'Ar-Riyadh Academy API',
+    name: 'Ar-Riyaadh Academy API',
     version: '0.1.0',
     endpoints: {
       classes: '/api/classes',

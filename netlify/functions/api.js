@@ -1,4 +1,4 @@
-// Netlify Functions entry for the Ar-Riyadh Academy API.
+// Netlify Functions entry for the Ar-Riyaadh Academy API.
 // Mounts the existing Express app via serverless-http and lazy-connects
 // MongoDB on first request (connection reused across warm invocations).
 import serverless from 'serverless-http'

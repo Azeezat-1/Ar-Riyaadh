@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 4000
 async function start() {
   await connectDB()
   app.listen(PORT, () => {
-    console.log(`[server] Ar-Riyadh Academy API running on http://localhost:${PORT}`)
+    console.log(`[server] Ar-Riyaadh Academy API running on http://localhost:${PORT}`)
   })
 }
 
