@@ -39,7 +39,7 @@ export default function Hero() {
 
             <motion.p variants={fade} className="hero__lead">
               Ar-Riyaadh Academy provides structured Islamic and Arabic learning for women and
-              girls — Qur'an, Hadith, Tafsir, Arabic and Islamic education, in a peaceful and
+              girls and Qur'an, Hadith, Tafsir, Arabic and Islamic education, in a peaceful and
               female-focused environment.
             </motion.p>
 
