@@ -770,6 +770,27 @@
   align-items: center;
 }
 
+.hijama-split__img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 6px solid var(--warm-white);
+}
+
+.hijama-page__visual {
+  margin-top: 2rem;
+}
+
+.hijama-page__img {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 6px solid var(--warm-white);
+}
+
 .hijama-points {
   margin: 1.5rem 0 1.75rem;
   display: flex;

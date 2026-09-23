@@ -41,6 +41,9 @@ export default function HijamaSection() {
             </a>
           </Reveal>
           <StaggerGroup className="grid grid--2 hijama-split__grid">
+            <Reveal>
+              <img src={hijama.image} alt="Hijaamah (cupping) therapy, performed with care" className="hijama-split__img" />
+            </Reveal>
             {highlights.map((s) => (
               <Reveal key={s.title}>
                 <article className="card hijama-card">

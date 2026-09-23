@@ -110,7 +110,7 @@ export default function Home() {
               <span className="hadith-feature__ref">Sahih Muslim</span>
             </Reveal>
             <Reveal as="div" className="hadith-split__visual" delay={0.15}>
-              <img src={images.hadithImage} alt="Seeking knowledge, the academy's lesson poster" className="hadith-split__img" />
+              <img src={images.hadithImage} alt="Journey to Hadith — a guided 30-day programme for Muslim women" className="hadith-split__img" />
             </Reveal>
           </div>
         </div>

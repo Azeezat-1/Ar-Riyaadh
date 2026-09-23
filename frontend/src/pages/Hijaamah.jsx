@@ -17,6 +17,9 @@ export default function Hijaamah() {
             <p className="lede">
               {hijama.intro}
             </p>
+            <div className="hijama-page__visual">
+              <img src={hijama.image} alt="Hijaamah (cupping) therapy, performed with care" className="hijama-page__img" />
+            </div>
           </div>
         </div>
       </section>

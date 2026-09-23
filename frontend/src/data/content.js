@@ -40,7 +40,7 @@ export const images = {
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
   about: '/images/about-studying-quran.jpeg',
   arabicProgram: '/images/arabic-90days.jpeg',
-  hadithImage: '/images/knowledge-light.jpeg',
+  hadithImage: '/images/journey-to-hadith.jpeg',
   heroBackground: '/images/knowledge-light.jpeg',
 };
 
@@ -394,6 +394,7 @@ export const books = [
 // teaches hijaamah using needles and hijaamah cups.
 // ------------------------------------------------------------
 export const hijama = {
+  image: '/images/hijama-cupping.jpg',
   title: 'Hijaamah',
   tagline: 'Sunnah cupping therapy, practised and taught with care',
   intro:
