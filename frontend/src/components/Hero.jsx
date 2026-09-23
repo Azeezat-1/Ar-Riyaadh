@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="hero__content">
           <motion.div variants={container} initial="hidden" animate="visible">
             <motion.span variants={fade} className="hero__badge">
-              AR RIYAADH ACADEMY
+              AR-RIYAADH ACADEMY
             </motion.span>
 
             <motion.h1 variants={fade} className="hero__title">
