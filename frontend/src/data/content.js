@@ -38,7 +38,7 @@ export const images = {
   study: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=80',
   library: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80',
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
-  about: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80',
+  about: '/images/about-studying-quran.jpeg',
   arabicProgram: '/images/arabic-90days.jpeg',
   hadithImage: '/images/knowledge-light.jpeg',
   heroBackground: '/images/knowledge-light.jpeg',

@@ -61,7 +61,7 @@ export default function About() {
           <Reveal as="div">
             <SmartImage
               src={images.about}
-              alt="Umm Abdillah Ar-Riyaadah, a dedicated Islamic teacher"
+              alt="A woman in hijab studying the Qur'an, the academy's pursuit of authentic knowledge"
               ratio="4 / 5"
               style={{ borderRadius: 'var(--radius-lg)', border: '6px solid var(--warm-white)', boxShadow: 'var(--shadow-lg)' }}
             />

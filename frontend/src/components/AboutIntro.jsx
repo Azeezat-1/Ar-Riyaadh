@@ -13,7 +13,7 @@ export default function AboutIntro() {
           <Reveal as="div" className="about-intro__media">
             <SmartImage
               src={images.about}
-              alt="Guiding students with authentic Islamic knowledge"
+              alt="A woman in hijab studying the Qur'an, the academy's pursuit of authentic knowledge"
               ratio="4 / 5"
               className="about-intro__img"
             />
