@@ -1,9 +1,23 @@
+import { useEffect, useRef, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
 import { images, TELEGRAM } from '../data/content'
 import './Hero.css'
+
+const SLIDES = [
+  {
+    src: images.heroBackground,
+    label: 'The Qur\u02bc\u0101n, the core of the academy\u2019s studies',
+  },
+  {
+    src: images.heroPoster,
+    label: 'Knowledge is Light — the academy\u2019s guiding motto',
+  },
+]
+
+const SLIDE_MS = 6500
 
 const container = {
   hidden: {},
@@ -18,11 +32,44 @@ const item = (reduced) => ({
 export default function Hero() {
   const reduced = useReducedMotion()
   const fade = item(reduced)
+  const [active, setActive] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const timer = useRef(null)
+
+  const goTo = (i) => setActive((i + SLIDES.length) % SLIDES.length)
+
+  useEffect(() => {
+    if (reduced || paused || SLIDES.length < 2) return undefined
+    timer.current = setInterval(() => setActive((a) => (a + 1) % SLIDES.length), SLIDE_MS)
+    return () => clearInterval(timer.current)
+  }, [reduced, paused])
 
   return (
-    <section className="hero hero--overlay">
-      <img className="hero__bg" src={images.heroBackground} alt="" />
-      <div className="hero__bg-overlay" aria-hidden="true" />
+    <section
+      className="hero hero--overlay"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={() => setPaused(false)}
+      aria-label="Al Riyadh Academy hero"
+    >
+      <div className="hero__slides" aria-hidden="true">
+        {SLIDES.map((slide, i) => (
+          <motion.img
+            key={slide.src}
+            src={slide.src}
+            alt=""
+            className="hero__bg"
+            initial={false}
+            animate={{
+              opacity: i === active ? 1 : 0,
+              scale: reduced ? 1 : i === active ? 1.06 : 1,
+            }}
+            transition={{ opacity: { duration: 1.1, ease: 'easeInOut' }, scale: { duration: SLIDE_MS / 1000, ease: 'linear' } }}
+          />
+        ))}
+        <div className="hero__bg-overlay" />
+      </div>
 
       <div className="container hero__inner">
         <div className="hero__content">
@@ -75,6 +122,23 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {SLIDES.length > 1 && (
+        <div className="hero__controls" role="tablist" aria-label="Hero slides">
+          {SLIDES.map((slide, i) => (
+            <button
+              key={slide.src}
+              type="button"
+              role="tab"
+              aria-selected={active === i}
+              aria-label={slide.label}
+              title={slide.label}
+              className={`hero__dot ${active === i ? 'hero__dot--active' : ''}`}
+              onClick={() => goTo(i)}
+            />
+          ))}
+        </div>
+      )}
     </section>
   )
 }

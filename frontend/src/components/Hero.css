@@ -6,13 +6,19 @@
   padding: calc(var(--header-h) + clamp(3rem, 7vw, 5rem)) 0 clamp(3rem, 7vw, 5.5rem);
 }
 
+.hero__slides {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
 .hero__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
+  object-position: center;
 }
 
 .hero__bg-overlay {
@@ -127,6 +133,33 @@
 
 .hero__points svg {
   color: var(--brand-sage);
+}
+
+/* Slideshow controls */
+
+.hero__controls {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(1.4rem, 4vw, 2.2rem);
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.hero__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--brand-sage);
+  background: transparent;
+  padding: 0;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.hero__dot--active {
+  width: 1.6rem;
+  background: var(--brand-sage);
 }
 
 /* Responsive */
