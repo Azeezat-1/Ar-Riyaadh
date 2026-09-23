@@ -130,8 +130,8 @@ export default function Home() {
                 <div className="value-cover">
                   <SmartImage
                     src={images.library}
-                    alt="Knowledge is Light — the academy's guiding motto"
-                    ratio="1 / 1"
+                    alt="A calm, studied library space"
+                    ratio="3 / 4"
                   />
                 </div>
               </Reveal>

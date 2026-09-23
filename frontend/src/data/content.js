@@ -45,9 +45,8 @@ export const site = {
 // elegant placeholder if an image cannot load.
 export const images = {
   heroBackground: '/images/quran-stand.jpeg',
-  heroPoster: '/images/knowledge-light.jpeg',
   study: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=80',
-  library: '/images/knowledge-light.jpeg',
+  library: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80',
   books: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80',
   about: '/images/about-umm-abdillah.jpg',
   arabicProgram: '/images/arabic-90days.jpeg',
