@@ -56,21 +56,6 @@ export default function Hero() {
                 Learn More
               </Link>
             </motion.div>
-
-            <motion.ul variants={fade} className="hero__points">
-              <li>
-                <FontAwesomeIcon icon={icons.check} />
-                Qur'an &amp; Tajweed
-              </li>
-              <li>
-                <FontAwesomeIcon icon={icons.check} />
-                Arabic, Tafseer &amp; Hadith
-              </li>
-              <li>
-                <FontAwesomeIcon icon={icons.check} />
-                Hijaamah instruction
-              </li>
-            </motion.ul>
           </motion.div>
         </div>
       </div>

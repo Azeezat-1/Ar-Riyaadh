@@ -55,10 +55,10 @@
 }
 
 .hero__title {
-  font-size: clamp(2.6rem, 6vw, 4.3rem);
-  line-height: 1.06;
-  letter-spacing: -0.02em;
-  font-weight: 550;
+  font-size: clamp(2.6rem, 6vw, 4.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 700;
   color: var(--cream);
   margin: 1.4rem 0 1.2rem;
 }
@@ -107,26 +107,6 @@
 .btn--link:hover {
   color: var(--brand-sage);
   text-decoration-color: var(--brand-sage);
-}
-
-.hero__points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.6rem;
-  margin-top: 2.2rem;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.92rem;
-  font-weight: 500;
-}
-
-.hero__points li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.hero__points svg {
-  color: var(--brand-sage);
 }
 
 /* Responsive */

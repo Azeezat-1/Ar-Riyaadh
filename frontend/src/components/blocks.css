@@ -486,6 +486,73 @@
   object-fit: cover;
 }
 
+/* Focus strip — statement band under the hero */
+
+.focus-strip {
+  background: var(--deep-green-800);
+  color: var(--warm-white);
+}
+
+.focus-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.focus-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.4rem 1.4rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.focus-item:first-child {
+  border-left: none;
+}
+
+.focus-item__icon {
+  flex: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(189, 202, 164, 0.16);
+  color: var(--brand-sage);
+  font-size: 1.05rem;
+}
+
+.focus-item__label {
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .focus-strip__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .focus-item:nth-child(3) {
+    border-left: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .focus-strip__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-item {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .focus-item:first-child {
+    border-top: none;
+  }
+}
+
 /* Hadith feature */
 
 .hadith-feature {

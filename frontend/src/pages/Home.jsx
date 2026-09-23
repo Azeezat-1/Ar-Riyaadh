@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from '../components/icons'
 import PageWrapper from '../components/PageWrapper'
 import Hero from '../components/Hero'
+import FocusStrip from '../components/FocusStrip'
 import AboutIntro from '../components/AboutIntro'
 import SectionHeading from '../components/SectionHeading'
 import SubjectCard from '../components/SubjectCard'
@@ -43,6 +44,7 @@ export default function Home() {
   return (
     <PageWrapper>
       <Hero />
+      <FocusStrip />
 
       {/* About Umm Abdillah */}
       <AboutIntro />
