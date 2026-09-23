@@ -406,6 +406,7 @@ export const books = [
 // ------------------------------------------------------------
 export const hijama = {
   image: '/images/hijama-cupping.jpg',
+  detailImage: '/images/hijaamah-cupping-detail.png',
   title: 'Hijaamah',
   tagline: 'Sunnah cupping therapy, practised and taught with care',
   intro:

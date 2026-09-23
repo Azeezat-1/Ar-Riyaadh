@@ -17,6 +17,7 @@ export default function HijamaSection() {
               Cupping therapy, practised and taught
             </h2>
             <p className="lede">{hijama.intro}</p>
+            <img src={hijama.detailImage} alt="Hijaamah, Sunnah cupping therapy practised with care" className="hijama-split__detail" />
             <ul className="hijama-points">
               <li>
                 <FontAwesomeIcon icon={icons.droplet} aria-hidden="true" />
