@@ -91,7 +91,7 @@ export default function Hero() {
           <div className="hero__frame hero__frame--side">
             <SmartImage
               src={images.heroSecondary}
-              alt="A calm reading room with bookshelves at the academy"
+              alt="Knowledge is Light — the academy's learning poster"
             />
             <span className="hero__caption hero__caption--alt">
               <FontAwesomeIcon icon={icons['book-open']} />
