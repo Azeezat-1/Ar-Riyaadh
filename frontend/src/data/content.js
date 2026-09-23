@@ -10,7 +10,7 @@
 // the `#` social links with the academy's real links.
 // ============================================================
 
-export const WHATSAPP_NUMBER = '2348131663860'
+export const WHATSAPP_NUMBER = '2348106882041'
 export const WA_BASE = `https://wa.me/${WHATSAPP_NUMBER}`
 export const waLink = (message = '') =>
   message ? `${WA_BASE}?text=${encodeURIComponent(message)}` : WA_BASE
@@ -31,7 +31,7 @@ export const site = {
   founder: 'Umm Abdillah Ar-Riyaadh',
   founderRole: 'Muallima & Student of Knowledge',
   email: 'contact@alriyadhacademy.example',
-  phone: '+234 813 166 3860',
+  phone: '+234 81 0688 2041',
   socials: {
     telegram: TELEGRAM.join, // TODO: real Telegram link
     whatsapp: WA_BASE,
