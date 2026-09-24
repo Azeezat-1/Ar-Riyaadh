@@ -32,12 +32,24 @@ export default function About() {
 
       {/* Story */}
       <section className="section">
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 'clamp(2rem, 5vw, 4.5rem)', alignItems: 'center' }}>
-          <Reveal as="div">
+        <div className="container">
+          <Reveal as="div" className="story-intro">
             <span className="eyebrow">Her story</span>
-            <h2 style={{ fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', margin: '1rem 0 1.1rem', color: 'var(--primary)' }}>
+            <h2 style={{ fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', margin: '1rem 0 0', color: 'var(--primary)' }}>
               Not always easy, but worth every step
             </h2>
+          </Reveal>
+
+          <Reveal as="div" className="story-photo">
+            <SmartImage
+              src={images.about}
+              alt="A woman in hijab studying the Qur'an, the academy's pursuit of authentic knowledge"
+              ratio="4 / 5"
+              style={{ borderRadius: 'var(--radius-lg)', border: '6px solid var(--warm-white)', boxShadow: 'var(--shadow-lg)' }}
+            />
+          </Reveal>
+
+          <Reveal as="div" className="story-intro">
             <div className="story-body">
               <p>
                 She began her journey as a student of knowledge approximately ten years ago,
@@ -57,14 +69,6 @@ export default function About() {
                 girls can take their own step in the path of seeking beneficial knowledge.
               </p>
             </div>
-          </Reveal>
-          <Reveal as="div">
-            <SmartImage
-              src={images.about}
-              alt="A woman in hijab studying the Qur'an, the academy's pursuit of authentic knowledge"
-              ratio="4 / 5"
-              style={{ borderRadius: 'var(--radius-lg)', border: '6px solid var(--warm-white)', boxShadow: 'var(--shadow-lg)' }}
-            />
           </Reveal>
         </div>
       </section>

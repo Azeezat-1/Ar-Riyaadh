@@ -192,7 +192,7 @@ export default function Home() {
               </Reveal>
             ))}
           </StaggerGroup>
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+          <div className="view-all">
             <Link to="/lectures" className="btn btn--outline">
               View All Lectures
               <FontAwesomeIcon icon={icons['arrow-right']} />

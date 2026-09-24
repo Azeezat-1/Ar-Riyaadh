@@ -459,6 +459,15 @@
 
 /* Story prose */
 
+.story-intro {
+  max-width: 46rem;
+}
+
+.story-photo {
+  margin: 1.75rem 0 2rem;
+  max-width: 34rem;
+}
+
 .story-body {
   display: flex;
   flex-direction: column;
