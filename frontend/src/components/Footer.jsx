@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>
-            © {new Date().getFullYear()} {site.name} · {site.motto} · Azeezat Yusuf
+            © {new Date().getFullYear()} {site.name} · {site.motto} · Website by Azeezat Yusuf
           </p>
         </div>
       </div>
