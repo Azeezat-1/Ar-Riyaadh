@@ -20,6 +20,15 @@ const telegramMethod = {
   href: TELEGRAM.join,
 }
 
+const emailMethod = {
+  icon: icons.envelope,
+  title: 'Email',
+  text: site.email,
+  href: `mailto:${site.email}`,
+}
+
+const contactMethods = [whatsappMethod, telegramMethod, emailMethod]
+
 export default function Contact() {
   return (
     <PageWrapper>
@@ -57,24 +66,17 @@ export default function Contact() {
           </Reveal>
 
           <ul className="contact-methods">
-            <Reveal as="li" key={whatsappMethod.title} className="card contact-method">
-              <span className="icon-wrap icon-wrap--gold">
-                <FontAwesomeIcon icon={whatsappMethod.icon} aria-hidden="true" />
-              </span>
-              <span className="contact-method__body">
-                <span className="contact-method__title">{whatsappMethod.title}</span>
-                <a href={whatsappMethod.href}>{whatsappMethod.text}</a>
-              </span>
-            </Reveal>
-            <Reveal as="li" key={telegramMethod.title} className="card contact-method">
-              <span className="icon-wrap icon-wrap--gold">
-                <FontAwesomeIcon icon={telegramMethod.icon} aria-hidden="true" />
-              </span>
-              <span className="contact-method__body">
-                <span className="contact-method__title">{telegramMethod.title}</span>
-                <a href={telegramMethod.href}>{telegramMethod.text}</a>
-              </span>
-            </Reveal>
+            {contactMethods.map((m) => (
+              <Reveal as="li" key={m.title} className="card contact-method">
+                <span className="icon-wrap icon-wrap--gold">
+                  <FontAwesomeIcon icon={m.icon} aria-hidden="true" />
+                </span>
+                <span className="contact-method__body">
+                  <span className="contact-method__title">{m.title}</span>
+                  <a href={m.href}>{m.text}</a>
+                </span>
+              </Reveal>
+            ))}
           </ul>
         </div>
       </section>
