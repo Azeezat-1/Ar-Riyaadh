@@ -21,6 +21,23 @@
 
 /* Class cards */
 
+.view-all {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 46rem) {
+  .view-all {
+    text-align: left;
+    margin-left: 1.75rem;
+  }
+
+  .view-all .btn {
+    padding: 0.6rem 1.15rem;
+    font-size: 0.85rem;
+  }
+}
+
 .class-card {
   display: flex;
   flex-direction: column;

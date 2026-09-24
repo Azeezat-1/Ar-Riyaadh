@@ -86,7 +86,7 @@ export default function Home() {
               ))}
             </StaggerGroup>
           )}
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+          <div className="view-all">
             <Link to="/classes" className="btn btn--primary">
               View All Classes
               <FontAwesomeIcon icon={icons['arrow-right']} />
