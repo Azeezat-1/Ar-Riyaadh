@@ -26,7 +26,7 @@ export const TELEGRAM = {
 export const site = {
   name: 'Ar-Riyaadh Academy',
   fullName: 'Umm Abdillah Ar-Riyaadh Academy',
-  motto: 'Rooted Learning, Lasting Impact.',
+  motto: '',
   tagline: 'A female-focused academy for structured Islamic and Arabic learning.',
   founder: 'Umm Abdillah Ar-Riyaadh',
   founderRole: 'Muallima & Student of Knowledge',

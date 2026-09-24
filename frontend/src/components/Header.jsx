@@ -40,7 +40,7 @@ export function Logo({ to = '/', onClick }) {
       <LogoMark />
       <span className="brand-text">
         <span className="brand-name">{site.name}</span>
-        <span className="brand-sub">{site.motto}</span>
+        {site.motto && <span className="brand-sub">{site.motto}</span>}
       </span>
     </Link>
   )
