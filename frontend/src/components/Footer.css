@@ -135,6 +135,10 @@
   .footer__about {
     grid-column: 1 / -1;
   }
+
+  .footer__name {
+    display: none;
+  }
 }
 
 @media (max-width: 34rem) {
