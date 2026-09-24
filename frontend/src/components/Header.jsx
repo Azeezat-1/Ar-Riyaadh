@@ -77,12 +77,6 @@ export default function Header() {
         <div className="container header__inner">
           <Logo />
 
-          <div className="header__cta-wrap">
-            <Link to="/classes" className="btn btn--primary btn--sm header__cta">
-              Join a Class
-            </Link>
-          </div>
-
           <nav className="header__nav" aria-label="Primary navigation">
             {navLinks.map((link) => (
               <NavLink
@@ -95,6 +89,12 @@ export default function Header() {
               </NavLink>
             ))}
           </nav>
+
+          <div className="header__cta-wrap">
+            <Link to="/classes" className="btn btn--primary btn--sm header__cta">
+              Join a Class
+            </Link>
+          </div>
 
           <button
             type="button"
