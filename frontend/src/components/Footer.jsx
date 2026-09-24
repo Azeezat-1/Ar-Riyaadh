@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="footer__about">
             <LogoMark />
             <span className="footer__name">{site.fullName}</span>
-            {site.motto && <span className="footer__motto">{site.motto}</span>}
+            <span className="footer__motto">{site.motto}</span>
             <p className="footer__desc">
               {site.tagline} Structured Islamic and Arabic learning taught by {site.founder}.
             </p>
@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>
-            © {new Date().getFullYear()} {site.name}
+            © {new Date().getFullYear()} {site.name} · {site.motto}
           </p>
         </div>
       </div>
