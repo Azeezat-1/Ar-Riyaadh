@@ -30,7 +30,7 @@ export const site = {
   tagline: 'A female-focused academy for structured Islamic and Arabic learning.',
   founder: 'Umm Abdillah Ar-Riyaadh',
   founderRole: 'Muallima & Student of Knowledge',
-  email: 'contact@arriyadhacademy.example',
+  email: 'salam@arriyaadh.com',
   phone: '+234 81 0688 2041',
   socials: {
     telegram: TELEGRAM.join, // TODO: real Telegram link
