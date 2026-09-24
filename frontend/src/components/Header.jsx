@@ -77,19 +77,10 @@ export default function Header() {
         <div className="container header__inner">
           <Logo />
 
-          <div className="header__actions">
+          <div className="header__cta-wrap">
             <Link to="/classes" className="btn btn--primary btn--sm header__cta">
               Join a Class
             </Link>
-            <button
-              type="button"
-              className="header__burger"
-              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-              aria-expanded={menuOpen}
-              onClick={() => setMenuOpen((o) => !o)}
-            >
-              <FontAwesomeIcon icon={menuOpen ? icons.xmark : icons.bars} />
-            </button>
           </div>
 
           <nav className="header__nav" aria-label="Primary navigation">
@@ -104,6 +95,16 @@ export default function Header() {
               </NavLink>
             ))}
           </nav>
+
+          <button
+            type="button"
+            className="header__burger"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            <FontAwesomeIcon icon={menuOpen ? icons.xmark : icons.bars} />
+          </button>
         </div>
       </header>
 
