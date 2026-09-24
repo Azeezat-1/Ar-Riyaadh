@@ -23,6 +23,8 @@ export const TELEGRAM = {
   note: 'Links are placeholders until the academy supplies its Telegram join links.',
 }
 
+export const LECTURES_CHANNEL = 'https://t.me/JourneyToBarakah'
+
 export const site = {
   name: 'Ar-Riyaadh Academy',
   fullName: 'Umm Abdillah Ar-Riyaadh Academy',

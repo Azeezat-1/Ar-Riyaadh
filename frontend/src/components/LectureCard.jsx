@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icons } from './icons'
+import { LECTURES_CHANNEL } from '../data/content'
 
-export default function LectureCard({ topic, title, excerpt, tags, schedule, audience, status, accessLink }) {
+export default function LectureCard({ topic, title, excerpt, tags, schedule, audience, status }) {
   return (
     <article className="card lecture-card">
       <div className="lecture-card__head">
@@ -32,7 +33,7 @@ export default function LectureCard({ topic, title, excerpt, tags, schedule, aud
         </div>
       )}
       <a
-        href={accessLink}
+        href={LECTURES_CHANNEL}
         className="btn btn--outline btn--sm lecture-card__cta"
         rel="noreferrer"
         target="_blank"
