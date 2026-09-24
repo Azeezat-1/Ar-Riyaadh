@@ -77,19 +77,6 @@ export default function Header() {
         <div className="container header__inner">
           <Logo />
 
-          <nav className="header__nav" aria-label="Primary navigation">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                className={({ isActive }) => `nav-link ${isActive ? 'nav-link--active' : ''}`}
-                end={link.to === '/'}
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </nav>
-
           <div className="header__actions">
             <Link to="/classes" className="btn btn--primary btn--sm header__cta">
               Join a Class
@@ -104,6 +91,19 @@ export default function Header() {
               <FontAwesomeIcon icon={menuOpen ? icons.xmark : icons.bars} />
             </button>
           </div>
+
+          <nav className="header__nav" aria-label="Primary navigation">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) => `nav-link ${isActive ? 'nav-link--active' : ''}`}
+                end={link.to === '/'}
+              >
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
         </div>
       </header>
 
