@@ -6,25 +6,19 @@ import ContactForm from '../components/ContactForm'
 import { Reveal } from '../components/motion'
 import { site, WA_BASE, TELEGRAM } from '../data/content'
 
-const contactMethods = [
-  {
-    icon: icons.brandWhatsapp,
-    title: 'WhatsApp',
-    text: site.phone,
-    href: WA_BASE,
-  },
-  {
-    icon: icons.brandTelegram,
-    title: 'Telegram',
-    text: 'Classes and lectures are joined through Telegram. Follow the class link or ask for access.',
-  },
-  {
-    icon: icons.envelope,
-    title: 'Email',
-    text: site.email,
-    href: `mailto:${site.email}`,
-  },
-]
+const whatsappMethod = {
+  icon: icons.brandWhatsapp,
+  title: 'WhatsApp',
+  text: site.phone,
+  href: WA_BASE,
+}
+
+const telegramMethod = {
+  icon: icons.brandTelegram,
+  title: 'Telegram',
+  text: 'Classes and lectures are joined through Telegram. Follow the class link or ask for access.',
+  href: TELEGRAM.join,
+}
 
 export default function Contact() {
   return (
@@ -43,39 +37,45 @@ export default function Contact() {
       </section>
 
       <section className="section">
-        <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 'clamp(2rem, 5vw, 4rem)', alignItems: 'start' }}>
-            <Reveal as="div">
-              <SectionHeading
-                align="left"
-                eyebrow="Reach us"
-                title="Ways to contact the academy"
-                lede="Prefer messaging? Any of these channels work."
-              />
-              <ul className="contact-methods">
-                {contactMethods.map((m) => (
-                  <li key={m.title} className="card contact-method">
-                    <span className="icon-wrap icon-wrap--gold">
-                      <FontAwesomeIcon icon={m.icon} aria-hidden="true" />
-                    </span>
-                    <span className="contact-method__body">
-                      <span className="contact-method__title">{m.title}</span>
-                      {m.href ? <a href={m.href}>{m.text}</a> : <span>{m.text}</span>}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
+        <div className="container container--narrow">
+          <Reveal as="div">
+            <SectionHeading
+              align="left"
+              eyebrow="Reach us"
+              title="Ways to contact the academy"
+              lede="Prefer messaging? Any of these channels work."
+            />
+          </Reveal>
 
-            <Reveal as="div">
-              <div className="card">
-                <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--primary)', fontSize: '1.35rem', marginBottom: '1.25rem' }}>
-                  Send a message
-                </h3>
-                <ContactForm />
-              </div>
+          <Reveal as="div">
+            <div className="card">
+              <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--primary)', fontSize: '1.35rem', marginBottom: '1.25rem' }}>
+                Send a message
+              </h3>
+              <ContactForm />
+            </div>
+          </Reveal>
+
+          <ul className="contact-methods">
+            <Reveal as="li" key={whatsappMethod.title} className="card contact-method">
+              <span className="icon-wrap icon-wrap--gold">
+                <FontAwesomeIcon icon={whatsappMethod.icon} aria-hidden="true" />
+              </span>
+              <span className="contact-method__body">
+                <span className="contact-method__title">{whatsappMethod.title}</span>
+                <a href={whatsappMethod.href}>{whatsappMethod.text}</a>
+              </span>
             </Reveal>
-          </div>
+            <Reveal as="li" key={telegramMethod.title} className="card contact-method">
+              <span className="icon-wrap icon-wrap--gold">
+                <FontAwesomeIcon icon={telegramMethod.icon} aria-hidden="true" />
+              </span>
+              <span className="contact-method__body">
+                <span className="contact-method__title">{telegramMethod.title}</span>
+                <a href={telegramMethod.href}>{telegramMethod.text}</a>
+              </span>
+            </Reveal>
+          </ul>
         </div>
       </section>
 
