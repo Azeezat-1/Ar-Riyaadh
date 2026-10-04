@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Classes & Programs */}
       <section className="section" id="classes">
-        <div className="container">
+        <div className="container container--wide">
           <SectionHeading
             eyebrow="Classes & programs"
             title="Choose your learning path"
@@ -78,7 +78,7 @@ export default function Home() {
           {loadingClasses ? (
             <Loader label="Loading classes…" />
           ) : (
-            <StaggerGroup className="grid grid--4">
+            <StaggerGroup className="grid grid--4 grid--wide">
               {featuredClasses.map((c) => (
                 <Reveal key={c.id}>
                   <ClassCard {...c} />

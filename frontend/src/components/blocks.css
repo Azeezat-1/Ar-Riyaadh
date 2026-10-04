@@ -82,7 +82,8 @@
 }
 
 .class-card__cta {
-  margin-top: 1.4rem;
+  margin-top: auto;
+  padding-top: 1.4rem;
 }
 
 .class-card__meta {
