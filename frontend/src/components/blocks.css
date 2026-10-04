@@ -59,6 +59,10 @@
   margin-top: 0.85rem;
   color: var(--text-muted);
   font-size: 0.94rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .class-card__focus {
@@ -84,6 +88,26 @@
 .class-card__cta {
   margin-top: auto;
   padding-top: 1.4rem;
+}
+
+.classes-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.classes-grid > *,
+.classes-grid .class-card {
+  height: 100%;
+}
+
+@media (max-width: 46rem) {
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .classes-grid .class-card {
+    padding: 1.15rem;
+  }
 }
 
 .class-card__meta {

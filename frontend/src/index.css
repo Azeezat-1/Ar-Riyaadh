@@ -184,10 +184,6 @@ small {
   max-width: 56rem;
 }
 
-.container--wide {
-  max-width: 92rem;
-}
-
 .section {
   padding-block: clamp(3.5rem, 8vw, 6.5rem);
 }
@@ -431,10 +427,6 @@ small {
 .grid {
   display: grid;
   gap: 1.5rem;
-}
-
-.grid--wide {
-  gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .grid--2 {
