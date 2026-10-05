@@ -39,10 +39,6 @@ export function Logo({ to = '/', onClick }) {
     <Link to={to} className="brand" onClick={onClick} aria-label={`${site.name}, home`}>
       <LogoMark />
       <img src="/images/logo-banner.jpg" alt={`${site.name} banner logo`} className="brand-banner" />
-      <span className="brand-text">
-        <span className="brand-name">{site.fullName}</span>
-        <span className="brand-sub">{site.motto}</span>
-      </span>
     </Link>
   )
 }
