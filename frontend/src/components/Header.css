@@ -47,12 +47,34 @@ img.brand-mark {
 }
 
 .brand-text {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.15;
+  transform: skewX(-8deg);
+}
+
+.brand-text > span {
+  display: block;
+  transform: skewX(8deg);
+}
+
+.brand-name {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(0.95rem, 1.5vw, 1.2rem);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--primary);
+  white-space: nowrap;
+}
+
+.brand-sub {
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
   white-space: nowrap;
 }
 
