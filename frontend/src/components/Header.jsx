@@ -38,6 +38,7 @@ export function Logo({ to = '/', onClick }) {
   return (
     <Link to={to} className="brand" onClick={onClick} aria-label={`${site.name}, home`}>
       <LogoMark />
+      <span className="brand-text">Ar-Riyaadh Academy</span>
     </Link>
   )
 }
