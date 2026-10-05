@@ -433,6 +433,18 @@ small {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Cards inside grids stretch to a common height per row */
+.grid > *,
+.grid .card,
+.grid .value-card,
+.grid .book-card,
+.grid .testimonial-card,
+.grid .step-card,
+.grid .class-card,
+.grid .contact-method {
+  height: 100%;
+}
+
 .grid--3 {
   grid-template-columns: repeat(3, 1fr);
 }

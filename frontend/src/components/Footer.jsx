@@ -29,10 +29,8 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__about">
             <LogoMark />
-            <span className="footer__brand">
-              <span className="footer__name">{site.fullName}</span>
-              <span className="footer__motto">{site.motto}</span>
-            </span>
+            <span className="footer__name">{site.fullName}</span>
+            <span className="footer__motto">{site.motto}</span>
             <p className="footer__desc">
               {site.tagline} Structured Islamic and Arabic learning taught by {site.founder}.
             </p>
