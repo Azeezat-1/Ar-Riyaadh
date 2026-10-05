@@ -38,24 +38,12 @@
   flex-shrink: 0;
 }
 
-.header .brand-mark {
-  display: none;
-}
-
 .brand-mark.brand-mark--img,
 img.brand-mark {
   width: 2.6rem;
   height: 2.6rem;
   object-fit: contain;
   border-radius: 8px;
-}
-
-.brand-banner {
-  display: block;
-  height: clamp(2.4rem, 4.5vh, 3.1rem);
-  width: auto;
-  max-width: 16rem;
-  object-fit: contain;
 }
 
 /* Nav */
@@ -162,12 +150,3 @@ img.brand-mark {
   }
 }
 
-@media (max-width: 40rem) {
-  .header .brand-mark {
-    display: inline-flex;
-  }
-
-  .brand-banner {
-    display: none;
-  }
-}
