@@ -127,6 +127,17 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer__credit {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease;
+}
+
+.footer__credit:hover {
+  color: var(--sage-300);
+}
+
 @media (max-width: 52rem) {
   .footer__grid {
     grid-template-columns: 1fr 1fr;

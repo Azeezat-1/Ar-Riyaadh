@@ -85,7 +85,10 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>
-            © {new Date().getFullYear()} {site.name} · {site.motto} · Website by Azeezat Yusuf
+            © {new Date().getFullYear()} {site.name} · {site.motto} · Developed by{' '}
+            <a href="https://wa.link/exuqkq" target="_blank" rel="noreferrer" className="footer__credit">
+              Azeezat Yusuf
+            </a>
           </p>
         </div>
       </div>
