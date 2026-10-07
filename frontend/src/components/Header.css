@@ -180,5 +180,9 @@ img.brand-mark {
   .header__burger {
     display: inline-flex;
   }
+
+  .brand-text {
+    display: none;
+  }
 }
 
