@@ -17,6 +17,15 @@ const articleSchema = new mongoose.Schema(
     author: { type: String, default: 'Umu Abdullah Riyadh', trim: true },
     category: { type: String, default: 'Reflections', trim: true },
     publishedAt: { type: Date },
+
+    // --- Editorial workflow -------------------------------------------------
+    status: {
+      type: String,
+      enum: { values: ['draft', 'published'], message: 'Status must be draft or published' },
+      default: 'published',
+    },
+    tags: { type: [String], default: [] },
+    viewCount: { type: Number, default: 0, min: 0 },
   },
   { timestamps: true }
 )
@@ -25,5 +34,8 @@ articleSchema.pre('save', function preSave(next) {
   if (!this.publishedAt) this.publishedAt = new Date()
   next()
 })
+
+articleSchema.index({ status: 1, publishedAt: -1 })
+articleSchema.index({ category: 1 })
 
 export default mongoose.model('HomeschoolingArticle', articleSchema)
